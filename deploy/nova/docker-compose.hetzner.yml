@@ -74,6 +74,9 @@ services:
       <<: *application-environment
       DISABLE_DB_MIGRATIONS: "true"
       DISABLE_CRON_JOBS_REGISTRATION: "true"
+      # Node sizes its default heap from the cgroup limit, which is too small for
+      # the worker to finish loading every queue processor.
+      NODE_OPTIONS: --max-old-space-size=700
     volumes:
       - server-local-data:/app/packages/twenty-server/.local-storage
     depends_on:
@@ -83,7 +86,7 @@ services:
         condition: service_healthy
       redis:
         condition: service_healthy
-    mem_limit: 768m
+    mem_limit: 1g
     networks:
       - internal
 
