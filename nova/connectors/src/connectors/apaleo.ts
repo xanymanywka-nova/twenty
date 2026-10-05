@@ -76,7 +76,7 @@ export const mapApaleoProperty = (property: ApaleoProperty): SyncRecord => ({
   fields: {
     name: property.name,
     code: property.id,
-    type: property.id === 'NBW' ? 'apartments' : 'hotel',
+    propertyType: property.id === 'NBW' ? 'apartments' : 'hotel',
   },
 });
 

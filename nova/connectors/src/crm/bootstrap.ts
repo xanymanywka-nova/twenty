@@ -34,7 +34,7 @@ export const OBJECT_DEFINITIONS: ObjectDefinition[] = [
     fields: [
       ...COMMON_FIELDS,
       { name: 'code', label: 'Code', type: 'TEXT' },
-      { name: 'type', label: 'Type', type: 'TEXT' },
+      { name: 'propertyType', label: 'Property type', type: 'TEXT' },
       { name: 'website', label: 'Website', type: 'LINK' },
       { name: 'listings', label: 'Listings', type: 'RICH_TEXT' },
     ],
