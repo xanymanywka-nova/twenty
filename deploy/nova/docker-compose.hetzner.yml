@@ -23,6 +23,8 @@ services:
       SUPPORT_DRIVER: ${SUPPORT_DRIVER:-NONE}
       CHECK_FOR_UPDATES_ENABLED: ${CHECK_FOR_UPDATES_ENABLED:-false}
       IS_BILLING_ENABLED: ${IS_BILLING_ENABLED:-false}
+      # The default 100 requests/minute per key stalls the connectors' bulk imports.
+      API_RATE_LIMITING_LONG_LIMIT: ${API_RATE_LIMITING_LONG_LIMIT:-3000}
       # Workspace activation seeds every standard object in one request and runs out
       # of the heap Node derives from a 1g cgroup.
       NODE_OPTIONS: --max-old-space-size=1152
