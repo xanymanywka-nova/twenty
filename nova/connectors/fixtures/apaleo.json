@@ -1,0 +1,49 @@
+[
+  {
+    "object": "properties",
+    "externalSource": "apaleo",
+    "externalId": "HHA",
+    "fields": { "name": "Synthetic Hotel Anna", "code": "HHA", "type": "hotel" }
+  },
+  {
+    "object": "people",
+    "externalSource": "guest",
+    "externalId": "email:fixture.guest@example.test",
+    "fields": {
+      "name": { "firstName": "Fixture", "lastName": "Guest" },
+      "emails": {
+        "primaryEmail": "fixture.guest@example.test",
+        "additionalEmails": null
+      }
+    }
+  },
+  {
+    "object": "stays",
+    "externalSource": "apaleo",
+    "externalId": "FIXTURE-RESERVATION-1",
+    "fields": {
+      "name": "FIXTURE-RESERVATION-1",
+      "arrival": "2026-01-10",
+      "departure": "2026-01-12",
+      "nights": 2,
+      "adults": 1,
+      "status": "Confirmed",
+      "channel": "direct-web",
+      "totalGross": { "amountMicros": 200000000, "currencyCode": "EUR" }
+    },
+    "links": [
+      {
+        "field": "guestId",
+        "object": "people",
+        "externalSource": "guest",
+        "externalId": "email:fixture.guest@example.test"
+      },
+      {
+        "field": "propertyId",
+        "object": "properties",
+        "externalSource": "apaleo",
+        "externalId": "HHA"
+      }
+    ]
+  }
+]

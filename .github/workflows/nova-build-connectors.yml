@@ -1,0 +1,29 @@
+name: Build Nova connectors
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - nova/connectors/**
+      - .github/workflows/nova-build-connectors.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - uses: docker/build-push-action@v6
+        with:
+          context: nova/connectors
+          push: true
+          tags: ghcr.io/xanymanywka-nova/nova-crm-connectors:latest
