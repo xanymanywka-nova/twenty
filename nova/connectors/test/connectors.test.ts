@@ -137,13 +137,40 @@ test('maps Hotel Anna stays and privacy-safe daily aggregates', () => {
   assert.equal(JSON.stringify(stats).includes('rotating-hash'), false);
 });
 
+test('maps Hotel Anna rows whose dates are Prisma epoch milliseconds', () => {
+  const [, stay] = mapHotelReservation({
+    id: 'web-2',
+    propertyId: 'HHA',
+    guestName: 'Test Guest',
+    guestEmail: 'guest@example.test',
+    checkIn: Date.parse('2026-07-04T22:00:00Z'),
+    checkOut: Date.parse('2026-07-06T22:00:00Z'),
+    adults: 1,
+    totalPrice: 180,
+    status: 'confirmed',
+  });
+  assert.equal(stay?.fields.arrival, '2026-07-04');
+  assert.equal(stay?.fields.nights, 2);
+  const [stats] = aggregatePageViews([
+    {
+      id: 'v3',
+      propertyId: 'HHA',
+      createdAt: Date.parse('2026-07-01T09:00:00Z'),
+    },
+  ]);
+  assert.equal(stats?.fields.date, '2026-07-01');
+});
+
 test('maps review-monitor, Stripe and Nova Beds', () => {
   const monitorReview = mapMonitorReview({
     id: 'g1',
     sourceName: 'Google',
-    propertyCode: 'HHA',
+    placeName: 'Hotel ANNA Hilden',
     rating: 4,
+    repliedAt: 1783202400000,
   });
+  assert.equal(monitorReview.fields.name, 'Hotel ANNA Hilden · Google review');
+  assert.equal(monitorReview.fields.replied, true);
   const welcomeReview = mapWelcomeRow('channex_reviews', {
     id: 'internal-1',
     ota: 'Google',
