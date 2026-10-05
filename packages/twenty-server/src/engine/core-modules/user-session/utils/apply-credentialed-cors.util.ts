@@ -70,7 +70,7 @@ export const warnOnceOnDisallowedBrowserPreflight = ({
   warnedOrigins.add(comparableOrigin);
 
   logger.warn(
-    `Cross-origin browser request from ${comparableOrigin} (API host: ${getRequestBaseUrl(request)}); credentialed requests from it will be blocked by the browser. If this is your Twenty front-end, serve it same-origin with the API, or add the origin to AUTH_COOKIE_ALLOWED_ORIGINS. Logged once per origin.`,
+    `Cross-origin browser request from ${comparableOrigin} (API host: ${getRequestBaseUrl(request)}); credentialed requests from it will be blocked by the browser. If this is your Nova CRM front-end, serve it same-origin with the API, or add the origin to AUTH_COOKIE_ALLOWED_ORIGINS. Logged once per origin.`,
   );
 };
 

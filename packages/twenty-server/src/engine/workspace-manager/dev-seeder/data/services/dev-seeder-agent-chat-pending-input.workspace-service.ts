@@ -187,13 +187,13 @@ const FIGMA_CALL_FIELDS: RequestFormField[] = [
 
 const LINEAR_WELCOME_EMAIL: SeededEmail = {
   to: 'ops@linear.app',
-  subject: 'Welcome to Twenty, Linear',
+  subject: 'Welcome to Nova CRM, Linear',
   body: '<p>Hi Linear team,</p><p>Welcome aboard! Phil will run your onboarding: expect a kickoff invite from him this week, with SSO and your data import on the agenda.</p><p>Best,<br>Tim</p>',
 };
 
 const FIGMA_WELCOME_EMAIL: SeededEmail = {
   to: 'it@figma.com',
-  subject: 'Welcome to Twenty, Figma',
+  subject: 'Welcome to Nova CRM, Figma',
   body: '<p>Hi Figma team,</p><p>Welcome aboard! Your workspace is ready, and we will start with the pipeline import you asked about on our last call.</p><p>Best,<br>Tim</p>',
 };
 

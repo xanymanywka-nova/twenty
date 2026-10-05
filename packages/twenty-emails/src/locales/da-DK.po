@@ -71,7 +71,7 @@ msgstr ""
 #. js-lingui-explicit-id
 #: src/emails/password-update-notify.email.tsx
 msgid "Connect to Twenty"
-msgstr "Forbind til Twenty"
+msgstr "Forbind til Nova CRM"
 
 #. js-lingui-explicit-id
 #: src/emails/password-update-notify.email.tsx
@@ -130,7 +130,7 @@ msgstr "Hej {userName},"
 #. js-lingui-explicit-id
 #: src/emails/billing-trial-converting.email.tsx
 msgid "If Twenty is working for you, you're all set — there's nothing to do. If it's not the right fit, you can cancel in one click before then and you won't be charged."
-msgstr "Hvis Twenty fungerer for dig, er du helt klar — du behøver ikke gøre noget. Hvis det ikke er det rette match, kan du opsige med ét klik inden da, og du vil ikke blive opkrævet."
+msgstr "Hvis Nova CRM fungerer for dig, er du helt klar — du behøver ikke gøre noget. Hvis det ikke er det rette match, kan du opsige med ét klik inden da, og du vil ikke blive opkrævet."
 
 #. js-lingui-explicit-id
 #: src/emails/server-admin-access-changed.email.tsx
@@ -150,7 +150,7 @@ msgstr "Hvis du ikke gør noget, sætter vi dit arbejdsområde på pause og hold
 #. js-lingui-explicit-id
 #: src/emails/clean-suspended-workspace.email.tsx
 msgid "If you'd ever like to give Twenty another try, you can start a fresh workspace in minutes — we'd love to have you back."
-msgstr "Hvis du på et tidspunkt vil give Twenty en chance igen, kan du starte et nyt arbejdsområde på få minutter — vi vil meget gerne have dig tilbage."
+msgstr "Hvis du på et tidspunkt vil give Nova CRM en chance igen, kan du starte et nyt arbejdsområde på få minutter — vi vil meget gerne have dig tilbage."
 
 #. js-lingui-explicit-id
 #: src/emails/server-admin-access-changed.email.tsx
@@ -170,7 +170,7 @@ msgstr "Dets data er blevet fjernet og kan ikke længere gendannes."
 #. js-lingui-explicit-id
 #: src/emails/send-invite-link.email.tsx
 msgid "Join your team on Twenty"
-msgstr "Deltag i dit team på Twenty"
+msgstr "Deltag i dit team på Nova CRM"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-subscription-renewing.email.tsx
@@ -206,7 +206,7 @@ msgstr "Genaktiver arbejdsområdet"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Read Twenty's user guide"
-msgstr "Læs Twenty's brugervejledning"
+msgstr "Læs Nova CRM's brugervejledning"
 
 #. js-lingui-explicit-id
 #: src/emails/password-reset-link.email.tsx
@@ -266,7 +266,7 @@ msgstr "For at beholde dit arbejdsområde og alt, hvad du har bygget, skal du ti
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Twenty.com, Public Benefit Corporation"
-msgstr "Twenty.com, Offentlig Fordelskorporation"
+msgstr "Nova CRM.com, Offentlig Fordelskorporation"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
@@ -287,17 +287,17 @@ msgstr "Bekræft e-mail"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's developer documentation"
-msgstr "Besøg Twenty's udviklerdokumentation"
+msgstr "Besøg Nova CRM's udviklerdokumentation"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's GitHub repository"
-msgstr "Besøg Twenty's GitHub-lager"
+msgstr "Besøg Nova CRM's GitHub-lager"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's website"
-msgstr "Besøg Twenty's hjemmeside"
+msgstr "Besøg Nova CRM's hjemmeside"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-trial-converting.email.tsx
@@ -312,7 +312,7 @@ msgstr "Hjemmeside"
 #. js-lingui-explicit-id
 #: src/components/WhatIsTwenty.tsx
 msgid "What is Twenty?"
-msgstr "Hvad er Twenty?"
+msgstr "Hvad er Nova CRM?"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-subscription-renewing.email.tsx

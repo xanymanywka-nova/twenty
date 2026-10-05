@@ -198,7 +198,7 @@ msgstr "گروهی از افراد که به‌دقت انتخاب شده‌ان
 #. js-lingui-id: TF/ZV2
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
 msgid "A heads up before your Twenty trial ends"
-msgstr "اطلاع‌رسانی پیش از پایان دوره آزمایشی Twenty شما"
+msgstr "اطلاع‌رسانی پیش از پایان دوره آزمایشی Nova CRM شما"
 
 #. js-lingui-id: 6yZjO1
 #: src/engine/core-modules/application/application.exception.ts
@@ -6499,7 +6499,7 @@ msgstr "جدول پیونددهنده ارتباط‌های پیام کانال 
 #. js-lingui-id: PviVyk
 #: src/engine/core-modules/workspace-invitation/services/workspace-invitation.service.ts
 msgid "Join your team on Twenty"
-msgstr "به تیم خود در Twenty بپیوندید"
+msgstr "به تیم خود در Nova CRM بپیوندید"
 
 #. js-lingui-id: +KEn4d
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-call-recording-standard-flat-field-metadata.util.ts
@@ -8992,8 +8992,8 @@ msgstr "لطفاً ایمیل به‌روزرسانی‌شده خود را تأ�
 
 #. js-lingui-id: Zm9s4F
 #: src/engine/api/common/common-args-processors/data-arg-processor/validator-utils/validate-links-field-or-throw.util.ts
-msgid "Please enter a domain name, like twenty.com"
-msgstr "لطفاً یک نام دامنه وارد کنید، مانند twenty.com"
+msgid "Please enter a domain name, like crm.nova-tool.online"
+msgstr "لطفاً یک نام دامنه وارد کنید، مانند crm.nova-tool.online"
 
 #. js-lingui-id: qgasuj
 #: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection-validator.service.ts
@@ -11069,7 +11069,7 @@ msgstr "فیلدهای سیستمی قابل به‌روزرسانی نیستن�
 #. js-lingui-id: aK2k19
 #: src/engine/metadata-modules/index-metadata/services/index-metadata.service.ts
 msgid "System indexes are required for Twenty to work and cannot be deleted."
-msgstr "ایندکس‌های سیستمی برای کارکرد Twenty لازم هستند و نمی‌توان آن‌ها را حذف کرد."
+msgstr "ایندکس‌های سیستمی برای کارکرد Nova CRM لازم هستند و نمی‌توان آن‌ها را حذف کرد."
 
 #. js-lingui-id: /ojawH
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-object-metadata-validator.service.ts
@@ -12034,7 +12034,7 @@ msgstr "هیچ نقشی به این کلید API اختصاص داده نشده 
 #: src/engine/core-modules/application/application-registration/application-registration.exception.ts
 #: src/engine/core-modules/application/application.exception.ts
 msgid "This app requires a newer version of the Twenty server. Please upgrade your server or use a compatible app version."
-msgstr "این برنامه به نسخه جدیدتری از سرور Twenty نیاز دارد. لطفاً سرور خود را ارتقا دهید یا از نسخه سازگار برنامه استفاده کنید."
+msgstr "این برنامه به نسخه جدیدتری از سرور Nova CRM نیاز دارد. لطفاً سرور خود را ارتقا دهید یا از نسخه سازگار برنامه استفاده کنید."
 
 #. js-lingui-id: y2nks/
 #: src/engine/core-modules/application/application.exception.ts
@@ -14054,7 +14054,7 @@ msgstr "چهارشنبه"
 #. js-lingui-id: TVkCrJ
 #: src/engine/core-modules/email-verification/services/email-verification.service.ts
 msgid "Welcome to Twenty: Please Confirm Your Email"
-msgstr "به Twenty خوش آمدید: لطفاً ایمیل خود را تأیید کنید"
+msgstr "به Nova CRM خوش آمدید: لطفاً ایمیل خود را تأیید کنید"
 
 #. js-lingui-id: lKboI8
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-record-share-standard-flat-field-metadata.util.ts
@@ -15129,12 +15129,12 @@ msgstr "عضو تیم شما که مسئول مدیریت حساب شرکت اس
 #. js-lingui-id: sOfbGC
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
 msgid "Your Twenty plan renews soon"
-msgstr "طرح Twenty شما به‌زودی تمدید می‌شود"
+msgstr "طرح Nova CRM شما به‌زودی تمدید می‌شود"
 
 #. js-lingui-id: qW+K5e
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
 msgid "Your Twenty trial is ending soon"
-msgstr "دوره آزمایشی Twenty شما به‌زودی پایان می‌یابد"
+msgstr "دوره آزمایشی Nova CRM شما به‌زودی پایان می‌یابد"
 
 #. js-lingui-id: ej/tZF
 #: src/engine/core-modules/graphql/hooks/use-graphql-error-handler.hook.ts

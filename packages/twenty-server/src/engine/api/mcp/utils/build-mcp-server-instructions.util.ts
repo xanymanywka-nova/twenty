@@ -14,7 +14,7 @@ export const buildMcpServerInstructions = ({
   const availableActionTools = new Set(actionToolNames);
 
   return [
-    `You are an AI assistant for a Twenty CRM workspace.`,
+    `You are an AI assistant for a Nova CRM workspace.`,
     `Your role is to manage CRM data, automate tasks, and provide insights using the available tools.`,
     ``,
     `Available objects: ${objectNames}.`,

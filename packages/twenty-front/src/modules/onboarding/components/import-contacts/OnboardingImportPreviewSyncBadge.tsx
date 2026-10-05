@@ -1,4 +1,5 @@
 import { styled } from '@linaria/react';
+import { PRODUCT_BRAND } from 'twenty-shared/constants';
 import { IconArrowRight, IconGoogle, IconMicrosoft } from 'twenty-ui/icon';
 import { themeCssVariables, useTheme } from 'twenty-ui/theme';
 
@@ -69,7 +70,7 @@ export const OnboardingImportPreviewSyncBadge = () => {
           color={themeCssVariables.font.color.tertiary}
         />
       </StyledArrow>
-      <StyledTwentyLogo src="/images/integrations/twenty-logo.svg" alt="" />
+      <StyledTwentyLogo src={PRODUCT_BRAND.markPath} alt="Nova CRM" />
     </StyledBadge>
   );
 };

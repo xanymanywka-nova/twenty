@@ -198,7 +198,7 @@ msgstr "Pažljivo odabrana publika ljudi"
 #. js-lingui-id: TF/ZV2
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
 msgid "A heads up before your Twenty trial ends"
-msgstr "Obaveštenje pre isteka vašeg Twenty probnog perioda"
+msgstr "Obaveštenje pre isteka vašeg Nova CRM probnog perioda"
 
 #. js-lingui-id: 6yZjO1
 #: src/engine/core-modules/application/application.exception.ts
@@ -6517,7 +6517,7 @@ msgstr "Spojna tabela koja povezuje asocijacije poruka kanala poruka sa fascikla
 #. js-lingui-id: PviVyk
 #: src/engine/core-modules/workspace-invitation/services/workspace-invitation.service.ts
 msgid "Join your team on Twenty"
-msgstr "Pridružite se svom timu na Twenty"
+msgstr "Pridružite se svom timu na Nova CRM"
 
 #. js-lingui-id: +KEn4d
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-call-recording-standard-flat-field-metadata.util.ts
@@ -9010,8 +9010,8 @@ msgstr "Potvrdite ažuriranu e-poštu"
 
 #. js-lingui-id: Zm9s4F
 #: src/engine/api/common/common-args-processors/data-arg-processor/validator-utils/validate-links-field-or-throw.util.ts
-msgid "Please enter a domain name, like twenty.com"
-msgstr "Unesite naziv domena, kao što je twenty.com"
+msgid "Please enter a domain name, like crm.nova-tool.online"
+msgstr "Unesite naziv domena, kao što je crm.nova-tool.online"
 
 #. js-lingui-id: qgasuj
 #: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection-validator.service.ts
@@ -11087,7 +11087,7 @@ msgstr "Sistemska polja ne mogu biti ažurirana"
 #. js-lingui-id: aK2k19
 #: src/engine/metadata-modules/index-metadata/services/index-metadata.service.ts
 msgid "System indexes are required for Twenty to work and cannot be deleted."
-msgstr "Sistemski indeksi su neophodni da bi Twenty radio i ne mogu se izbrisati."
+msgstr "Sistemski indeksi su neophodni da bi Nova CRM radio i ne mogu se izbrisati."
 
 #. js-lingui-id: /ojawH
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-object-metadata-validator.service.ts
@@ -12052,7 +12052,7 @@ msgstr "Ovom API ključu nije dodeljena uloga."
 #: src/engine/core-modules/application/application-registration/application-registration.exception.ts
 #: src/engine/core-modules/application/application.exception.ts
 msgid "This app requires a newer version of the Twenty server. Please upgrade your server or use a compatible app version."
-msgstr "Ova aplikacija zahteva noviju verziju Twenty servera. Molimo, nadogradite svoj server ili koristite kompatibilnu verziju aplikacije."
+msgstr "Ova aplikacija zahteva noviju verziju Nova CRM servera. Molimo, nadogradite svoj server ili koristite kompatibilnu verziju aplikacije."
 
 #. js-lingui-id: y2nks/
 #: src/engine/core-modules/application/application.exception.ts
@@ -14077,7 +14077,7 @@ msgstr "Sreda"
 #. js-lingui-id: TVkCrJ
 #: src/engine/core-modules/email-verification/services/email-verification.service.ts
 msgid "Welcome to Twenty: Please Confirm Your Email"
-msgstr "Dobrodošli u Twenty: Molimo potvrdite vaš imejl"
+msgstr "Dobrodošli u Nova CRM: Molimo potvrdite vaš imejl"
 
 #. js-lingui-id: lKboI8
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-record-share-standard-flat-field-metadata.util.ts
@@ -15175,12 +15175,12 @@ msgstr "Vaš timski član zadužen za upravljanje nalogom kompanije"
 #. js-lingui-id: sOfbGC
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
 msgid "Your Twenty plan renews soon"
-msgstr "Vaš Twenty plan će uskoro biti obnovljen"
+msgstr "Vaš Nova CRM plan će uskoro biti obnovljen"
 
 #. js-lingui-id: qW+K5e
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
 msgid "Your Twenty trial is ending soon"
-msgstr "Vaš Twenty probni period uskoro ističe"
+msgstr "Vaš Nova CRM probni period uskoro ističe"
 
 #. js-lingui-id: ej/tZF
 #: src/engine/core-modules/graphql/hooks/use-graphql-error-handler.hook.ts

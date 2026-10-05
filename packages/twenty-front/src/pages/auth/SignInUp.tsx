@@ -36,6 +36,7 @@ import { clientConfigApiStatusState } from '@/client-config/states/clientConfigA
 import { useLingui } from '@lingui/react/macro';
 import { useSearchParams } from 'react-router-dom';
 import { isDefined } from 'twenty-shared/utils';
+import { PRODUCT_BRAND } from 'twenty-shared/constants';
 import { Loader } from 'twenty-ui/primitives/feedback';
 import { themeCssVariables } from 'twenty-ui/theme';
 
@@ -117,7 +118,7 @@ export const SignInUp = () => {
     }
 
     if (isGlobalScope) {
-      return t`Welcome to Twenty`;
+      return t`Welcome to ${PRODUCT_BRAND.name}`;
     }
 
     const workspaceName = workspacePublicData?.displayName;

@@ -18,6 +18,7 @@ import {
 } from 'class-validator';
 import {
   ENTERPRISE_INSTANCE_TYPE,
+  PRODUCT_BRAND,
   type EnterpriseInstanceType,
 } from 'twenty-shared/constants';
 import { isDefined } from 'twenty-shared/utils';
@@ -497,7 +498,7 @@ export class ConfigVariables {
     description: 'Name used in the From header for outgoing emails',
     type: ConfigVariableType.STRING,
   })
-  EMAIL_FROM_NAME = 'Felix from Twenty';
+  EMAIL_FROM_NAME = PRODUCT_BRAND.name;
 
   @ConfigVariablesMetadata({
     group: ConfigVariablesGroup.EMAIL_SETTINGS,
@@ -921,6 +922,14 @@ export class ConfigVariables {
   })
   @IsOptional()
   TELEMETRY_ENABLED = true;
+
+  @ConfigVariablesMetadata({
+    group: ConfigVariablesGroup.ADVANCED_SETTINGS,
+    description: 'Check Docker Hub for newer application versions',
+    type: ConfigVariableType.BOOLEAN,
+  })
+  @IsOptional()
+  CHECK_FOR_UPDATES_ENABLED = true;
 
   @ConfigVariablesMetadata({
     group: ConfigVariablesGroup.LOGGING,

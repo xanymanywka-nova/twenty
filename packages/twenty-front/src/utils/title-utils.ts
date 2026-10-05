@@ -1,5 +1,6 @@
 import { t } from '@lingui/core/macro';
 import { AppBasePath, AppPath, SettingsPath } from 'twenty-shared/types';
+import { PRODUCT_BRAND } from 'twenty-shared/constants';
 
 enum SettingsPathPrefixes {
   Accounts = `${AppBasePath.Settings}/${SettingsPath.Accounts}`,
@@ -58,8 +59,8 @@ export const getPageTitleFromPath = (pathname: string): string => {
     case SettingsPathPrefixes.General:
       return t`General - Settings`;
     case SettingsPathPrefixes.Community:
-      return t`Community - Settings`;
+      return t`About Nova CRM - Settings`;
     default:
-      return 'Twenty';
+      return PRODUCT_BRAND.name;
   }
 };

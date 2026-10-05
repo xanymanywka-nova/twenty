@@ -198,7 +198,7 @@ msgstr "Une audience de personnes sélectionnées manuellement"
 #. js-lingui-id: TF/ZV2
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
 msgid "A heads up before your Twenty trial ends"
-msgstr "Un rappel avant la fin de votre essai Twenty"
+msgstr "Un rappel avant la fin de votre essai Nova CRM"
 
 #. js-lingui-id: 6yZjO1
 #: src/engine/core-modules/application/application.exception.ts
@@ -6517,7 +6517,7 @@ msgstr "Table de jointure reliant les associations de messages du canal aux doss
 #. js-lingui-id: PviVyk
 #: src/engine/core-modules/workspace-invitation/services/workspace-invitation.service.ts
 msgid "Join your team on Twenty"
-msgstr "Rejoignez votre équipe sur Twenty"
+msgstr "Rejoignez votre équipe sur Nova CRM"
 
 #. js-lingui-id: +KEn4d
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-call-recording-standard-flat-field-metadata.util.ts
@@ -9010,8 +9010,8 @@ msgstr "Veuillez confirmer votre adresse e-mail mise à jour"
 
 #. js-lingui-id: Zm9s4F
 #: src/engine/api/common/common-args-processors/data-arg-processor/validator-utils/validate-links-field-or-throw.util.ts
-msgid "Please enter a domain name, like twenty.com"
-msgstr "Veuillez saisir un nom de domaine, comme twenty.com"
+msgid "Please enter a domain name, like crm.nova-tool.online"
+msgstr "Veuillez saisir un nom de domaine, comme crm.nova-tool.online"
 
 #. js-lingui-id: qgasuj
 #: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection-validator.service.ts
@@ -11087,7 +11087,7 @@ msgstr "Les champs système ne peuvent pas être mis à jour"
 #. js-lingui-id: aK2k19
 #: src/engine/metadata-modules/index-metadata/services/index-metadata.service.ts
 msgid "System indexes are required for Twenty to work and cannot be deleted."
-msgstr "Les index système sont nécessaires pour que Twenty fonctionne et ne peuvent pas être supprimés."
+msgstr "Les index système sont nécessaires pour que Nova CRM fonctionne et ne peuvent pas être supprimés."
 
 #. js-lingui-id: /ojawH
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-object-metadata-validator.service.ts
@@ -12052,7 +12052,7 @@ msgstr "Cette clé API n'a aucun rôle attribué."
 #: src/engine/core-modules/application/application-registration/application-registration.exception.ts
 #: src/engine/core-modules/application/application.exception.ts
 msgid "This app requires a newer version of the Twenty server. Please upgrade your server or use a compatible app version."
-msgstr "Cette application nécessite une version plus récente du serveur Twenty. Veuillez mettre à jour votre serveur ou utiliser une version de l'application compatible."
+msgstr "Cette application nécessite une version plus récente du serveur Nova CRM. Veuillez mettre à jour votre serveur ou utiliser une version de l'application compatible."
 
 #. js-lingui-id: y2nks/
 #: src/engine/core-modules/application/application.exception.ts
@@ -14077,7 +14077,7 @@ msgstr "Mercredi"
 #. js-lingui-id: TVkCrJ
 #: src/engine/core-modules/email-verification/services/email-verification.service.ts
 msgid "Welcome to Twenty: Please Confirm Your Email"
-msgstr "Bienvenue chez Twenty : Veuillez confirmer votre email"
+msgstr "Bienvenue chez Nova CRM : Veuillez confirmer votre email"
 
 #. js-lingui-id: lKboI8
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-record-share-standard-flat-field-metadata.util.ts
@@ -15175,12 +15175,12 @@ msgstr "Le membre de votre équipe responsable de la gestion du compte entrepris
 #. js-lingui-id: sOfbGC
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
 msgid "Your Twenty plan renews soon"
-msgstr "Votre formule Twenty sera bientôt renouvelée"
+msgstr "Votre formule Nova CRM sera bientôt renouvelée"
 
 #. js-lingui-id: qW+K5e
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
 msgid "Your Twenty trial is ending soon"
-msgstr "Votre période d’essai Twenty se termine bientôt"
+msgstr "Votre période d’essai Nova CRM se termine bientôt"
 
 #. js-lingui-id: ej/tZF
 #: src/engine/core-modules/graphql/hooks/use-graphql-error-handler.hook.ts

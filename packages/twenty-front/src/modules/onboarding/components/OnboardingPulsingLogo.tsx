@@ -1,4 +1,5 @@
 import { styled } from '@linaria/react';
+import { PRODUCT_BRAND } from 'twenty-shared/constants';
 import { themeCssVariables } from 'twenty-ui/theme';
 
 const StyledLogo = styled.img`
@@ -23,5 +24,5 @@ const StyledLogo = styled.img`
 `;
 
 export const OnboardingPulsingLogo = () => (
-  <StyledLogo src="/images/integrations/twenty-logo.svg" alt="" />
+  <StyledLogo src={PRODUCT_BRAND.markPath} alt="Nova CRM" />
 );

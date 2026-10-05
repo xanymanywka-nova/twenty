@@ -198,7 +198,7 @@ msgstr "手作業で選定されたオーディエンス"
 #. js-lingui-id: TF/ZV2
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
 msgid "A heads up before your Twenty trial ends"
-msgstr "Twenty トライアルが終了する前のお知らせ"
+msgstr "Nova CRM トライアルが終了する前のお知らせ"
 
 #. js-lingui-id: 6yZjO1
 #: src/engine/core-modules/application/application.exception.ts
@@ -6517,7 +6517,7 @@ msgstr "メッセージチャネルのメッセージ関連付けをメッセー
 #. js-lingui-id: PviVyk
 #: src/engine/core-modules/workspace-invitation/services/workspace-invitation.service.ts
 msgid "Join your team on Twenty"
-msgstr "Twentyでチームに参加"
+msgstr "Nova CRMでチームに参加"
 
 #. js-lingui-id: +KEn4d
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-call-recording-standard-flat-field-metadata.util.ts
@@ -9010,8 +9010,8 @@ msgstr "更新されたメールアドレスを確認してください"
 
 #. js-lingui-id: Zm9s4F
 #: src/engine/api/common/common-args-processors/data-arg-processor/validator-utils/validate-links-field-or-throw.util.ts
-msgid "Please enter a domain name, like twenty.com"
-msgstr "twenty.com のようなドメイン名を入力してください"
+msgid "Please enter a domain name, like crm.nova-tool.online"
+msgstr "crm.nova-tool.online のようなドメイン名を入力してください"
 
 #. js-lingui-id: qgasuj
 #: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection-validator.service.ts
@@ -11087,7 +11087,7 @@ msgstr "システムフィールドは更新できません"
 #. js-lingui-id: aK2k19
 #: src/engine/metadata-modules/index-metadata/services/index-metadata.service.ts
 msgid "System indexes are required for Twenty to work and cannot be deleted."
-msgstr "システムインデックスは Twenty が動作するために必要であり、削除できません。"
+msgstr "システムインデックスは Nova CRM が動作するために必要であり、削除できません。"
 
 #. js-lingui-id: /ojawH
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-object-metadata-validator.service.ts
@@ -12052,7 +12052,7 @@ msgstr "この API キーにはロールが割り当てられていません。"
 #: src/engine/core-modules/application/application-registration/application-registration.exception.ts
 #: src/engine/core-modules/application/application.exception.ts
 msgid "This app requires a newer version of the Twenty server. Please upgrade your server or use a compatible app version."
-msgstr "このアプリは Twenty サーバーのより新しいバージョンを必要とします。サーバーをアップグレードするか、互換性のあるアプリのバージョンを使用してください。"
+msgstr "このアプリは Nova CRM サーバーのより新しいバージョンを必要とします。サーバーをアップグレードするか、互換性のあるアプリのバージョンを使用してください。"
 
 #. js-lingui-id: y2nks/
 #: src/engine/core-modules/application/application.exception.ts
@@ -14077,7 +14077,7 @@ msgstr "水曜日"
 #. js-lingui-id: TVkCrJ
 #: src/engine/core-modules/email-verification/services/email-verification.service.ts
 msgid "Welcome to Twenty: Please Confirm Your Email"
-msgstr "Twentyへようこそ: メールを確認してください"
+msgstr "Nova CRMへようこそ: メールを確認してください"
 
 #. js-lingui-id: lKboI8
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-record-share-standard-flat-field-metadata.util.ts
@@ -15175,12 +15175,12 @@ msgstr "会社のアカウントを管理する責任のあるチームメンバ
 #. js-lingui-id: sOfbGC
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
 msgid "Your Twenty plan renews soon"
-msgstr "お使いの Twenty プランはまもなく更新されます"
+msgstr "お使いの Nova CRM プランはまもなく更新されます"
 
 #. js-lingui-id: qW+K5e
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
 msgid "Your Twenty trial is ending soon"
-msgstr "お使いの Twenty トライアルはまもなく終了します"
+msgstr "お使いの Nova CRM トライアルはまもなく終了します"
 
 #. js-lingui-id: ej/tZF
 #: src/engine/core-modules/graphql/hooks/use-graphql-error-handler.hook.ts

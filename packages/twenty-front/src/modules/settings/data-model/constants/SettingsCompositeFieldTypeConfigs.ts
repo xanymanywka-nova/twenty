@@ -179,14 +179,14 @@ export const SETTINGS_COMPOSITE_FIELD_TYPE_CONFIGS = {
     ],
     exampleValues: [
       {
-        primaryLinkUrl: 'twenty.com',
+        primaryLinkUrl: 'crm.nova-tool.online',
         primaryLinkLabel: '',
-        secondaryLinks: [{ url: 'twenty.com', label: 'Twenty' }],
+        secondaryLinks: [{ url: 'crm.nova-tool.online', label: 'Nova CRM' }],
       },
       {
-        primaryLinkUrl: 'github.com/twentyhq/twenty',
-        primaryLinkLabel: 'Twenty Repo',
-        secondaryLinks: [{ url: 'twenty.com', label: '' }],
+        primaryLinkUrl: 'github.com/xanymanywka-nova/twenty',
+        primaryLinkLabel: 'Nova CRM Source',
+        secondaryLinks: [{ url: 'crm.nova-tool.online', label: '' }],
       },
       {
         primaryLinkUrl: 'react.dev',

@@ -71,7 +71,7 @@ msgstr "新しいメールアドレスを確認してください"
 #. js-lingui-explicit-id
 #: src/emails/password-update-notify.email.tsx
 msgid "Connect to Twenty"
-msgstr "Twentyに接続"
+msgstr "Nova CRMに接続"
 
 #. js-lingui-explicit-id
 #: src/emails/password-update-notify.email.tsx
@@ -130,7 +130,7 @@ msgstr "{userName}様,"
 #. js-lingui-explicit-id
 #: src/emails/billing-trial-converting.email.tsx
 msgid "If Twenty is working for you, you're all set — there's nothing to do. If it's not the right fit, you can cancel in one click before then and you won't be charged."
-msgstr "Twenty がお役に立っているようでしたら、特に操作は不要です。そのままで問題ありません。もし合わないと感じられる場合は、その日までにワンクリックで解約でき、料金が請求されることはありません。"
+msgstr "Nova CRM がお役に立っているようでしたら、特に操作は不要です。そのままで問題ありません。もし合わないと感じられる場合は、その日までにワンクリックで解約でき、料金が請求されることはありません。"
 
 #. js-lingui-explicit-id
 #: src/emails/server-admin-access-changed.email.tsx
@@ -150,7 +150,7 @@ msgstr "何も操作されない場合、こちらでワークスペースを一
 #. js-lingui-explicit-id
 #: src/emails/clean-suspended-workspace.email.tsx
 msgid "If you'd ever like to give Twenty another try, you can start a fresh workspace in minutes — we'd love to have you back."
-msgstr "今後、もし再び Twenty をお試しいただけるようであれば、数分で新しいワークスペースを開始できます。お帰りいただけることを心よりお待ちしています。"
+msgstr "今後、もし再び Nova CRM をお試しいただけるようであれば、数分で新しいワークスペースを開始できます。お帰りいただけることを心よりお待ちしています。"
 
 #. js-lingui-explicit-id
 #: src/emails/server-admin-access-changed.email.tsx
@@ -170,7 +170,7 @@ msgstr "そのデータは削除され、今後復元することはできませ
 #. js-lingui-explicit-id
 #: src/emails/send-invite-link.email.tsx
 msgid "Join your team on Twenty"
-msgstr "Twentyでチームに参加"
+msgstr "Nova CRMでチームに参加"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-subscription-renewing.email.tsx
@@ -206,7 +206,7 @@ msgstr "ワークスペースを再有効化"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Read Twenty's user guide"
-msgstr "Twentyのユーザーガイドを読む"
+msgstr "Nova CRMのユーザーガイドを読む"
 
 #. js-lingui-explicit-id
 #: src/emails/password-reset-link.email.tsx
@@ -266,7 +266,7 @@ msgstr "ワークスペースとこれまでに構築された内容を保持す
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Twenty.com, Public Benefit Corporation"
-msgstr "Twenty.com, 公益企業"
+msgstr "Nova CRM.com, 公益企業"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
@@ -287,17 +287,17 @@ msgstr "メールを確認"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's developer documentation"
-msgstr "Twentyの開発者向けドキュメントを訪問"
+msgstr "Nova CRMの開発者向けドキュメントを訪問"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's GitHub repository"
-msgstr "TwentyのGitHubリポジトリを訪問"
+msgstr "Nova CRMのGitHubリポジトリを訪問"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's website"
-msgstr "Twentyのウェブサイトを訪問"
+msgstr "Nova CRMのウェブサイトを訪問"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-trial-converting.email.tsx
@@ -312,7 +312,7 @@ msgstr "ウェブサイト"
 #. js-lingui-explicit-id
 #: src/components/WhatIsTwenty.tsx
 msgid "What is Twenty?"
-msgstr "Twentyとは？"
+msgstr "Nova CRMとは？"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-subscription-renewing.email.tsx

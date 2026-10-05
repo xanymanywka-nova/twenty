@@ -198,7 +198,7 @@ msgstr "En håndplukket målgruppe af personer"
 #. js-lingui-id: TF/ZV2
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
 msgid "A heads up before your Twenty trial ends"
-msgstr "En påmindelse, før din Twenty-prøveperiode slutter"
+msgstr "En påmindelse, før din Nova CRM-prøveperiode slutter"
 
 #. js-lingui-id: 6yZjO1
 #: src/engine/core-modules/application/application.exception.ts
@@ -6517,7 +6517,7 @@ msgstr "Krydstabel, der knytter beskedkanalbeskedtilknytninger til beskedmapper"
 #. js-lingui-id: PviVyk
 #: src/engine/core-modules/workspace-invitation/services/workspace-invitation.service.ts
 msgid "Join your team on Twenty"
-msgstr "Deltag i dit team på Twenty"
+msgstr "Deltag i dit team på Nova CRM"
 
 #. js-lingui-id: +KEn4d
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-call-recording-standard-flat-field-metadata.util.ts
@@ -9010,8 +9010,8 @@ msgstr ""
 
 #. js-lingui-id: Zm9s4F
 #: src/engine/api/common/common-args-processors/data-arg-processor/validator-utils/validate-links-field-or-throw.util.ts
-msgid "Please enter a domain name, like twenty.com"
-msgstr "Indtast et domænenavn, f.eks. twenty.com"
+msgid "Please enter a domain name, like crm.nova-tool.online"
+msgstr "Indtast et domænenavn, f.eks. crm.nova-tool.online"
 
 #. js-lingui-id: qgasuj
 #: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection-validator.service.ts
@@ -11087,7 +11087,7 @@ msgstr "Systemfelter kan ikke opdateres"
 #. js-lingui-id: aK2k19
 #: src/engine/metadata-modules/index-metadata/services/index-metadata.service.ts
 msgid "System indexes are required for Twenty to work and cannot be deleted."
-msgstr "Systemindekser er påkrævet for, at Twenty fungerer, og kan ikke slettes."
+msgstr "Systemindekser er påkrævet for, at Nova CRM fungerer, og kan ikke slettes."
 
 #. js-lingui-id: /ojawH
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-object-metadata-validator.service.ts
@@ -12052,7 +12052,7 @@ msgstr "Denne API-nøgle har ingen rolle tildelt."
 #: src/engine/core-modules/application/application-registration/application-registration.exception.ts
 #: src/engine/core-modules/application/application.exception.ts
 msgid "This app requires a newer version of the Twenty server. Please upgrade your server or use a compatible app version."
-msgstr "Denne app kræver en nyere version af Twenty-serveren. Opgrader venligst din server eller brug en kompatibel appversion."
+msgstr "Denne app kræver en nyere version af Nova CRM-serveren. Opgrader venligst din server eller brug en kompatibel appversion."
 
 #. js-lingui-id: y2nks/
 #: src/engine/core-modules/application/application.exception.ts
@@ -14077,7 +14077,7 @@ msgstr "Onsdag"
 #. js-lingui-id: TVkCrJ
 #: src/engine/core-modules/email-verification/services/email-verification.service.ts
 msgid "Welcome to Twenty: Please Confirm Your Email"
-msgstr "Velkommen til Twenty: Bekræft venligst din e-mail"
+msgstr "Velkommen til Nova CRM: Bekræft venligst din e-mail"
 
 #. js-lingui-id: lKboI8
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-record-share-standard-flat-field-metadata.util.ts
@@ -15175,12 +15175,12 @@ msgstr "Dit teammedlem, der er ansvarlig for at administrere virksomhedens konto
 #. js-lingui-id: sOfbGC
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
 msgid "Your Twenty plan renews soon"
-msgstr "Dit Twenty-abonnement fornyes snart"
+msgstr "Dit Nova CRM-abonnement fornyes snart"
 
 #. js-lingui-id: qW+K5e
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
 msgid "Your Twenty trial is ending soon"
-msgstr "Din Twenty-prøveperiode udløber snart"
+msgstr "Din Nova CRM-prøveperiode udløber snart"
 
 #. js-lingui-id: ej/tZF
 #: src/engine/core-modules/graphql/hooks/use-graphql-error-handler.hook.ts

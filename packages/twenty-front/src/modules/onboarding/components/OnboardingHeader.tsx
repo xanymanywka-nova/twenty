@@ -2,6 +2,7 @@ import { ONBOARDING_CONTENT_BLOCK_WIDTH } from '@/onboarding/constants/Onboardin
 import { styled } from '@linaria/react';
 import { useLingui } from '@lingui/react/macro';
 import { type ReactNode } from 'react';
+import { PRODUCT_BRAND } from 'twenty-shared/constants';
 import { isDefined } from 'twenty-shared/utils';
 import { LightIconButton } from 'twenty-ui/components';
 import { IconChevronLeft } from 'twenty-ui/icon';
@@ -56,7 +57,6 @@ const StyledRightSide = styled(StyledSide)`
 `;
 
 const StyledLogo = styled.div`
-  background-image: url('/images/integrations/twenty-logo.svg');
   background-size: cover;
   height: ${themeCssVariables.spacing[6]};
   opacity: 0.4;
@@ -92,7 +92,9 @@ export const OnboardingHeader = ({
         )}
       </StyledLeftSide>
       <StyledCenter>
-        <StyledLogo />
+        <StyledLogo
+          style={{ backgroundImage: `url(${PRODUCT_BRAND.markPath})` }}
+        />
       </StyledCenter>
       <StyledRightSide>{rightComponent}</StyledRightSide>
     </StyledHeader>

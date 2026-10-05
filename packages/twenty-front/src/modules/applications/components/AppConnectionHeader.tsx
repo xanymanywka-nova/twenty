@@ -1,4 +1,5 @@
 import { styled } from '@linaria/react';
+import { PRODUCT_BRAND } from 'twenty-shared/constants';
 import { useState } from 'react';
 import { isNonEmptyString } from '@sniptt/guards';
 import { Avatar } from 'twenty-ui/primitives/data-display';
@@ -66,7 +67,7 @@ export const AppConnectionHeader = ({
   return (
     <StyledContainer>
       <StyledAppLogoTile>
-        <StyledAppLogo src={'/images/integrations/twenty-logo.svg'} alt="" />
+        <StyledAppLogo src={PRODUCT_BRAND.markPath} alt="Nova CRM" />
       </StyledAppLogoTile>
       <StyledLinkIconContainer aria-hidden>
         <IconRefresh size={theme.icon.size.md} stroke={theme.icon.stroke.lg} />

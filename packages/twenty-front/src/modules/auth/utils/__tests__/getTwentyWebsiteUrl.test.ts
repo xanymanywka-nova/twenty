@@ -17,19 +17,21 @@ describe('getTwentyWebsiteUrl', () => {
     ['tr-TR', 'tr'],
     ['zh-CN', 'zh'],
     ['zh-TW', 'zh'],
-  ])('uses the localized Twenty website path for %s', (locale, language) => {
+  ])('uses the localized Nova CRM website path for %s', (locale, language) => {
     expect(getTwentyWebsiteUrl(locale, 'privacy-policy')).toBe(
-      `https://twenty.com/${language}/privacy-policy`,
+      `https://crm.nova-tool.online/${language}/privacy-policy`,
     );
   });
 
-  it('uses the default Twenty website path for English', () => {
-    expect(getTwentyWebsiteUrl('en', 'terms')).toBe('https://twenty.com/terms');
+  it('uses the default Nova CRM website path for English', () => {
+    expect(getTwentyWebsiteUrl('en', 'terms')).toBe(
+      'https://crm.nova-tool.online/terms',
+    );
   });
 
   it('uses English for the pseudo locale', () => {
     expect(getTwentyWebsiteUrl('pseudo-en', 'terms')).toBe(
-      'https://twenty.com/terms',
+      'https://crm.nova-tool.online/terms',
     );
   });
 });

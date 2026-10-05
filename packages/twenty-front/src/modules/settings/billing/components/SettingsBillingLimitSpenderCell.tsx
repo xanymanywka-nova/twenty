@@ -56,9 +56,11 @@ export const SettingsBillingLimitSpenderCell = ({
         <Avatar
           name={name}
           colorSeed={getWorkspaceAvatarColorSeed(name)}
-          src={getAbsoluteImageUrl(
-            currentWorkspace?.logo ?? DEFAULT_WORKSPACE_LOGO,
-          )}
+          src={
+            currentWorkspace?.logo
+              ? getAbsoluteImageUrl(currentWorkspace.logo)
+              : DEFAULT_WORKSPACE_LOGO
+          }
           shape="square"
           size="sm"
         />

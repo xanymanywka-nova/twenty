@@ -67,7 +67,7 @@ WarnSuspendedWorkspaceEmail.PreviewProps = {
   inactiveDaysBeforeDelete: 14,
   userName: 'John Doe',
   workspaceDisplayName: 'Acme Inc.',
-  link: 'https://acme.twenty.com/settings/billing',
+  link: 'https://crm.nova-tool.online/settings/billing',
   locale: 'en',
 };
 

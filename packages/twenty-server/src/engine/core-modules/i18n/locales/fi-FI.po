@@ -198,7 +198,7 @@ msgstr "Harkiten valittu joukko ihmisiä"
 #. js-lingui-id: TF/ZV2
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
 msgid "A heads up before your Twenty trial ends"
-msgstr "Ilmoitus ennen kuin Twenty-kokeilusi päättyy"
+msgstr "Ilmoitus ennen kuin Nova CRM-kokeilusi päättyy"
 
 #. js-lingui-id: 6yZjO1
 #: src/engine/core-modules/application/application.exception.ts
@@ -6517,7 +6517,7 @@ msgstr "Liitostaulu, joka yhdistää viestikanavan viestiyhdistykset viestikansi
 #. js-lingui-id: PviVyk
 #: src/engine/core-modules/workspace-invitation/services/workspace-invitation.service.ts
 msgid "Join your team on Twenty"
-msgstr "Liity tiimiisi Twentyssä"
+msgstr "Liity tiimiisi Nova CRMssä"
 
 #. js-lingui-id: +KEn4d
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-call-recording-standard-flat-field-metadata.util.ts
@@ -9010,8 +9010,8 @@ msgstr ""
 
 #. js-lingui-id: Zm9s4F
 #: src/engine/api/common/common-args-processors/data-arg-processor/validator-utils/validate-links-field-or-throw.util.ts
-msgid "Please enter a domain name, like twenty.com"
-msgstr "Anna verkkotunnus, kuten twenty.com"
+msgid "Please enter a domain name, like crm.nova-tool.online"
+msgstr "Anna verkkotunnus, kuten crm.nova-tool.online"
 
 #. js-lingui-id: qgasuj
 #: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection-validator.service.ts
@@ -11087,7 +11087,7 @@ msgstr "Järjestelmäkenttiä ei voi päivittää"
 #. js-lingui-id: aK2k19
 #: src/engine/metadata-modules/index-metadata/services/index-metadata.service.ts
 msgid "System indexes are required for Twenty to work and cannot be deleted."
-msgstr "Järjestelmäindeksit ovat välttämättömiä, jotta Twenty toimii, eikä niitä voi poistaa."
+msgstr "Järjestelmäindeksit ovat välttämättömiä, jotta Nova CRM toimii, eikä niitä voi poistaa."
 
 #. js-lingui-id: /ojawH
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-object-metadata-validator.service.ts
@@ -12052,7 +12052,7 @@ msgstr "Tähän API-avaimeen ei ole liitetty roolia."
 #: src/engine/core-modules/application/application-registration/application-registration.exception.ts
 #: src/engine/core-modules/application/application.exception.ts
 msgid "This app requires a newer version of the Twenty server. Please upgrade your server or use a compatible app version."
-msgstr "Tämä sovellus edellyttää Twenty-palvelimen uudempaa versiota. Päivitä palvelimesi tai käytä yhteensopivaa sovellusversiota."
+msgstr "Tämä sovellus edellyttää Nova CRM-palvelimen uudempaa versiota. Päivitä palvelimesi tai käytä yhteensopivaa sovellusversiota."
 
 #. js-lingui-id: y2nks/
 #: src/engine/core-modules/application/application.exception.ts
@@ -14077,7 +14077,7 @@ msgstr "Keskiviikko"
 #. js-lingui-id: TVkCrJ
 #: src/engine/core-modules/email-verification/services/email-verification.service.ts
 msgid "Welcome to Twenty: Please Confirm Your Email"
-msgstr "Tervetuloa Twentyyn: Vahvista sähköpostisi"
+msgstr "Tervetuloa Nova CRMyn: Vahvista sähköpostisi"
 
 #. js-lingui-id: lKboI8
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-record-share-standard-flat-field-metadata.util.ts
@@ -15175,12 +15175,12 @@ msgstr "Tiimin jäsen vastuussa yritystilin hallinnasta"
 #. js-lingui-id: sOfbGC
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
 msgid "Your Twenty plan renews soon"
-msgstr "Twenty-tilauksesi uusiutuu pian"
+msgstr "Nova CRM-tilauksesi uusiutuu pian"
 
 #. js-lingui-id: qW+K5e
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
 msgid "Your Twenty trial is ending soon"
-msgstr "Twenty-kokeilujaksosi päättyy pian"
+msgstr "Nova CRM-kokeilujaksosi päättyy pian"
 
 #. js-lingui-id: ej/tZF
 #: src/engine/core-modules/graphql/hooks/use-graphql-error-handler.hook.ts

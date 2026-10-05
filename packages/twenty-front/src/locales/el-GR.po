@@ -1748,37 +1748,37 @@ msgstr ""
 #. js-lingui-id: FKGcEL
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
 msgid "Add the Twenty MCP server as a remote context server in Zed."
-msgstr "Προσθέστε τον διακομιστή Twenty MCP ως απομακρυσμένο διακομιστή περιβάλλοντος στο Zed."
+msgstr "Προσθέστε τον διακομιστή Nova CRM MCP ως απομακρυσμένο διακομιστή περιβάλλοντος στο Zed."
 
 #. js-lingui-id: iA2nHX
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
 msgid "Add the Twenty MCP server from Augment Code settings."
-msgstr "Προσθέστε τον διακομιστή Twenty MCP από τις ρυθμίσεις του Augment Code."
+msgstr "Προσθέστε τον διακομιστή Nova CRM MCP από τις ρυθμίσεις του Augment Code."
 
 #. js-lingui-id: l+NzAk
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
 msgid "Add the Twenty MCP server from Raycast's MCP commands or settings."
-msgstr "Προσθέστε τον διακομιστή Twenty MCP από τις εντολές ή τις ρυθμίσεις MCP του Raycast."
+msgstr "Προσθέστε τον διακομιστή Nova CRM MCP από τις εντολές ή τις ρυθμίσεις MCP του Raycast."
 
 #. js-lingui-id: j6G/yI
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
 msgid "Add the Twenty MCP server in Gemini CLI settings."
-msgstr "Προσθέστε τον διακομιστή Twenty MCP στις ρυθμίσεις του Gemini CLI."
+msgstr "Προσθέστε τον διακομιστή Nova CRM MCP στις ρυθμίσεις του Gemini CLI."
 
 #. js-lingui-id: /OyhlM
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
 msgid "Add the Twenty MCP server to your LibreChat configuration file."
-msgstr "Προσθέστε τον διακομιστή Twenty MCP στο αρχείο ρυθμίσεων του LibreChat."
+msgstr "Προσθέστε τον διακομιστή Nova CRM MCP στο αρχείο ρυθμίσεων του LibreChat."
 
 #. js-lingui-id: K0DXoj
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
 msgid "Add the Twenty remote server with LM Studio's install link."
-msgstr "Προσθέστε τον απομακρυσμένο διακομιστή Twenty με τον σύνδεσμο εγκατάστασης του LM Studio."
+msgstr "Προσθέστε τον απομακρυσμένο διακομιστή Nova CRM με τον σύνδεσμο εγκατάστασης του LM Studio."
 
 #. js-lingui-id: BTFMKE
 #: src/pages/settings/communications/SettingsWorkspaceCommunicationGroupChannelDetail.tsx
 msgid "Add these records at your DNS provider. Twenty checks them automatically."
-msgstr "Προσθέστε αυτές τις εγγραφές στον πάροχο DNS σας. Το Twenty τις ελέγχει αυτόματα."
+msgstr "Προσθέστε αυτές τις εγγραφές στον πάροχο DNS σας. Το Nova CRM τις ελέγχει αυτόματα."
 
 #. js-lingui-id: 5+ttxv
 #: src/modules/settings/accounts/components/SettingsAccountsBlocklistInput.tsx
@@ -1798,7 +1798,7 @@ msgstr "Προσθήκη θέματος"
 #. js-lingui-id: 4D/zWv
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
 msgid "Add Twenty as a Streamable HTTP extension in Goose."
-msgstr "Προσθέστε το Twenty ως επέκταση Streamable HTTP στο Goose."
+msgstr "Προσθέστε το Nova CRM ως επέκταση Streamable HTTP στο Goose."
 
 #. js-lingui-id: XnwceV
 #: src/pages/settings/applications/components/SettingsApplicationRegistrationRedirectURIsInput.tsx
@@ -3473,7 +3473,7 @@ msgstr "Εγκαθιστά αυτόματα αυτή την εφαρμογή σ�
 #. js-lingui-id: MHsVk5
 #: src/pages/settings/ai/components/SettingsAiModelTiersPreview.tsx
 msgid "Automatically selected by Twenty for this mode."
-msgstr "Επιλέγεται αυτόματα από το Twenty για αυτήν τη λειτουργία."
+msgstr "Επιλέγεται αυτόματα από το Nova CRM για αυτήν τη λειτουργία."
 
 #. js-lingui-id: XFGV21
 #: src/pages/settings/applications/tabs/SettingsApplicationAutoUpdateSection.tsx
@@ -3683,7 +3683,7 @@ msgstr "Περίοδος χρέωσης"
 #. js-lingui-id: xF/NXI
 #: src/modules/settings/billing/hooks/useBillingPortalSession.ts
 msgid "Billing portal session error. Please retry or contact Twenty team"
-msgstr "Σφάλμα συνεδρίας πύλης χρέωσης. Δοκιμάστε ξανά ή επικοινωνήστε με την ομάδα Twenty"
+msgstr "Σφάλμα συνεδρίας πύλης χρέωσης. Δοκιμάστε ξανά ή επικοινωνήστε με την ομάδα Nova CRM"
 
 #. js-lingui-id: H++SIW
 #: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
@@ -3893,7 +3893,7 @@ msgstr "από {author}"
 #. js-lingui-id: 8Pfllj
 #: src/modules/auth/sign-in-up/components/FooterNote.tsx
 msgid "By using Twenty, you agree to the"
-msgstr "Χρησιμοποιώντας το Twenty, συμφωνείτε με τους"
+msgstr "Χρησιμοποιώντας το Nova CRM, συμφωνείτε με τους"
 
 #. js-lingui-id: Yx41df
 #: src/modules/auth/sign-in-up/components/FooterNote.tsx
@@ -4471,7 +4471,7 @@ msgstr "Ελέγξτε τα εισερχόμενά σας για να επαλη
 #: src/modules/settings/billing/hooks/useHandleCheckoutSession.ts
 #: src/modules/settings/billing/hooks/useHandleCheckoutSession.ts
 msgid "Checkout session error. Please retry or contact Twenty team"
-msgstr "Σφάλμα συνεδρίας Checkout. Δοκιμάστε ξανά ή επικοινωνήστε με την ομάδα Twenty"
+msgstr "Σφάλμα συνεδρίας Checkout. Δοκιμάστε ξανά ή επικοινωνήστε με την ομάδα Nova CRM"
 
 #. js-lingui-id: SviKkE
 #: src/localization/hooks/useLocaleOptions.ts
@@ -5240,12 +5240,12 @@ msgstr "Ρυθμίστε τον απομακρυσμένο διακομιστή 
 #. js-lingui-id: g1/8jH
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
 msgid "Configure the Twenty MCP server manually in Cascade."
-msgstr "Ρυθμίστε χειροκίνητα τον διακομιστή Twenty MCP στο Cascade."
+msgstr "Ρυθμίστε χειροκίνητα τον διακομιστή Nova CRM MCP στο Cascade."
 
 #. js-lingui-id: XiyvRh
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
 msgid "Configure the Twenty MCP server manually in Cline."
-msgstr "Ρυθμίστε χειροκίνητα τον διακομιστή Twenty MCP στο Cline."
+msgstr "Ρυθμίστε χειροκίνητα τον διακομιστή Nova CRM MCP στο Cline."
 
 #. js-lingui-id: qA9AGQ
 #: src/modules/settings/domains/components/SettingsDomainRecords.tsx
@@ -9096,7 +9096,7 @@ msgstr "Σφάλμα κατά την ακύρωση αλλαγής προγρά�
 #. js-lingui-id: QmR+2U
 #: src/modules/settings/billing/hooks/useEndSubscriptionTrialPeriod.ts
 msgid "Error while ending trial period. Please contact Twenty team."
-msgstr "Σφάλμα κατά τη λήξη της δοκιμαστικής περιόδου. Επικοινωνήστε με την ομάδα Twenty."
+msgstr "Σφάλμα κατά τη λήξη της δοκιμαστικής περιόδου. Επικοινωνήστε με την ομάδα Nova CRM."
 
 #. js-lingui-id: 5g78zo
 #: src/pages/settings/members/SettingsWorkspaceMember.tsx
@@ -11250,7 +11250,7 @@ msgstr "Υψηλό"
 #. js-lingui-id: 1ETc0T
 #: src/pages/settings/community/SettingsCommunity.tsx
 msgid "Hire a partner to help you implement and customize Twenty."
-msgstr "Προσλάβετε έναν συνεργάτη για να σας βοηθήσει να υλοποιήσετε και να προσαρμόσετε το Twenty."
+msgstr "Προσλάβετε έναν συνεργάτη για να σας βοηθήσει να υλοποιήσετε και να προσαρμόσετε το Nova CRM."
 
 #. js-lingui-id: i0qMbr
 #: src/modules/navigation/hooks/useMobileNavigationBarItems.ts
@@ -11294,7 +11294,7 @@ msgid ""
 "npx create-twenty-app@latest my-twenty-app\n"
 "```\n"
 "\n"
-"See the [Getting Started guide](https://twenty.com/developers/extend/apps/getting-started) for the full walkthrough, and [Building Apps](https://twenty.com/developers/extend/apps/building) for the `defineApplication` / `defineEntity` APIs."
+"See the [Getting Started guide](https://crm.nova-tool.online/developers/extend/apps/getting-started) for the full walkthrough, and [Building Apps](https://crm.nova-tool.online/developers/extend/apps/building) for the `defineApplication` / `defineEntity` APIs."
 msgstr ""
 "Φιλοξενήστε τις προσαρμογές και τους υπερκαθορισμούς του χώρου εργασίας σας.\n"
 "\n"
@@ -11318,7 +11318,7 @@ msgstr ""
 "npx create-twenty-app@latest my-twenty-app\n"
 "```\n"
 "\n"
-"Δείτε τον [Οδηγό Γρήγορης Εκκίνησης](https://twenty.com/developers/extend/apps/getting-started) για την πλήρη παρουσίαση, και το [Δημιουργία εφαρμογών](https://twenty.com/developers/extend/apps/building) για τα APIs `defineApplication` / `defineEntity`."
+"Δείτε τον [Οδηγό Γρήγορης Εκκίνησης](https://crm.nova-tool.online/developers/extend/apps/getting-started) για την πλήρη παρουσίαση, και το [Δημιουργία εφαρμογών](https://crm.nova-tool.online/developers/extend/apps/building) για τα APIs `defineApplication` / `defineEntity`."
 
 #. js-lingui-id: yY8wAv
 #: src/modules/workflow/workflow-steps/workflow-actions/delay-actions/components/WorkflowEditActionDelay.tsx
@@ -14050,7 +14050,7 @@ msgstr "Πληροφορίες μοντέλου"
 #. js-lingui-id: iaurWj
 #: src/pages/settings/ai/components/SettingsAiModelsTab.tsx
 msgid "Model used when you chat with Twenty"
-msgstr "Μοντέλο που χρησιμοποιείται όταν συνομιλείτε με το Twenty"
+msgstr "Μοντέλο που χρησιμοποιείται όταν συνομιλείτε με το Nova CRM"
 
 #. js-lingui-id: //nm2/
 #: src/pages/settings/admin-panel/SettingsAdminAiProviderDetail.tsx
@@ -16085,7 +16085,7 @@ msgstr "Ένα ή περισσότερα φίλτρα αναφέρονται σ�
 #. js-lingui-id: 1WZTTl
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
 msgid "One subscription provides one Organization key that powers one production instance and one potential staging or test instance. To run a staging or test environment, install Twenty on a second server, activate it with this same Organization key, then register that server as a development instance. Development instances unlock premium features without extra billing and do not count toward your production seats."
-msgstr "Μία συνδρομή παρέχει ένα κλειδί Οργανισμού που ενεργοποιεί ένα στιγμιότυπο παραγωγής και ένα πιθανό στιγμιότυπο staging ή δοκιμών. Για να εκτελέσετε ένα περιβάλλον staging ή δοκιμών, εγκαταστήστε το Twenty σε δεύτερο διακομιστή, ενεργοποιήστε το με το ίδιο κλειδί Οργανισμού και κατόπιν καταχωρίστε αυτόν τον διακομιστή ως στιγμιότυπο ανάπτυξης. Τα στιγμιότυπα ανάπτυξης ξεκλειδώνουν premium δυνατότητες χωρίς επιπλέον χρέωση και δεν υπολογίζονται στις θέσεις παραγωγής σας."
+msgstr "Μία συνδρομή παρέχει ένα κλειδί Οργανισμού που ενεργοποιεί ένα στιγμιότυπο παραγωγής και ένα πιθανό στιγμιότυπο staging ή δοκιμών. Για να εκτελέσετε ένα περιβάλλον staging ή δοκιμών, εγκαταστήστε το Nova CRM σε δεύτερο διακομιστή, ενεργοποιήστε το με το ίδιο κλειδί Οργανισμού και κατόπιν καταχωρίστε αυτόν τον διακομιστή ως στιγμιότυπο ανάπτυξης. Τα στιγμιότυπα ανάπτυξης ξεκλειδώνουν premium δυνατότητες χωρίς επιπλέον χρέωση και δεν υπολογίζονται στις θέσεις παραγωγής σας."
 
 #. js-lingui-id: JEtonz
 #: src/modules/settings/event-logs/components/SettingsLogs.tsx
@@ -16192,7 +16192,7 @@ msgstr "Άνοιγμα ως σύνδεσμος"
 #. js-lingui-id: n0vVgf
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
 msgid "Open Claude with the Twenty connector name and MCP URL prefilled."
-msgstr "Ανοίξτε το Claude με προ-συμπληρωμένο το όνομα connector Twenty και την MCP URL."
+msgstr "Ανοίξτε το Claude με προ-συμπληρωμένο το όνομα connector Nova CRM και την MCP URL."
 
 #. js-lingui-id: uIKeEf
 #: src/modules/workflow/workflow-steps/workflow-actions/ai-agent-action/components/WorkflowRunStepAiAgentConversationButton.tsx
@@ -16202,7 +16202,7 @@ msgstr ""
 #. js-lingui-id: +n2jpB
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
 msgid "Open Cursor's MCP installer with the Twenty remote server config."
-msgstr "Ανοίξτε το πρόγραμμα εγκατάστασης MCP του Cursor με τη ρύθμιση απομακρυσμένου διακομιστή Twenty."
+msgstr "Ανοίξτε το πρόγραμμα εγκατάστασης MCP του Cursor με τη ρύθμιση απομακρυσμένου διακομιστή Nova CRM."
 
 #. js-lingui-id: pZZH4Q
 #: src/modules/auth/sign-in-up/components/EmailVerificationSent.tsx
@@ -16278,7 +16278,7 @@ msgstr "Ανοίξτε τις εγγραφές σε ξεχωριστή σελί�
 #. js-lingui-id: q170S2
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
 msgid "Open Replit with the Twenty remote server config."
-msgstr "Ανοίξτε το Replit με τη ρύθμιση απομακρυσμένου διακομιστή Twenty."
+msgstr "Ανοίξτε το Replit με τη ρύθμιση απομακρυσμένου διακομιστή Nova CRM."
 
 #. js-lingui-id: Yp+Hi/
 #: src/modules/settings/applications/components/SettingsApplicationActionButton.tsx
@@ -16293,7 +16293,7 @@ msgstr "Άνοιγμα πλευρικού πάνελ"
 #. js-lingui-id: sBd/cl
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
 msgid "Open Twenty's official ChatGPT integration for your workspace."
-msgstr "Ανοίξτε την επίσημη ενσωμάτωση ChatGPT του Twenty για τον χώρο εργασίας σας."
+msgstr "Ανοίξτε την επίσημη ενσωμάτωση ChatGPT του Nova CRM για τον χώρο εργασίας σας."
 
 #. js-lingui-id: tirDue
 #: src/modules/log-console/constants/LogConsoleSources.tsx
@@ -16664,7 +16664,7 @@ msgstr "Όνομα σελίδας"
 #. js-lingui-id: NRvxzv
 #: src/pages/not-found/NotFound.tsx
 msgid "Page Not Found | Twenty"
-msgstr "Η Σελίδα Δεν Βρέθηκε | Twenty"
+msgstr "Η Σελίδα Δεν Βρέθηκε | Nova CRM"
 
 #. js-lingui-id: oIhFvf
 #: src/modules/side-panel/pages/email-block-settings/components/EmailPageStyleSection.tsx
@@ -20960,8 +20960,8 @@ msgstr "Υποτομέας"
 
 #. js-lingui-id: Sv4BSp
 #: src/modules/settings/billing/constants/SettingsBillingPlanComparisonRows.ts
-msgid "Subdomain (yourco.twenty.com)"
-msgstr "Υποτομέας (yourco.twenty.com)"
+msgid "Subdomain (crm.nova-tool.online)"
+msgstr "Υποτομέας (crm.nova-tool.online)"
 
 #. js-lingui-id: mGO3xy
 #: src/modules/auth/sign-in-up/components/internal/SignInUpWorkspaceCreationForm.tsx
@@ -21060,7 +21060,7 @@ msgstr "Η συνδρομή ενεργοποιήθηκε."
 #: src/modules/settings/billing/hooks/useSubmitSubscriptionPayment.ts
 #: src/modules/settings/billing/hooks/useSubmitSubscriptionPayment.ts
 msgid "Subscription error. Please retry or contact Twenty team"
-msgstr "Σφάλμα συνδρομής. Δοκιμάστε ξανά ή επικοινωνήστε με την ομάδα Twenty"
+msgstr "Σφάλμα συνδρομής. Δοκιμάστε ξανά ή επικοινωνήστε με την ομάδα Nova CRM"
 
 #. js-lingui-id: +QiH+4
 #: src/modules/settings/billing/hooks/useApplyBillingSubscriptionChange.ts
@@ -21561,13 +21561,13 @@ msgid ""
 "yarn twenty dev\n"
 "```\n"
 "\n"
-"See the [Getting Started guide](https://twenty.com/developers/extend/apps/getting-started) for the full walkthrough, and [Building Apps](https://twenty.com/developers/extend/apps/building) for the `defineApplication` / `defineEntity` APIs."
+"See the [Getting Started guide](https://crm.nova-tool.online/developers/extend/apps/getting-started) for the full walkthrough, and [Building Apps](https://crm.nova-tool.online/developers/extend/apps/building) for the `defineApplication` / `defineEntity` APIs."
 msgstr ""
-"Το βασικό μοντέλο δεδομένων πάνω στο οποίο λειτουργεί κάθε χώρος εργασίας του Twenty.\n"
+"Το βασικό μοντέλο δεδομένων πάνω στο οποίο λειτουργεί κάθε χώρος εργασίας του Nova CRM.\n"
 "\n"
 "#### Τι σημαίνει \"θεμέλιο\"\n"
 "\n"
-"Κάθε χώρος εργασίας του Twenty ξεκινά με αυτό το σύνολο αντικειμένων. Αυτά ορίζουν τη μορφή του CRM σας, συμπεριλαμβανομένων των σχέσεων, της δραστηριότητας και της δημιουργίας αναφορών. Οτιδήποτε άλλο, συμπεριλαμβανομένων των εφαρμογών του marketplace, των πρακτόρων AI και των προσαρμοσμένων αντικειμένων, συνδέεται πάνω σε αυτά.\n"
+"Κάθε χώρος εργασίας του Nova CRM ξεκινά με αυτό το σύνολο αντικειμένων. Αυτά ορίζουν τη μορφή του CRM σας, συμπεριλαμβανομένων των σχέσεων, της δραστηριότητας και της δημιουργίας αναφορών. Οτιδήποτε άλλο, συμπεριλαμβανομένων των εφαρμογών του marketplace, των πρακτόρων AI και των προσαρμοσμένων αντικειμένων, συνδέεται πάνω σε αυτά.\n"
 "\n"
 "#### Περιλαμβανόμενα αντικείμενα\n"
 "- **Άνθρωποι & Εταιρείες**: εγγραφές επαφών και λογαριασμών\n"
@@ -21575,11 +21575,11 @@ msgstr ""
 "- **Σημειώσεις & Εργασίες**: δραστηριότητα και ενέργειες παρακολούθησης\n"
 "- **Ροές εργασίας & Πίνακες ελέγχου**: αυτοματοποίηση και αναφορές\n"
 "\n"
-"Αφαιρέστε αυτήν την εφαρμογή και το υπόλοιπο Twenty δεν έχει τίποτα για να στηριχθεί.\n"
+"Αφαιρέστε αυτήν την εφαρμογή και το υπόλοιπο Nova CRM δεν έχει τίποτα για να στηριχθεί.\n"
 "\n"
 "#### Δημιουργήστε τη δική σας εφαρμογή\n"
 "\n"
-"Επεκτείνετε το Twenty με δικά σας αντικείμενα, πεδία, συναρτήσεις λογικής ή δεξιότητες AI. Δημιουργήστε το αρχικό σκελετό μιας νέας εφαρμογής με μία εντολή:\n"
+"Επεκτείνετε το Nova CRM με δικά σας αντικείμενα, πεδία, συναρτήσεις λογικής ή δεξιότητες AI. Δημιουργήστε το αρχικό σκελετό μιας νέας εφαρμογής με μία εντολή:\n"
 "\n"
 "```bash\n"
 "npx create-twenty-app@latest my-twenty-app\n"
@@ -21592,7 +21592,7 @@ msgstr ""
 "yarn twenty dev\n"
 "```\n"
 "\n"
-"Δείτε τον [Οδηγό Γρήγορης Εκκίνησης](https://twenty.com/developers/extend/apps/getting-started) για την πλήρη παρουσίαση, και το [Δημιουργία εφαρμογών](https://twenty.com/developers/extend/apps/building) για τα APIs `defineApplication` / `defineEntity`."
+"Δείτε τον [Οδηγό Γρήγορης Εκκίνησης](https://crm.nova-tool.online/developers/extend/apps/getting-started) για την πλήρη παρουσίαση, και το [Δημιουργία εφαρμογών](https://crm.nova-tool.online/developers/extend/apps/building) για τα APIs `defineApplication` / `defineEntity`."
 
 #. js-lingui-id: VsxjzF
 #: src/modules/page-layout/widgets/call-recording/utils/getCallRecordingStatusDisplayConfiguration.ts
@@ -21724,7 +21724,7 @@ msgstr "Η σελίδα που αναζητάτε είτε έχει διαγρα
 #. js-lingui-id: Ya1wb4
 #: src/pages/settings/legal/SettingsLegalDpaNew.tsx
 msgid "The PDF is pre-signed by Twenty and executed with your legal entity and authorized signatory."
-msgstr "Το PDF είναι προ-υπογεγραμμένο από την Twenty και εκτελείται με τη νομική σας οντότητα και τον εξουσιοδοτημένο υπογράφοντα."
+msgstr "Το PDF είναι προ-υπογεγραμμένο από την Nova CRM και εκτελείται με τη νομική σας οντότητα και τον εξουσιοδοτημένο υπογράφοντα."
 
 #. js-lingui-id: Ir4tSJ
 #: src/modules/page-layout/widgets/call-recording/utils/getCallRecordingStatusDisplayConfiguration.ts
@@ -22834,12 +22834,12 @@ msgstr "Τιρκουάζ"
 #. js-lingui-id: JnaRPe
 #: src/modules/spreadsheet-import/steps/components/MatchColumnsStep/components/ColumnGrid.tsx
 msgid "Twenty fields"
-msgstr "Πεδία Twenty"
+msgstr "Πεδία Nova CRM"
 
 #. js-lingui-id: pNo8xt
 #: src/pages/settings/ai/components/SettingsAiModelsTab.tsx
 msgid "Twenty fills each level with the best model that meets your requirements"
-msgstr "Το Twenty συμπληρώνει κάθε επίπεδο με το καλύτερο μοντέλο που ανταποκρίνεται στις απαιτήσεις σας"
+msgstr "Το Nova CRM συμπληρώνει κάθε επίπεδο με το καλύτερο μοντέλο που ανταποκρίνεται στις απαιτήσεις σας"
 
 #. js-lingui-id: YIjS4q
 #: src/modules/ai/components/SettingsAgentModelCapabilities.tsx
@@ -24662,7 +24662,7 @@ msgstr ""
 #. js-lingui-id: nTuObL
 #: src/pages/auth/SignInUp.tsx
 msgid "Welcome to Twenty"
-msgstr "Καλώς ήρθατε στο Twenty"
+msgstr "Καλώς ήρθατε στο Nova CRM"
 
 #. js-lingui-id: t8ZvkC
 #: src/modules/onboarding/constants/WelcomeTitleMessage.ts

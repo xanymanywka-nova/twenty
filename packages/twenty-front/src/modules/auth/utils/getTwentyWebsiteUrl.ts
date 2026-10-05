@@ -1,10 +1,9 @@
 import {
   DOCUMENTATION_DEFAULT_LANGUAGE,
   DOCUMENTATION_SUPPORTED_LANGUAGES,
+  PRODUCT_BRAND,
   type DocumentationSupportedLanguage,
 } from 'twenty-shared/constants';
-
-const TWENTY_WEBSITE_HREF = 'https://twenty.com';
 
 type TwentyWebsitePage = 'terms' | 'privacy-policy';
 
@@ -23,7 +22,7 @@ export const getTwentyWebsiteUrl = (
 
   const url = new URL(
     isLocalizedWebsitePath ? `/${language}/${page}` : `/${page}`,
-    TWENTY_WEBSITE_HREF,
+    PRODUCT_BRAND.websiteUrl,
   );
 
   return url.toString();

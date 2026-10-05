@@ -23,4 +23,4 @@ Scaffold a new app in one command:
 npx create-twenty-app@latest my-twenty-app
 \`\`\`
 
-See the [Getting Started guide](https://twenty.com/developers/extend/apps/getting-started) for the full walkthrough, and [Building Apps](https://twenty.com/developers/extend/apps/building) for the \`defineApplication\` / \`defineEntity\` APIs.`;
+Visit the [Nova CRM website](https://crm.nova-tool.online) for deployment information and source access.`;
