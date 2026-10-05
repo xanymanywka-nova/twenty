@@ -7,7 +7,7 @@ services:
       - path: .env
         required: false
     environment:
-      NOVA_CRM_URL: ${NOVA_CRM_URL:-http://server:3000}
+      NOVA_CRM_URL: ${NOVA_CRM_URL:-http://nova-crm-server:3000}
       HOTEL_ANNA_DATABASE_PATH: /data/hotel-anna/prod.db
       REVIEW_MONITOR_DATABASE_PATH: /data/review-monitor/reviews.db
       NOVA_BEDS_DATABASE_PATH: /data/nova-beds/prod.db

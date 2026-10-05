@@ -76,7 +76,7 @@ docker compose -f docker-compose.connectors.yml config
 docker compose -f docker-compose.connectors.yml build
 ```
 
-Сервис подключается к внешней сети `novahub` и обращается к `http://server:3000`. Точный каталог
+Сервис подключается к внешней сети `novahub` и обращается к `http://nova-crm-server:3000`. Точный каталог
 SQLite review-monitor на сервере следует получить из существующего `docker inspect` и передать в
 `REVIEW_MONITOR_SQLITE_DIR`; сам compose не предполагает конкретную внутреннюю раскладку проекта.
 CI публикует `ghcr.io/xanymanywka-nova/nova-crm-connectors:latest` при изменениях в

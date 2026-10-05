@@ -9,9 +9,9 @@ services:
         required: false
     environment: &application-environment
       NODE_PORT: 3000
-      PG_DATABASE_URL: postgres://${PG_DATABASE_USER}:${PG_DATABASE_PASSWORD}@db:5432/${PG_DATABASE_NAME}
+      PG_DATABASE_URL: postgres://${PG_DATABASE_USER}:${PG_DATABASE_PASSWORD}@nova-crm-db:5432/${PG_DATABASE_NAME}
       SERVER_URL: ${SERVER_URL}
-      REDIS_URL: redis://redis:6379
+      REDIS_URL: redis://nova-crm-redis:6379
       DISABLE_DB_MIGRATIONS: ${DISABLE_DB_MIGRATIONS:-false}
       DISABLE_CRON_JOBS_REGISTRATION: ${DISABLE_CRON_JOBS_REGISTRATION:-false}
       STORAGE_TYPE: local
@@ -37,11 +37,15 @@ services:
       retries: 20
       start_period: 30s
     mem_limit: 1g
+    # Short service names are ambiguous on the shared coolify network (coolify-redis
+    # also answers to "redis"), so every cross-container hostname is prefixed.
     networks:
-      - internal
-      - coolify
-      # Connectors reach the API as http://server:3000 without leaving the host.
-      - novahub
+      internal:
+      coolify:
+      # Connectors reach the API as http://nova-crm-server:3000 without leaving the host.
+      novahub:
+        aliases:
+          - nova-crm-server
     labels:
       - traefik.enable=true
       - traefik.docker.network=coolify
@@ -101,7 +105,9 @@ services:
       retries: 10
     mem_limit: 512m
     networks:
-      - internal
+      internal:
+        aliases:
+          - nova-crm-db
 
   redis:
     image: redis:7-alpine
@@ -114,7 +120,9 @@ services:
       retries: 10
     mem_limit: 128m
     networks:
-      - internal
+      internal:
+        aliases:
+          - nova-crm-redis
 
 volumes:
   db-data:
