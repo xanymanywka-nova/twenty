@@ -70,7 +70,7 @@ BillingTrialEndingEmail.PreviewProps = {
   workspaceDisplayName: 'Acme Inc.',
   trialEndsAt: new Date('2026-07-02'),
   dataRetentionDays: 14,
-  link: 'https://acme.twenty.com/settings/billing',
+  link: 'https://crm.nova-tool.online/settings/billing',
   locale: 'en',
 } as BillingTrialEndingEmailProps;
 

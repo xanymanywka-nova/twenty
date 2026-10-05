@@ -3,6 +3,7 @@ import { useQuery } from '@apollo/client/react';
 import { useLingui } from '@lingui/react/macro';
 import { NavigationMenuItemType } from 'twenty-shared/types';
 import { isDefined } from 'twenty-shared/utils';
+import { PRODUCT_BRAND } from 'twenty-shared/constants';
 import { TintedIconTile } from 'twenty-ui/components';
 import {
   IconBox,
@@ -167,8 +168,8 @@ export const useNavigationMenuItemAddOptions = ({
           onClick: () => {
             addItem({
               type: NavigationMenuItemType.LINK,
-              name: 'Twenty',
-              link: 'https://twenty.com',
+              name: PRODUCT_BRAND.name,
+              link: PRODUCT_BRAND.websiteUrl,
               color: DEFAULT_NAVIGATION_MENU_ITEM_COLOR_LINK,
             });
           },

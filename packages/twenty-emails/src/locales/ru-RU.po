@@ -70,8 +70,8 @@ msgstr "Подтвердите ваш новый адрес электронно
 
 #. js-lingui-explicit-id
 #: src/emails/password-update-notify.email.tsx
-msgid "Connect to Twenty"
-msgstr "Подключиться к Twenty"
+msgid "Connect to Nova CRM"
+msgstr "Подключиться к Nova CRM"
 
 #. js-lingui-explicit-id
 #: src/emails/password-update-notify.email.tsx
@@ -129,8 +129,8 @@ msgstr "Здравствуйте, {userName},"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-trial-converting.email.tsx
-msgid "If Twenty is working for you, you're all set — there's nothing to do. If it's not the right fit, you can cancel in one click before then and you won't be charged."
-msgstr "Если Twenty вам подходит, ничего делать не нужно — все уже настроено. Если это не совсем то, что вам нужно, вы можете отменить подписку в один клик до этой даты, и с вас ничего не спишут."
+msgid "If Nova CRM is working for you, you're all set — there's nothing to do. If it's not the right fit, you can cancel in one click before then and you won't be charged."
+msgstr "Если Nova CRM вам подходит, ничего делать не нужно — все уже настроено. Если это не совсем то, что вам нужно, вы можете отменить подписку в один клик до этой даты, и с вас ничего не спишут."
 
 #. js-lingui-explicit-id
 #: src/emails/server-admin-access-changed.email.tsx
@@ -149,8 +149,8 @@ msgstr "Если вы ничего не сделаете, мы приостан�
 
 #. js-lingui-explicit-id
 #: src/emails/clean-suspended-workspace.email.tsx
-msgid "If you'd ever like to give Twenty another try, you can start a fresh workspace in minutes — we'd love to have you back."
-msgstr "Если вы когда-нибудь захотите снова попробовать Twenty, вы сможете запустить новое рабочее пространство за считанные минуты — мы будем рады вашему возвращению."
+msgid "If you'd ever like to give Nova CRM another try, you can start a fresh workspace in minutes — we'd love to have you back."
+msgstr "Если вы когда-нибудь захотите снова попробовать Nova CRM, вы сможете запустить новое рабочее пространство за считанные минуты — мы будем рады вашему возвращению."
 
 #. js-lingui-explicit-id
 #: src/emails/server-admin-access-changed.email.tsx
@@ -169,8 +169,8 @@ msgstr "Его данные удалены и больше не подлежат
 
 #. js-lingui-explicit-id
 #: src/emails/send-invite-link.email.tsx
-msgid "Join your team on Twenty"
-msgstr "Присоединяйтесь к вашей команде на Twenty"
+msgid "Join your team on Nova CRM"
+msgstr "Присоединяйтесь к вашей команде на Nova CRM"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-subscription-renewing.email.tsx
@@ -206,7 +206,7 @@ msgstr "Повторно активировать рабочее простра�
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Read Twenty's user guide"
-msgstr "Читайте руководство пользователя Twenty"
+msgstr "Читайте руководство пользователя Nova CRM"
 
 #. js-lingui-explicit-id
 #: src/emails/password-reset-link.email.tsx
@@ -266,7 +266,7 @@ msgstr "Чтобы сохранить свое рабочее пространс
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Twenty.com, Public Benefit Corporation"
-msgstr "Twenty.com, Общественная корпорация"
+msgstr "Nova CRM.com, Общественная корпорация"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
@@ -287,17 +287,17 @@ msgstr "Подтвердить электронную почту"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's developer documentation"
-msgstr "Ознакомьтесь с документацией для разработчиков Twenty"
+msgstr "Ознакомьтесь с документацией для разработчиков Nova CRM"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's GitHub repository"
-msgstr "Посетите репозиторий Twenty на GitHub"
+msgstr "Посетите репозиторий Nova CRM на GitHub"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's website"
-msgstr "Посетите веб-сайт Twenty"
+msgstr "Посетите веб-сайт Nova CRM"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-trial-converting.email.tsx
@@ -311,8 +311,8 @@ msgstr "Веб-сайт"
 
 #. js-lingui-explicit-id
 #: src/components/WhatIsTwenty.tsx
-msgid "What is Twenty?"
-msgstr "Что такое Twenty?"
+msgid "What is Nova CRM?"
+msgstr "Что такое Nova CRM?"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-subscription-renewing.email.tsx
@@ -358,3 +358,23 @@ msgstr "Ваше рабочее пространство удалено"
 #: src/emails/warn-suspended-workspace.email.tsx
 msgid "Your workspace is paused"
 msgstr "Ваше рабочее пространство приостановлено"
+
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx
+msgid "Open-source CRM"
+msgstr "CRM с открытым исходным кодом"
+
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx
+msgid "Source code"
+msgstr "Исходный код"
+
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx
+msgid "Visit Nova CRM source code"
+msgstr "Посмотреть исходный код Nova CRM"
+
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx
+msgid "Visit Nova CRM website"
+msgstr "Посетить сайт Nova CRM"

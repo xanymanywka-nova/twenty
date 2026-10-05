@@ -17,9 +17,11 @@ export const useCommandMenuItemWorkspaceSectionContext =
           size="md"
           name={currentWorkspace?.displayName ?? ''}
           colorSeed={getWorkspaceAvatarColorSeed(currentWorkspace?.displayName)}
-          src={getAbsoluteImageUrl(
-            currentWorkspace?.logo ?? DEFAULT_WORKSPACE_LOGO,
-          )}
+          src={
+            currentWorkspace?.logo
+              ? getAbsoluteImageUrl(currentWorkspace.logo)
+              : DEFAULT_WORKSPACE_LOGO
+          }
         />
       ),
     };

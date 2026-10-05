@@ -1,25 +1,17 @@
 import { SettingsCard } from '@/settings/components/SettingsCard';
-import { SettingsDiscoveryHeroCard } from '@/settings/components/SettingsDiscoveryHeroCard';
 import { SettingsPageContainer } from '@/settings/components/SettingsPageContainer';
 import { SettingsLabContent } from '@/settings/lab/components/SettingsLabContent';
+import { useHasPermissionFlag } from '@/settings/roles/hooks/useHasPermissionFlag';
 import { SettingsPageLayout } from '@/settings/components/layout/SettingsPageLayout';
 import { styled } from '@linaria/react';
 import { t } from '@lingui/core/macro';
 import { Section } from 'twenty-ui/components';
-import {
-  IconBrandX,
-  IconBriefcase,
-  IconTransform,
-  type IconComponent,
-  useIcons,
-} from 'twenty-ui/icon';
+import { IconCode, IconWorld, type IconComponent } from 'twenty-ui/icon';
 import { SettingsPath } from 'twenty-shared/types';
+import { PermissionFlagType } from '~/generated-metadata/graphql';
 import { getSettingsPath } from 'twenty-shared/utils';
-import { MOBILE_VIEWPORT, useTheme, themeCssVariables } from 'twenty-ui/theme';
-import coverDark from '~/pages/settings/community/assets/cover-dark.png';
-import coverLight from '~/pages/settings/community/assets/cover-light.png';
-
-const SETTINGS_COMMUNITY_HERO_INSTANCE_ID_PREFIX = 'settings-community-hero';
+import { PRODUCT_BRAND } from 'twenty-shared/constants';
+import { MOBILE_VIEWPORT, themeCssVariables, useTheme } from 'twenty-ui/theme';
 
 const StyledCardLink = styled.a`
   display: block;
@@ -37,66 +29,49 @@ const StyledCardsGrid = styled.div`
   }
 `;
 
-const StyledFeaturesContent = styled.div`
-  display: grid;
-  gap: ${themeCssVariables.spacing[4]};
-`;
-
 type SettingsCommunityLink = {
   href: string;
   Icon: IconComponent;
-  iconColor: string;
   cardTitle: string;
 };
 
 export const SettingsCommunity = () => {
   const theme = useTheme();
-  const { getIcon } = useIcons();
-  const IconBrandDiscord = getIcon('IconBrandDiscord');
+  // Lab toggles change workspace feature flags, unlike the rest of this page.
+  const canManageWorkspace = useHasPermissionFlag(PermissionFlagType.WORKSPACE);
 
   const socialLinks: SettingsCommunityLink[] = [
     {
-      href: 'https://discord.com/invite/cx5n4Jzs57',
-      Icon: IconBrandDiscord,
-      iconColor: themeCssVariables.color.blue9,
-      cardTitle: t`Join our Discord`,
+      href: PRODUCT_BRAND.websiteUrl,
+      Icon: IconWorld,
+      cardTitle: t`Nova CRM website`,
     },
     {
-      href: 'https://x.com/twentycrm',
-      Icon: IconBrandX,
-      iconColor: themeCssVariables.font.color.primary,
-      cardTitle: t`Follow us on X`,
+      href: PRODUCT_BRAND.sourceCodeUrl,
+      Icon: IconCode,
+      cardTitle: t`Source code`,
     },
   ];
 
   return (
     <SettingsPageLayout
-      title={t`Community`}
+      title={t`About Nova CRM`}
       links={[
         {
           children: t`Other`,
           href: getSettingsPath(SettingsPath.Community),
         },
-        { children: t`Community` },
+        { children: t`About Nova CRM` },
       ]}
     >
       <SettingsPageContainer>
         <Section.Root>
-          <SettingsDiscoveryHeroCard
-            lightSrc={coverLight}
-            darkSrc={coverDark}
-            instanceIdPrefix={SETTINGS_COMMUNITY_HERO_INSTANCE_ID_PREFIX}
-            tabs={[]}
-          />
-        </Section.Root>
-
-        <Section.Root>
           <Section.Header
-            title={t`Join the community`}
-            description={t`Stay up to date with product news and community updates.`}
+            title={t`Nova CRM`}
+            description={t`Open-source customer relationship management for your team.`}
           />
           <StyledCardsGrid>
-            {socialLinks.map(({ href, Icon, iconColor, cardTitle }) => (
+            {socialLinks.map(({ href, Icon, cardTitle }) => (
               <StyledCardLink
                 key={href}
                 href={href}
@@ -110,7 +85,6 @@ export const SettingsCommunity = () => {
                       stroke={theme.icon.stroke.sm}
                     />
                   }
-                  iconColor={iconColor}
                   title={cardTitle}
                 />
               </StyledCardLink>
@@ -118,52 +92,15 @@ export const SettingsCommunity = () => {
           </StyledCardsGrid>
         </Section.Root>
 
-        <Section.Root>
-          <Section.Header
-            title={t`Partners`}
-            description={t`Hire a partner to help you implement and customize Twenty.`}
-          />
-          <StyledCardLink
-            href="https://twenty.com/partners/list"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <SettingsCard
-              Icon={
-                <IconBriefcase
-                  size={theme.icon.size.md}
-                  stroke={theme.icon.stroke.sm}
-                />
-              }
-              title={t`Browse partners`}
+        {canManageWorkspace && (
+          <Section.Root>
+            <Section.Header
+              title={t`Features`}
+              description={t`Try our upcoming features. Note they are still in beta. Please bear with us and report any issues you find.`}
             />
-          </StyledCardLink>
-        </Section.Root>
-
-        <Section.Root>
-          <Section.Header
-            title={t`Features`}
-            description={t`Try our upcoming features. Note they are still in beta. Please bear with us and report any issues you find.`}
-          />
-          <StyledFeaturesContent>
             <SettingsLabContent />
-            <StyledCardLink
-              href="https://twenty.com/releases"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <SettingsCard
-                Icon={
-                  <IconTransform
-                    size={theme.icon.size.md}
-                    stroke={theme.icon.stroke.sm}
-                  />
-                }
-                title={t`Read changelog`}
-              />
-            </StyledCardLink>
-          </StyledFeaturesContent>
-        </Section.Root>
+          </Section.Root>
+        )}
       </SettingsPageContainer>
     </SettingsPageLayout>
   );

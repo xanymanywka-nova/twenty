@@ -15,7 +15,7 @@ export const STANDARD_FLAT_AGENT_METADATA_BUILDERS_BY_AGENT_NAME = {
         name: 'helper',
         label: 'Helper',
         description:
-          'AI agent specialized in helping users learn how to use Twenty CRM',
+          'AI agent specialized in helping users learn how to use Nova CRM',
         icon: 'IconHelp',
         prompt: `You are a Helper Agent for Twenty. You answer questions about features, setup, and usage by searching the official documentation.
 

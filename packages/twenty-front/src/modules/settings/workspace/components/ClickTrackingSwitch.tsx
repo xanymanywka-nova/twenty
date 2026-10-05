@@ -50,7 +50,7 @@ export const ClickTrackingSwitch = () => {
           <SettingsOptionCardContentSwitch
             Icon={IconClick}
             title={t`Track link clicks`}
-            description={t`Count clicks by routing campaign links through Twenty before the original page.`}
+            description={t`Count clicks by routing campaign links through Nova CRM before the original page.`}
             checked={currentWorkspace.isCampaignClickTrackingEnabled}
             disabled={loading}
             onChange={handleChange}

@@ -1,0 +1,128 @@
+name: nova-crm-hub
+
+services:
+  server:
+    image: ghcr.io/xanymanywka-nova/nova-crm:${TAG:-latest}
+    restart: unless-stopped
+    env_file:
+      - path: .env
+        required: false
+    environment: &application-environment
+      NODE_PORT: 3000
+      PG_DATABASE_URL: postgres://${PG_DATABASE_USER}:${PG_DATABASE_PASSWORD}@db:5432/${PG_DATABASE_NAME}
+      SERVER_URL: ${SERVER_URL}
+      REDIS_URL: redis://redis:6379
+      DISABLE_DB_MIGRATIONS: ${DISABLE_DB_MIGRATIONS:-false}
+      DISABLE_CRON_JOBS_REGISTRATION: ${DISABLE_CRON_JOBS_REGISTRATION:-false}
+      STORAGE_TYPE: local
+      ENCRYPTION_KEY: ${ENCRYPTION_KEY}
+      FALLBACK_ENCRYPTION_KEY: ${FALLBACK_ENCRYPTION_KEY}
+      APP_SECRET: ${APP_SECRET}
+      TELEMETRY_ENABLED: ${TELEMETRY_ENABLED:-false}
+      EXCEPTION_HANDLER_DRIVER: ${EXCEPTION_HANDLER_DRIVER:-CONSOLE}
+      SUPPORT_DRIVER: ${SUPPORT_DRIVER:-NONE}
+      CHECK_FOR_UPDATES_ENABLED: ${CHECK_FOR_UPDATES_ENABLED:-false}
+      IS_BILLING_ENABLED: ${IS_BILLING_ENABLED:-false}
+    volumes:
+      - server-local-data:/app/packages/twenty-server/.local-storage
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:3000/healthz"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+      start_period: 30s
+    mem_limit: 1g
+    networks:
+      - internal
+      - coolify
+      # Connectors reach the API as http://server:3000 without leaving the host.
+      - novahub
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=coolify
+      - traefik.http.middlewares.novahub-gzip.compress=true
+      - traefik.http.middlewares.novahub-redirect.redirectscheme.scheme=https
+      - traefik.http.routers.novahub-http.entrypoints=http
+      - traefik.http.routers.novahub-http.rule=Host(`crm.nova-tool.online`)
+      - traefik.http.routers.novahub-http.middlewares=novahub-redirect
+      - traefik.http.routers.novahub-http.service=novahub-server
+      - traefik.http.routers.novahub-https.entrypoints=https
+      - traefik.http.routers.novahub-https.rule=Host(`crm.nova-tool.online`)
+      - traefik.http.routers.novahub-https.tls=true
+      - traefik.http.routers.novahub-https.tls.certresolver=letsencrypt
+      - traefik.http.routers.novahub-https.middlewares=novahub-gzip
+      - traefik.http.routers.novahub-https.service=novahub-server
+      - traefik.http.services.novahub-server.loadbalancer.server.port=3000
+
+  worker:
+    image: ghcr.io/xanymanywka-nova/nova-crm:${TAG:-latest}
+    restart: unless-stopped
+    command: ["yarn", "worker:prod"]
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      <<: *application-environment
+      DISABLE_DB_MIGRATIONS: "true"
+      DISABLE_CRON_JOBS_REGISTRATION: "true"
+    volumes:
+      - server-local-data:/app/packages/twenty-server/.local-storage
+    depends_on:
+      db:
+        condition: service_healthy
+      server:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    mem_limit: 768m
+    networks:
+      - internal
+
+  db:
+    image: postgres:16
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${PG_DATABASE_NAME}
+      POSTGRES_USER: ${PG_DATABASE_USER}
+      POSTGRES_PASSWORD: ${PG_DATABASE_PASSWORD}
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    ports:
+      - "127.0.0.1:55433:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${PG_DATABASE_USER} -d ${PG_DATABASE_NAME}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    mem_limit: 512m
+    networks:
+      - internal
+
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--maxmemory-policy", "noeviction"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    mem_limit: 128m
+    networks:
+      - internal
+
+volumes:
+  db-data:
+  server-local-data:
+
+networks:
+  internal:
+  coolify:
+    external: true
+  novahub:
+    external: true

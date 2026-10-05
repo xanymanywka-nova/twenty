@@ -70,8 +70,8 @@ msgstr "Հաստատեք ձեր նոր էլփոստի հասցեն"
 
 #. js-lingui-explicit-id
 #: src/emails/password-update-notify.email.tsx
-msgid "Connect to Twenty"
-msgstr "Միացեք Twenty պլատֆորմին"
+msgid "Connect to Nova CRM"
+msgstr "Միացեք Nova CRM պլատֆորմին"
 
 #. js-lingui-explicit-id
 #: src/emails/password-update-notify.email.tsx
@@ -129,8 +129,8 @@ msgstr "Ողջույն, {userName},"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-trial-converting.email.tsx
-msgid "If Twenty is working for you, you're all set — there's nothing to do. If it's not the right fit, you can cancel in one click before then and you won't be charged."
-msgstr "Եթե Twenty-ը ձեզ հարմար է, ամեն ինչ կարգին է՝ այլևս ոչինչ անել պետք չէ։ Եթե այն ձեզ համար չէ, կարող եք մինչև այդ մեկ սեղմումով չեղարկել, և գանձում չի կատարվի։"
+msgid "If Nova CRM is working for you, you're all set — there's nothing to do. If it's not the right fit, you can cancel in one click before then and you won't be charged."
+msgstr "Եթե Nova CRM-ը ձեզ հարմար է, ամեն ինչ կարգին է՝ այլևս ոչինչ անել պետք չէ։ Եթե այն ձեզ համար չէ, կարող եք մինչև այդ մեկ սեղմումով չեղարկել, և գանձում չի կատարվի։"
 
 #. js-lingui-explicit-id
 #: src/emails/server-admin-access-changed.email.tsx
@@ -149,8 +149,8 @@ msgstr "Եթե ոչինչ չանեք, մենք կդադարեցնենք ձեր w
 
 #. js-lingui-explicit-id
 #: src/emails/clean-suspended-workspace.email.tsx
-msgid "If you'd ever like to give Twenty another try, you can start a fresh workspace in minutes — we'd love to have you back."
-msgstr "Եթե երբևէ ցանկանաք նորից փորձել Twenty-ը, կարող եք մի քանի րոպեում սկսել նոր workspace՝ մենք ուրախ կլինենք կրկին ձեզ տեսնել։"
+msgid "If you'd ever like to give Nova CRM another try, you can start a fresh workspace in minutes — we'd love to have you back."
+msgstr "Եթե երբևէ ցանկանաք նորից փորձել Nova CRM-ը, կարող եք մի քանի րոպեում սկսել նոր workspace՝ մենք ուրախ կլինենք կրկին ձեզ տեսնել։"
 
 #. js-lingui-explicit-id
 #: src/emails/server-admin-access-changed.email.tsx
@@ -169,8 +169,8 @@ msgstr "Դրա տվյալները հեռացվել են և այլևս չեն կ�
 
 #. js-lingui-explicit-id
 #: src/emails/send-invite-link.email.tsx
-msgid "Join your team on Twenty"
-msgstr "Միացեք ձեր թիմին Twenty պլատֆորմում"
+msgid "Join your team on Nova CRM"
+msgstr "Միացեք ձեր թիմին Nova CRM պլատֆորմում"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-subscription-renewing.email.tsx
@@ -206,7 +206,7 @@ msgstr "Վերաակտիվացնել workspace-ը"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Read Twenty's user guide"
-msgstr "Կարդացեք Twenty-ի օգտվողի ձեռնարկը"
+msgstr "Կարդացեք Nova CRM-ի օգտվողի ձեռնարկը"
 
 #. js-lingui-explicit-id
 #: src/emails/password-reset-link.email.tsx
@@ -266,7 +266,7 @@ msgstr "Ձեր workspace-ը և ձեր ստեղծած ամեն ինչը պահպ�
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Twenty.com, Public Benefit Corporation"
-msgstr "Twenty.com, հասարակային շահի կորպորացիա"
+msgstr "Nova CRM.com, հասարակային շահի կորպորացիա"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
@@ -287,17 +287,17 @@ msgstr "Հաստատել էլփոստը"
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's developer documentation"
-msgstr "Այցելեք Twenty-ի ծրագրավորողների փաստաթղթավորումը"
+msgstr "Այցելեք Nova CRM-ի ծրագրավորողների փաստաթղթավորումը"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's GitHub repository"
-msgstr "Այցելեք Twenty-ի GitHub պահոցը"
+msgstr "Այցելեք Nova CRM-ի GitHub պահոցը"
 
 #. js-lingui-explicit-id
 #: src/components/Footer.tsx
 msgid "Visit Twenty's website"
-msgstr "Այցելեք Twenty-ի վեբկայքը"
+msgstr "Այցելեք Nova CRM-ի վեբկայքը"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-trial-converting.email.tsx
@@ -311,8 +311,8 @@ msgstr "Վեբկայք"
 
 #. js-lingui-explicit-id
 #: src/components/WhatIsTwenty.tsx
-msgid "What is Twenty?"
-msgstr "Ի՞նչ է Twenty-ը։"
+msgid "What is Nova CRM?"
+msgstr "Ի՞նչ է Nova CRM-ը։"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-subscription-renewing.email.tsx
@@ -358,3 +358,23 @@ msgstr "Ձեր workspace-ը ջնջվել է"
 #: src/emails/warn-suspended-workspace.email.tsx
 msgid "Your workspace is paused"
 msgstr "Ձեր workspace-ը դադարեցված է"
+
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx
+msgid "Open-source CRM"
+msgstr "Open-source CRM"
+
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx
+msgid "Source code"
+msgstr "Source code"
+
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx
+msgid "Visit Nova CRM source code"
+msgstr "Visit Nova CRM source code"
+
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx
+msgid "Visit Nova CRM website"
+msgstr "Visit Nova CRM website"

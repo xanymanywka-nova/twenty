@@ -195,10 +195,10 @@ msgctxt "objectMetadata.description"
 msgid "A hand-picked audience of people"
 msgstr "Một tập khách hàng được chọn thủ công"
 
-#. js-lingui-id: TF/ZV2
+#. js-lingui-id: GjhNQa
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
-msgid "A heads up before your Twenty trial ends"
-msgstr "Thông báo trước khi bản dùng thử Twenty của bạn kết thúc"
+msgid "A heads up before your Nova CRM trial ends"
+msgstr "Thông báo trước khi bản dùng thử Nova CRM của bạn kết thúc"
 
 #. js-lingui-id: 6yZjO1
 #: src/engine/core-modules/application/application.exception.ts
@@ -2371,7 +2371,7 @@ msgctxt "fieldMetadata.label"
 msgid "Chat threads"
 msgstr "Chuỗi trò chuyện"
 
-#. js-lingui-id: 9P+QyJ
+#. js-lingui-id: 68T2AN
 #: src/engine/metadata-modules/object-metadata/constants/standard-relation-field-properties.constant.ts
 msgctxt "fieldMetadata.label"
 msgid "Chats"
@@ -2906,7 +2906,7 @@ msgctxt "fieldMetadata.label"
 msgid "Conversation Size"
 msgstr "Kích thước cuộc trò chuyện"
 
-#. js-lingui-id: qsiOwY
+#. js-lingui-id: Hl4lJ2
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-workflow-run-standard-flat-field-metadata.util.ts
 msgctxt "fieldMetadata.label"
 msgid "Conversations"
@@ -6517,7 +6517,7 @@ msgstr "Bảng nối liên kết các liên kết tin nhắn của kênh với c
 #. js-lingui-id: PviVyk
 #: src/engine/core-modules/workspace-invitation/services/workspace-invitation.service.ts
 msgid "Join your team on Twenty"
-msgstr "Tham gia vào đội ngũ của bạn trên Twenty"
+msgstr "Tham gia vào đội ngũ của bạn trên Nova CRM"
 
 #. js-lingui-id: +KEn4d
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-call-recording-standard-flat-field-metadata.util.ts
@@ -9008,10 +9008,10 @@ msgstr "Vui lòng chọn ngày và giờ kết thúc sau ngày và giờ bắt �
 msgid "Please confirm your updated email"
 msgstr ""
 
-#. js-lingui-id: Zm9s4F
+#. js-lingui-id: LzWAVL
 #: src/engine/api/common/common-args-processors/data-arg-processor/validator-utils/validate-links-field-or-throw.util.ts
-msgid "Please enter a domain name, like twenty.com"
-msgstr "Vui lòng nhập tên miền, chẳng hạn như twenty.com"
+msgid "Please enter a domain name, like crm.nova-tool.online"
+msgstr "Vui lòng nhập tên miền, chẳng hạn như crm.nova-tool.online"
 
 #. js-lingui-id: qgasuj
 #: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection-validator.service.ts
@@ -11087,7 +11087,7 @@ msgstr "Các trường hệ thống không thể được cập nhật"
 #. js-lingui-id: aK2k19
 #: src/engine/metadata-modules/index-metadata/services/index-metadata.service.ts
 msgid "System indexes are required for Twenty to work and cannot be deleted."
-msgstr "Các chỉ mục hệ thống là bắt buộc để Twenty hoạt động và không thể bị xóa."
+msgstr "Các chỉ mục hệ thống là bắt buộc để Nova CRM hoạt động và không thể bị xóa."
 
 #. js-lingui-id: /ojawH
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-object-metadata-validator.service.ts
@@ -12052,7 +12052,7 @@ msgstr "Khóa API này chưa được gán vai trò."
 #: src/engine/core-modules/application/application-registration/application-registration.exception.ts
 #: src/engine/core-modules/application/application.exception.ts
 msgid "This app requires a newer version of the Twenty server. Please upgrade your server or use a compatible app version."
-msgstr "Ứng dụng này yêu cầu phiên bản máy chủ Twenty mới hơn. Vui lòng nâng cấp máy chủ của bạn hoặc dùng phiên bản ứng dụng tương thích."
+msgstr "Ứng dụng này yêu cầu phiên bản máy chủ Nova CRM mới hơn. Vui lòng nâng cấp máy chủ của bạn hoặc dùng phiên bản ứng dụng tương thích."
 
 #. js-lingui-id: y2nks/
 #: src/engine/core-modules/application/application.exception.ts
@@ -14074,10 +14074,10 @@ msgstr "Không tìm thấy webhook."
 msgid "Wednesday"
 msgstr "Thứ Tư"
 
-#. js-lingui-id: TVkCrJ
+#. js-lingui-id: W5eaC0
 #: src/engine/core-modules/email-verification/services/email-verification.service.ts
-msgid "Welcome to Twenty: Please Confirm Your Email"
-msgstr "Chào mừng đến với Twenty: Vui lòng xác nhận email của bạn"
+msgid "Welcome to Nova CRM: Please Confirm Your Email"
+msgstr "Chào mừng đến với Nova CRM: Vui lòng xác nhận email của bạn"
 
 #. js-lingui-id: lKboI8
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-record-share-standard-flat-field-metadata.util.ts
@@ -15175,12 +15175,12 @@ msgstr "Thành viên trong nhóm của bạn phụ trách quản lý tài khoả
 #. js-lingui-id: sOfbGC
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
 msgid "Your Twenty plan renews soon"
-msgstr "Gói Twenty của bạn sẽ gia hạn sớm"
+msgstr "Gói Nova CRM của bạn sẽ gia hạn sớm"
 
-#. js-lingui-id: qW+K5e
+#. js-lingui-id: RYqxt4
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
-msgid "Your Twenty trial is ending soon"
-msgstr "Bản dùng thử Twenty của bạn sắp kết thúc"
+msgid "Your Nova CRM trial is ending soon"
+msgstr "Bản dùng thử Nova CRM của bạn sắp kết thúc"
 
 #. js-lingui-id: ej/tZF
 #: src/engine/core-modules/graphql/hooks/use-graphql-error-handler.hook.ts

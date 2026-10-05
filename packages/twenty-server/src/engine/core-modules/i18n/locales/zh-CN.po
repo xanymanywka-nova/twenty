@@ -195,10 +195,10 @@ msgctxt "objectMetadata.description"
 msgid "A hand-picked audience of people"
 msgstr "精心挑选的人群受众"
 
-#. js-lingui-id: TF/ZV2
+#. js-lingui-id: GjhNQa
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
-msgid "A heads up before your Twenty trial ends"
-msgstr "在您的 Twenty 试用结束前的提醒通知"
+msgid "A heads up before your Nova CRM trial ends"
+msgstr "在您的 Nova CRM 试用结束前的提醒通知"
 
 #. js-lingui-id: 6yZjO1
 #: src/engine/core-modules/application/application.exception.ts
@@ -2371,7 +2371,7 @@ msgctxt "fieldMetadata.label"
 msgid "Chat threads"
 msgstr "聊天线程"
 
-#. js-lingui-id: 9P+QyJ
+#. js-lingui-id: 68T2AN
 #: src/engine/metadata-modules/object-metadata/constants/standard-relation-field-properties.constant.ts
 msgctxt "fieldMetadata.label"
 msgid "Chats"
@@ -2906,7 +2906,7 @@ msgctxt "fieldMetadata.label"
 msgid "Conversation Size"
 msgstr "会话大小"
 
-#. js-lingui-id: qsiOwY
+#. js-lingui-id: Hl4lJ2
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-workflow-run-standard-flat-field-metadata.util.ts
 msgctxt "fieldMetadata.label"
 msgid "Conversations"
@@ -6517,7 +6517,7 @@ msgstr "用于将消息通道消息关联与消息文件夹关联起来的连接
 #. js-lingui-id: PviVyk
 #: src/engine/core-modules/workspace-invitation/services/workspace-invitation.service.ts
 msgid "Join your team on Twenty"
-msgstr "加入您的团队，使用 Twenty"
+msgstr "加入您的团队，使用 Nova CRM"
 
 #. js-lingui-id: +KEn4d
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-call-recording-standard-flat-field-metadata.util.ts
@@ -9008,10 +9008,10 @@ msgstr "请选择在开始日期和时间之后的结束日期和时间。"
 msgid "Please confirm your updated email"
 msgstr ""
 
-#. js-lingui-id: Zm9s4F
+#. js-lingui-id: LzWAVL
 #: src/engine/api/common/common-args-processors/data-arg-processor/validator-utils/validate-links-field-or-throw.util.ts
-msgid "Please enter a domain name, like twenty.com"
-msgstr "请输入域名，例如 twenty.com"
+msgid "Please enter a domain name, like crm.nova-tool.online"
+msgstr "请输入域名，例如 crm.nova-tool.online"
 
 #. js-lingui-id: qgasuj
 #: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection-validator.service.ts
@@ -11087,7 +11087,7 @@ msgstr "系统字段无法更新"
 #. js-lingui-id: aK2k19
 #: src/engine/metadata-modules/index-metadata/services/index-metadata.service.ts
 msgid "System indexes are required for Twenty to work and cannot be deleted."
-msgstr "系统索引是 Twenty 正常运行所必需的，且不能被删除。"
+msgstr "系统索引是 Nova CRM 正常运行所必需的，且不能被删除。"
 
 #. js-lingui-id: /ojawH
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-object-metadata-validator.service.ts
@@ -12052,7 +12052,7 @@ msgstr "此 API 密钥未分配角色。"
 #: src/engine/core-modules/application/application-registration/application-registration.exception.ts
 #: src/engine/core-modules/application/application.exception.ts
 msgid "This app requires a newer version of the Twenty server. Please upgrade your server or use a compatible app version."
-msgstr "此应用需要更高版本的 Twenty 服务器。请升级您的服务器或使用兼容的应用版本。"
+msgstr "此应用需要更高版本的 Nova CRM 服务器。请升级您的服务器或使用兼容的应用版本。"
 
 #. js-lingui-id: y2nks/
 #: src/engine/core-modules/application/application.exception.ts
@@ -14074,10 +14074,10 @@ msgstr "未找到 Webhook。"
 msgid "Wednesday"
 msgstr "星期三"
 
-#. js-lingui-id: TVkCrJ
+#. js-lingui-id: W5eaC0
 #: src/engine/core-modules/email-verification/services/email-verification.service.ts
-msgid "Welcome to Twenty: Please Confirm Your Email"
-msgstr "欢迎来到Twenty: 请确认您的邮箱"
+msgid "Welcome to Nova CRM: Please Confirm Your Email"
+msgstr "欢迎来到Nova CRM: 请确认您的邮箱"
 
 #. js-lingui-id: lKboI8
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-record-share-standard-flat-field-metadata.util.ts
@@ -15175,12 +15175,12 @@ msgstr "负责管理公司账户的团队成员"
 #. js-lingui-id: sOfbGC
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
 msgid "Your Twenty plan renews soon"
-msgstr "您的 Twenty 方案即将续订"
+msgstr "您的 Nova CRM 方案即将续订"
 
-#. js-lingui-id: qW+K5e
+#. js-lingui-id: RYqxt4
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
-msgid "Your Twenty trial is ending soon"
-msgstr "您的 Twenty 试用即将结束"
+msgid "Your Nova CRM trial is ending soon"
+msgstr "您的 Nova CRM 试用即将结束"
 
 #. js-lingui-id: ej/tZF
 #: src/engine/core-modules/graphql/hooks/use-graphql-error-handler.hook.ts

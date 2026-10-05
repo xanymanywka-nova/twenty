@@ -152,7 +152,7 @@ export const SyncEmails = () => {
           />
         }
         title={t`Start with your whole network`}
-        description={t`Twenty adds the people you email and meet, and keeps them up to date without manual data entry.`}
+        description={t`Nova CRM adds the people you email and meet, and keeps them up to date without manual data entry.`}
         actions={providerActions}
         onSkip={() => void handleSkipConfirm()}
       />

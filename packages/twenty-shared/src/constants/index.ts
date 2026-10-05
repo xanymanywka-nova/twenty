@@ -66,6 +66,7 @@ export { OBJECTS_WITH_CHANNEL_VISIBILITY_CONSTRAINTS } from './ObjectsWithChanne
 export { PermissionFlagType } from './PermissionFlagType';
 export { PermissionsOnAllObjectRecords } from './PermissionsOnAllObjectRecords';
 export { POLLED_MESSAGE_CHANNEL_TYPES } from './PolledMessageChannelTypes';
+export { PRODUCT_BRAND } from './ProductBrand';
 export { QUERY_DEFAULT_LIMIT_RECORDS } from './QueryDefaultLimitRecords';
 export { QUERY_MAX_RECORDS } from './QueryMaxRecords';
 export { QUERY_MAX_RECORDS_FROM_RELATION } from './QueryMaxRecordsFromRelation';

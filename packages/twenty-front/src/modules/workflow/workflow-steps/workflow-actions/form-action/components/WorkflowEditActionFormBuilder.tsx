@@ -24,6 +24,7 @@ import { isNonEmptyString } from '@sniptt/guards';
 import { useEffect, useState } from 'react';
 import { FieldMetadataType } from 'twenty-shared/types';
 import { isDefined } from 'twenty-shared/utils';
+import { PRODUCT_BRAND } from 'twenty-shared/constants';
 import { Callout, LightIconButton } from 'twenty-ui/components';
 import {
   IconAlertTriangle,
@@ -275,7 +276,7 @@ export const WorkflowEditActionFormBuilder = ({
                 label: t`Learn more`,
                 onClick: () =>
                   window.open(
-                    'https://docs.twenty.com/user-guide/workflows/capabilities/workflow-actions#form',
+                    PRODUCT_BRAND.websiteUrl,
                     '_blank',
                     'noopener,noreferrer',
                   ),

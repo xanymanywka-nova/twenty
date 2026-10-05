@@ -1,4 +1,5 @@
 import { Img } from 'react-email';
+import { PRODUCT_BRAND } from 'twenty-shared/constants';
 
 const logoStyle = {
   marginBottom: '40px',
@@ -7,8 +8,8 @@ const logoStyle = {
 export const Logo = () => {
   return (
     <Img
-      src="https://app.twenty.com/images/icons/windows11/Square150x150Logo.scale-100.png"
-      alt="Twenty logo"
+      src={`${PRODUCT_BRAND.websiteUrl}/brand/nova-mark.svg`}
+      alt={`${PRODUCT_BRAND.name} logo`}
       width="40"
       height="40"
       style={logoStyle}

@@ -195,10 +195,10 @@ msgctxt "objectMetadata.description"
 msgid "A hand-picked audience of people"
 msgstr "선별된 사람들로 구성된 대상입니다."
 
-#. js-lingui-id: TF/ZV2
+#. js-lingui-id: GjhNQa
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
-msgid "A heads up before your Twenty trial ends"
-msgstr "Twenty 체험이 종료되기 전에 알려드립니다."
+msgid "A heads up before your Nova CRM trial ends"
+msgstr "Nova CRM 체험이 종료되기 전에 알려드립니다."
 
 #. js-lingui-id: 6yZjO1
 #: src/engine/core-modules/application/application.exception.ts
@@ -2371,7 +2371,7 @@ msgctxt "fieldMetadata.label"
 msgid "Chat threads"
 msgstr "채팅 스레드"
 
-#. js-lingui-id: 9P+QyJ
+#. js-lingui-id: 68T2AN
 #: src/engine/metadata-modules/object-metadata/constants/standard-relation-field-properties.constant.ts
 msgctxt "fieldMetadata.label"
 msgid "Chats"
@@ -2906,7 +2906,7 @@ msgctxt "fieldMetadata.label"
 msgid "Conversation Size"
 msgstr "대화 크기"
 
-#. js-lingui-id: qsiOwY
+#. js-lingui-id: Hl4lJ2
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-workflow-run-standard-flat-field-metadata.util.ts
 msgctxt "fieldMetadata.label"
 msgid "Conversations"
@@ -6517,7 +6517,7 @@ msgstr "메시지 채널 메시지 연결을 메시지 폴더와 연결하는 �
 #. js-lingui-id: PviVyk
 #: src/engine/core-modules/workspace-invitation/services/workspace-invitation.service.ts
 msgid "Join your team on Twenty"
-msgstr "Twenty에서 팀에 합류하세요"
+msgstr "Nova CRM에서 팀에 합류하세요"
 
 #. js-lingui-id: +KEn4d
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-call-recording-standard-flat-field-metadata.util.ts
@@ -9008,10 +9008,10 @@ msgstr "시작 일시 이후의 종료 일시를 선택하세요."
 msgid "Please confirm your updated email"
 msgstr ""
 
-#. js-lingui-id: Zm9s4F
+#. js-lingui-id: LzWAVL
 #: src/engine/api/common/common-args-processors/data-arg-processor/validator-utils/validate-links-field-or-throw.util.ts
-msgid "Please enter a domain name, like twenty.com"
-msgstr "twenty.com과 같은 도메인 이름을 입력하세요."
+msgid "Please enter a domain name, like crm.nova-tool.online"
+msgstr "crm.nova-tool.online과 같은 도메인 이름을 입력하세요."
 
 #. js-lingui-id: qgasuj
 #: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection-validator.service.ts
@@ -11087,7 +11087,7 @@ msgstr "시스템 필드는 업데이트할 수 없습니다."
 #. js-lingui-id: aK2k19
 #: src/engine/metadata-modules/index-metadata/services/index-metadata.service.ts
 msgid "System indexes are required for Twenty to work and cannot be deleted."
-msgstr "시스템 인덱스는 Twenty가 동작하는 데 필수이며 삭제할 수 없습니다."
+msgstr "시스템 인덱스는 Nova CRM가 동작하는 데 필수이며 삭제할 수 없습니다."
 
 #. js-lingui-id: /ojawH
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-object-metadata-validator.service.ts
@@ -12052,7 +12052,7 @@ msgstr "이 API 키에는 역할이 할당되어 있지 않습니다."
 #: src/engine/core-modules/application/application-registration/application-registration.exception.ts
 #: src/engine/core-modules/application/application.exception.ts
 msgid "This app requires a newer version of the Twenty server. Please upgrade your server or use a compatible app version."
-msgstr "이 앱을 사용하려면 더 최신 버전의 Twenty 서버가 필요합니다. 서버를 업그레이드하거나 호환되는 앱 버전을 사용하세요."
+msgstr "이 앱을 사용하려면 더 최신 버전의 Nova CRM 서버가 필요합니다. 서버를 업그레이드하거나 호환되는 앱 버전을 사용하세요."
 
 #. js-lingui-id: y2nks/
 #: src/engine/core-modules/application/application.exception.ts
@@ -14074,10 +14074,10 @@ msgstr "웹훅을 찾을 수 없음."
 msgid "Wednesday"
 msgstr "수요일"
 
-#. js-lingui-id: TVkCrJ
+#. js-lingui-id: W5eaC0
 #: src/engine/core-modules/email-verification/services/email-verification.service.ts
-msgid "Welcome to Twenty: Please Confirm Your Email"
-msgstr "Twenty에 오신 것을 환영합니다: 이메일을 확인해 주세요"
+msgid "Welcome to Nova CRM: Please Confirm Your Email"
+msgstr "Nova CRM에 오신 것을 환영합니다: 이메일을 확인해 주세요"
 
 #. js-lingui-id: lKboI8
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-record-share-standard-flat-field-metadata.util.ts
@@ -15175,12 +15175,12 @@ msgstr "회사 계정을 관리하는 팀원"
 #. js-lingui-id: sOfbGC
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
 msgid "Your Twenty plan renews soon"
-msgstr "Twenty 요금제가 곧 갱신됩니다."
+msgstr "Nova CRM 요금제가 곧 갱신됩니다."
 
-#. js-lingui-id: qW+K5e
+#. js-lingui-id: RYqxt4
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
-msgid "Your Twenty trial is ending soon"
-msgstr "Twenty 체험 기간이 곧 종료됩니다."
+msgid "Your Nova CRM trial is ending soon"
+msgstr "Nova CRM 체험 기간이 곧 종료됩니다."
 
 #. js-lingui-id: ej/tZF
 #: src/engine/core-modules/graphql/hooks/use-graphql-error-handler.hook.ts

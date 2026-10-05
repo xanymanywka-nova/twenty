@@ -5,6 +5,7 @@ import {
   DOCUMENTATION_SUPPORTED_LANGUAGES,
   type DocumentationPath,
 } from 'twenty-shared/constants';
+import { isDefined } from 'twenty-shared/utils';
 
 export const getDocumentationUrl = ({
   locale,
@@ -12,7 +13,11 @@ export const getDocumentationUrl = ({
 }: {
   locale?: string | null;
   path?: DocumentationPath | string;
-}): string => {
+}): string | undefined => {
+  if (!isDefined(DOCUMENTATION_BASE_URL)) {
+    return undefined;
+  }
+
   if (!locale) {
     return `${DOCUMENTATION_BASE_URL}${path}`;
   }

@@ -1745,40 +1745,40 @@ msgstr "הוסף ספק זיהוי של SSO"
 msgid "Add test input for evaluation (e.g., \"Find all customers in NY\")"
 msgstr ""
 
-#. js-lingui-id: FKGcEL
+#. js-lingui-id: L7WZJM
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add the Twenty MCP server as a remote context server in Zed."
-msgstr "הוסף את שרת Twenty MCP בתור שרת הקשר מרוחק בתוך Zed."
+msgid "Add the Nova CRM MCP server as a remote context server in Zed."
+msgstr "הוסף את שרת Nova CRM MCP בתור שרת הקשר מרוחק בתוך Zed."
 
-#. js-lingui-id: iA2nHX
+#. js-lingui-id: IOMXx2
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add the Twenty MCP server from Augment Code settings."
-msgstr "הוסף את שרת Twenty MCP מההגדרות של Augment Code."
+msgid "Add the Nova CRM MCP server from Augment Code settings."
+msgstr "הוסף את שרת Nova CRM MCP מההגדרות של Augment Code."
 
-#. js-lingui-id: l+NzAk
+#. js-lingui-id: 3GE+Vq
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add the Twenty MCP server from Raycast's MCP commands or settings."
-msgstr "הוסף את שרת Twenty MCP מפקודות או מההגדרות של MCP ב-Raycast."
+msgid "Add the Nova CRM MCP server from Raycast's MCP commands or settings."
+msgstr "הוסף את שרת Nova CRM MCP מפקודות או מההגדרות של MCP ב-Raycast."
 
-#. js-lingui-id: j6G/yI
+#. js-lingui-id: aFJSz4
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add the Twenty MCP server in Gemini CLI settings."
-msgstr "הוסף את שרת Twenty MCP בהגדרות Gemini CLI."
+msgid "Add the Nova CRM MCP server in Gemini CLI settings."
+msgstr "הוסף את שרת Nova CRM MCP בהגדרות Gemini CLI."
 
-#. js-lingui-id: /OyhlM
+#. js-lingui-id: OVKFVI
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add the Twenty MCP server to your LibreChat configuration file."
-msgstr "הוסף את שרת Twenty MCP לקובץ התצורה של LibreChat שלך."
+msgid "Add the Nova CRM MCP server to your LibreChat configuration file."
+msgstr "הוסף את שרת Nova CRM MCP לקובץ התצורה של LibreChat שלך."
 
-#. js-lingui-id: K0DXoj
+#. js-lingui-id: iIyxYS
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add the Twenty remote server with LM Studio's install link."
-msgstr "הוסף את השרת המרוחק של Twenty באמצעות קישור ההתקנה של LM Studio."
+msgid "Add the Nova CRM remote server with LM Studio's install link."
+msgstr "הוסף את השרת המרוחק של Nova CRM באמצעות קישור ההתקנה של LM Studio."
 
-#. js-lingui-id: BTFMKE
+#. js-lingui-id: DQU0u5
 #: src/pages/settings/communications/SettingsWorkspaceCommunicationGroupChannelDetail.tsx
-msgid "Add these records at your DNS provider. Twenty checks them automatically."
-msgstr "הוסף רשומות אלה אצל ספק ה-DNS שלך. Twenty בודקת אותן באופן אוטומטי."
+msgid "Add these records at your DNS provider. Nova CRM checks them automatically."
+msgstr "הוסף רשומות אלה אצל ספק ה-DNS שלך. Nova CRM בודקת אותן באופן אוטומטי."
 
 #. js-lingui-id: 5+ttxv
 #: src/modules/settings/accounts/components/SettingsAccountsBlocklistInput.tsx
@@ -1795,10 +1795,10 @@ msgstr "הוסף למועדפים"
 msgid "Add topic"
 msgstr "הוסף נושא"
 
-#. js-lingui-id: 4D/zWv
+#. js-lingui-id: EJpfip
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add Twenty as a Streamable HTTP extension in Goose."
-msgstr "הוסף את Twenty כהרחבת Streamable HTTP ב-Goose."
+msgid "Add Nova CRM as a Streamable HTTP extension in Goose."
+msgstr "הוסף את Nova CRM כהרחבת Streamable HTTP ב-Goose."
 
 #. js-lingui-id: XnwceV
 #: src/pages/settings/applications/components/SettingsApplicationRegistrationRedirectURIsInput.tsx
@@ -3470,10 +3470,10 @@ msgstr "יצירה אוטומטית של רשומות אנשים בעת קבלה
 msgid "Automatically install this app on every newly created workspace"
 msgstr "התקן אפליקציה זו אוטומטית בכל סביבת עבודה חדשה שתיווצר"
 
-#. js-lingui-id: MHsVk5
+#. js-lingui-id: uSq0Sl
 #: src/pages/settings/ai/components/SettingsAiModelTiersPreview.tsx
-msgid "Automatically selected by Twenty for this mode."
-msgstr "נבחר אוטומטית על ידי Twenty עבור מצב זה."
+msgid "Automatically selected by Nova CRM for this mode."
+msgstr "נבחר אוטומטית על ידי Nova CRM עבור מצב זה."
 
 #. js-lingui-id: XFGV21
 #: src/pages/settings/applications/tabs/SettingsApplicationAutoUpdateSection.tsx
@@ -3680,10 +3680,10 @@ msgstr "אינטרוול חיוב"
 msgid "Billing period"
 msgstr "תקופת חיוב"
 
-#. js-lingui-id: xF/NXI
+#. js-lingui-id: UeXU24
 #: src/modules/settings/billing/hooks/useBillingPortalSession.ts
-msgid "Billing portal session error. Please retry or contact Twenty team"
-msgstr "שגיאה במושב פורטל החיוב. בבקשה נסה שנית או צור קשר עם צוות Twenty"
+msgid "Billing portal session error. Please retry or contact Nova CRM team"
+msgstr "שגיאה במושב פורטל החיוב. בבקשה נסה שנית או צור קשר עם צוות Nova CRM"
 
 #. js-lingui-id: H++SIW
 #: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
@@ -3890,10 +3890,10 @@ msgstr "כפתור"
 msgid "by {author}"
 msgstr "מאת {author}"
 
-#. js-lingui-id: 8Pfllj
+#. js-lingui-id: 8UMLyO
 #: src/modules/auth/sign-in-up/components/FooterNote.tsx
-msgid "By using Twenty, you agree to the"
-msgstr "על ידי שימוש ב-Twenty, אתה מסכים ל"
+msgid "By using Nova CRM, you agree to the"
+msgstr "על ידי שימוש ב-Nova CRM, אתה מסכים ל"
 
 #. js-lingui-id: Yx41df
 #: src/modules/auth/sign-in-up/components/FooterNote.tsx
@@ -4467,11 +4467,11 @@ msgstr "בדוק את האימיילים שלך"
 msgid "Check your inbox to verify your new email address."
 msgstr "בדוק את תיבת הדואר שלך כדי לאמת את כתובת הדוא\"ל החדשה."
 
-#. js-lingui-id: SxwQE8
+#. js-lingui-id: hiAtq7
 #: src/modules/settings/billing/hooks/useHandleCheckoutSession.ts
 #: src/modules/settings/billing/hooks/useHandleCheckoutSession.ts
-msgid "Checkout session error. Please retry or contact Twenty team"
-msgstr "שגיאת חיבור במעמד תשלום. בבקשה נסה שנית או צור קשר עם צוות Twenty"
+msgid "Checkout session error. Please retry or contact Nova CRM team"
+msgstr "שגיאת חיבור במעמד תשלום. בבקשה נסה שנית או צור קשר עם צוות Nova CRM"
 
 #. js-lingui-id: SviKkE
 #: src/localization/hooks/useLocaleOptions.ts
@@ -5237,15 +5237,15 @@ msgstr "הגדר את שרת ה-MCP המרוחק דרך הגדרות הסוכן 
 msgid "Configure the remote server in Amazon Q Developer's MCP settings."
 msgstr "הגדר את השרת המרוחק בהגדרות MCP של Amazon Q Developer."
 
-#. js-lingui-id: g1/8jH
+#. js-lingui-id: me8J+b
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Configure the Twenty MCP server manually in Cascade."
-msgstr "הגדר ידנית את שרת Twenty MCP ב-Cascade."
+msgid "Configure the Nova CRM MCP server manually in Cascade."
+msgstr "הגדר ידנית את שרת Nova CRM MCP ב-Cascade."
 
-#. js-lingui-id: XiyvRh
+#. js-lingui-id: QJZpMN
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Configure the Twenty MCP server manually in Cline."
-msgstr "הגדר ידנית את שרת Twenty MCP ב-Cline."
+msgid "Configure the Nova CRM MCP server manually in Cline."
+msgstr "הגדר ידנית את שרת Nova CRM MCP ב-Cline."
 
 #. js-lingui-id: qA9AGQ
 #: src/modules/settings/domains/components/SettingsDomainRecords.tsx
@@ -9093,10 +9093,10 @@ msgstr "שגיאה בביטול החלפת מרווחים."
 msgid "Error while cancelling plan switching."
 msgstr "שגיאה בביטול החלפת תכנית."
 
-#. js-lingui-id: QmR+2U
+#. js-lingui-id: kNHe8p
 #: src/modules/settings/billing/hooks/useEndSubscriptionTrialPeriod.ts
-msgid "Error while ending trial period. Please contact Twenty team."
-msgstr "שגיאה בעת סיום תקופת הניסיון. אנא פנה לצוות Twenty."
+msgid "Error while ending trial period. Please contact Nova CRM team."
+msgstr "שגיאה בעת סיום תקופת הניסיון. אנא פנה לצוות Nova CRM."
 
 #. js-lingui-id: 5g78zo
 #: src/pages/settings/members/SettingsWorkspaceMember.tsx
@@ -11250,7 +11250,7 @@ msgstr "גבוה"
 #. js-lingui-id: 1ETc0T
 #: src/pages/settings/community/SettingsCommunity.tsx
 msgid "Hire a partner to help you implement and customize Twenty."
-msgstr "שכרו שותף שיסייע לכם להטמיע ולהתאים אישית את Twenty."
+msgstr "שכרו שותף שיסייע לכם להטמיע ולהתאים אישית את Nova CRM."
 
 #. js-lingui-id: i0qMbr
 #: src/modules/navigation/hooks/useMobileNavigationBarItems.ts
@@ -11294,7 +11294,7 @@ msgid ""
 "npx create-twenty-app@latest my-twenty-app\n"
 "```\n"
 "\n"
-"See the [Getting Started guide](https://twenty.com/developers/extend/apps/getting-started) for the full walkthrough, and [Building Apps](https://twenty.com/developers/extend/apps/building) for the `defineApplication` / `defineEntity` APIs."
+"See the [Getting Started guide](https://crm.nova-tool.online/developers/extend/apps/getting-started) for the full walkthrough, and [Building Apps](https://crm.nova-tool.online/developers/extend/apps/building) for the `defineApplication` / `defineEntity` APIs."
 msgstr ""
 "אחסנו את ההתאמות האישיות והדריסות של סביבת העבודה שלכם.\n"
 "\n"
@@ -11318,7 +11318,7 @@ msgstr ""
 "npx create-twenty-app@latest my-twenty-app\n"
 "```\n"
 "\n"
-"ראו את [מדריך ההתחלה](https://twenty.com/developers/extend/apps/getting-started) לסקירה מלאה, ואת [בניית אפליקציות](https://twenty.com/developers/extend/apps/building) עבור ממשקי ה-API של `defineApplication` / `defineEntity`."
+"ראו את [מדריך ההתחלה](https://crm.nova-tool.online/developers/extend/apps/getting-started) לסקירה מלאה, ואת [בניית אפליקציות](https://crm.nova-tool.online/developers/extend/apps/building) עבור ממשקי ה-API של `defineApplication` / `defineEntity`."
 
 #. js-lingui-id: yY8wAv
 #: src/modules/workflow/workflow-steps/workflow-actions/delay-actions/components/WorkflowEditActionDelay.tsx
@@ -14047,10 +14047,10 @@ msgstr "נדרש מזהה מודל"
 msgid "Model information"
 msgstr "מידע על המודל"
 
-#. js-lingui-id: iaurWj
+#. js-lingui-id: /sSH0Z
 #: src/pages/settings/ai/components/SettingsAiModelsTab.tsx
-msgid "Model used when you chat with Twenty"
-msgstr "המודל שבו נעשה שימוש כשאתה משוחח עם Twenty"
+msgid "Model used when you chat with Nova CRM"
+msgstr "המודל שבו נעשה שימוש כשאתה משוחח עם Nova CRM"
 
 #. js-lingui-id: //nm2/
 #: src/pages/settings/admin-panel/SettingsAdminAiProviderDetail.tsx
@@ -16082,10 +16082,10 @@ msgstr "תגמול על תהליך ההצטרפות"
 msgid "One or more filters reference deactivated or deleted fields and will be automatically removed on save."
 msgstr "מסנן אחד או יותר מתייחסים לשדות מושבתים או שנמחקו, ויוסרו אוטומטית בעת השמירה."
 
-#. js-lingui-id: 1WZTTl
+#. js-lingui-id: Iqh4bc
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
-msgid "One subscription provides one Organization key that powers one production instance and one potential staging or test instance. To run a staging or test environment, install Twenty on a second server, activate it with this same Organization key, then register that server as a development instance. Development instances unlock premium features without extra billing and do not count toward your production seats."
-msgstr "מנוי אחד מספק מפתח ארגון אחד שמפעיל מופע ייצור אחד ומופע פוטנציאלי אחד של סביבת הכנה או בדיקות. כדי להפעיל סביבת הכנה או בדיקות, התקן את Twenty בשרת שני, הפעל אותו עם אותו מפתח ארגון, ולאחר מכן רשום את השרת הזה כמופע פיתוח. מופעי פיתוח פותחים תכונות פרימיום ללא חיוב נוסף ואינם נספרים במסגרת המושבים שלך בסביבת הייצור."
+msgid "One subscription provides one Organization key that powers one production instance and one potential staging or test instance. To run a staging or test environment, install Nova CRM on a second server, activate it with this same Organization key, then register that server as a development instance. Development instances unlock premium features without extra billing and do not count toward your production seats."
+msgstr "מנוי אחד מספק מפתח ארגון אחד שמפעיל מופע ייצור אחד ומופע פוטנציאלי אחד של סביבת הכנה או בדיקות. כדי להפעיל סביבת הכנה או בדיקות, התקן את Nova CRM בשרת שני, הפעל אותו עם אותו מפתח ארגון, ולאחר מכן רשום את השרת הזה כמופע פיתוח. מופעי פיתוח פותחים תכונות פרימיום ללא חיוב נוסף ואינם נספרים במסגרת המושבים שלך בסביבת הייצור."
 
 #. js-lingui-id: JEtonz
 #: src/modules/settings/event-logs/components/SettingsLogs.tsx
@@ -16189,20 +16189,20 @@ msgstr "פתח עורך אימייל כדי לערוך את הגדרות הבל�
 msgid "Open as link"
 msgstr "פתח כקישור"
 
-#. js-lingui-id: n0vVgf
+#. js-lingui-id: vv05qq
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Open Claude with the Twenty connector name and MCP URL prefilled."
-msgstr "פתח את Claude כששם מחבר Twenty וכתובת ה-URL של MCP מולאו מראש."
+msgid "Open Claude with the Nova CRM connector name and MCP URL prefilled."
+msgstr "פתח את Claude כששם מחבר Nova CRM וכתובת ה-URL של MCP מולאו מראש."
 
 #. js-lingui-id: uIKeEf
 #: src/modules/workflow/workflow-steps/workflow-actions/ai-agent-action/components/WorkflowRunStepAiAgentConversationButton.tsx
 msgid "Open conversation"
 msgstr ""
 
-#. js-lingui-id: +n2jpB
+#. js-lingui-id: a5B2hY
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Open Cursor's MCP installer with the Twenty remote server config."
-msgstr "פתח את מתקין ה-MCP של Cursor עם תצורת השרת המרוחק של Twenty."
+msgid "Open Cursor's MCP installer with the Nova CRM remote server config."
+msgstr "פתח את מתקין ה-MCP של Cursor עם תצורת השרת המרוחק של Nova CRM."
 
 #. js-lingui-id: pZZH4Q
 #: src/modules/auth/sign-in-up/components/EmailVerificationSent.tsx
@@ -16275,10 +16275,10 @@ msgstr "פתח רשומות ב"
 msgid "Open records on a dedicated page"
 msgstr "פתח רשומות בדף ייעודי"
 
-#. js-lingui-id: q170S2
+#. js-lingui-id: IEKwtt
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Open Replit with the Twenty remote server config."
-msgstr "פתח את Replit עם תצורת השרת המרוחק של Twenty."
+msgid "Open Replit with the Nova CRM remote server config."
+msgstr "פתח את Replit עם תצורת השרת המרוחק של Nova CRM."
 
 #. js-lingui-id: Yp+Hi/
 #: src/modules/settings/applications/components/SettingsApplicationActionButton.tsx
@@ -16293,7 +16293,7 @@ msgstr "פתח את חלונית הצד"
 #. js-lingui-id: sBd/cl
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
 msgid "Open Twenty's official ChatGPT integration for your workspace."
-msgstr "פתח את אינטגרציית ChatGPT הרשמית של Twenty עבור סביבת העבודה שלך."
+msgstr "פתח את אינטגרציית ChatGPT הרשמית של Nova CRM עבור סביבת העבודה שלך."
 
 #. js-lingui-id: tirDue
 #: src/modules/log-console/constants/LogConsoleSources.tsx
@@ -16661,10 +16661,10 @@ msgstr "פריסות עמודים"
 msgid "Page name"
 msgstr "שם עמוד"
 
-#. js-lingui-id: NRvxzv
+#. js-lingui-id: IdwVmc
 #: src/pages/not-found/NotFound.tsx
-msgid "Page Not Found | Twenty"
-msgstr "הדף לא נמצא | Twenty"
+msgid "Page Not Found | Nova CRM"
+msgstr "הדף לא נמצא | Nova CRM"
 
 #. js-lingui-id: oIhFvf
 #: src/modules/side-panel/pages/email-block-settings/components/EmailPageStyleSection.tsx
@@ -20958,10 +20958,10 @@ msgstr "שדות משנה"
 msgid "Subdomain"
 msgstr ""
 
-#. js-lingui-id: Sv4BSp
+#. js-lingui-id: ZgMy0x
 #: src/modules/settings/billing/constants/SettingsBillingPlanComparisonRows.ts
-msgid "Subdomain (yourco.twenty.com)"
-msgstr "תת-דומיין (yourco.twenty.com)"
+msgid "Subdomain (crm.nova-tool.online)"
+msgstr "תת-דומיין (crm.nova-tool.online)"
 
 #. js-lingui-id: mGO3xy
 #: src/modules/auth/sign-in-up/components/internal/SignInUpWorkspaceCreationForm.tsx
@@ -21054,13 +21054,13 @@ msgstr "מנוי"
 msgid "Subscription activated."
 msgstr "המנוי הופעל."
 
-#. js-lingui-id: 0okvpx
+#. js-lingui-id: EUuX3G
 #: src/modules/settings/billing/components/AddPaymentMethodForm.tsx
 #: src/modules/settings/billing/components/AddPaymentMethodForm.tsx
 #: src/modules/settings/billing/hooks/useSubmitSubscriptionPayment.ts
 #: src/modules/settings/billing/hooks/useSubmitSubscriptionPayment.ts
-msgid "Subscription error. Please retry or contact Twenty team"
-msgstr "שגיאת מנוי. בבקשה נסה שנית או צור קשר עם צוות Twenty"
+msgid "Subscription error. Please retry or contact Nova CRM team"
+msgstr "שגיאת מנוי. בבקשה נסה שנית או צור קשר עם צוות Nova CRM"
 
 #. js-lingui-id: +QiH+4
 #: src/modules/settings/billing/hooks/useApplyBillingSubscriptionChange.ts
@@ -21561,13 +21561,13 @@ msgid ""
 "yarn twenty dev\n"
 "```\n"
 "\n"
-"See the [Getting Started guide](https://twenty.com/developers/extend/apps/getting-started) for the full walkthrough, and [Building Apps](https://twenty.com/developers/extend/apps/building) for the `defineApplication` / `defineEntity` APIs."
+"See the [Getting Started guide](https://crm.nova-tool.online/developers/extend/apps/getting-started) for the full walkthrough, and [Building Apps](https://crm.nova-tool.online/developers/extend/apps/building) for the `defineApplication` / `defineEntity` APIs."
 msgstr ""
-"מודל הנתונים הבסיסי שעליו פועלת כל סביבת עבודה של Twenty.\n"
+"מודל הנתונים הבסיסי שעליו פועלת כל סביבת עבודה של Nova CRM.\n"
 "\n"
 "#### מה פירוש \"בסיס\"\n"
 "\n"
-"כל סביבת עבודה של Twenty מתחילה עם קבוצת האובייקטים הזו. הם מגדירים את המבנה של ה-CRM שלכם, כולל קשרים, פעילות ודיווח. כל השאר, כולל אפליקציות מהשוק, סוכני בינה מלאכותית (AI), ואובייקטים מותאמים אישית, מתחבר אליהם.\n"
+"כל סביבת עבודה של Nova CRM מתחילה עם קבוצת האובייקטים הזו. הם מגדירים את המבנה של ה-CRM שלכם, כולל קשרים, פעילות ודיווח. כל השאר, כולל אפליקציות מהשוק, סוכני בינה מלאכותית (AI), ואובייקטים מותאמים אישית, מתחבר אליהם.\n"
 "\n"
 "#### אובייקטים כלולים\n"
 "- **אנשים וחברות**: רשומות אנשי קשר וחשבונות\n"
@@ -21575,11 +21575,11 @@ msgstr ""
 "- **הערות ומשימות**: פעילות ומעקבים\n"
 "- **תהליכי עבודה ולוחות מחוונים**: אוטומציה ודיווח\n"
 "\n"
-"הסרת האפליקציה הזו תשאיר את שאר Twenty ללא בסיס להישען עליו.\n"
+"הסרת האפליקציה הזו תשאיר את שאר Nova CRM ללא בסיס להישען עליו.\n"
 "\n"
 "#### בנו אפליקציה משלכם\n"
 "\n"
-"הרחיבו את Twenty באמצעות אובייקטים, שדות, פונקציות לוגיקה או יכולות בינה מלאכותית (AI) משלכם. צרו שלד לאפליקציה חדשה בפקודה אחת:\n"
+"הרחיבו את Nova CRM באמצעות אובייקטים, שדות, פונקציות לוגיקה או יכולות בינה מלאכותית (AI) משלכם. צרו שלד לאפליקציה חדשה בפקודה אחת:\n"
 "\n"
 "```bash\n"
 "npx create-twenty-app@latest my-twenty-app\n"
@@ -21592,7 +21592,7 @@ msgstr ""
 "yarn twenty dev\n"
 "```\n"
 "\n"
-"ראו את [מדריך ההתחלה](https://twenty.com/developers/extend/apps/getting-started) לסקירה מלאה, ואת [בניית אפליקציות](https://twenty.com/developers/extend/apps/building) עבור ממשקי ה-API של `defineApplication` / `defineEntity`."
+"ראו את [מדריך ההתחלה](https://crm.nova-tool.online/developers/extend/apps/getting-started) לסקירה מלאה, ואת [בניית אפליקציות](https://crm.nova-tool.online/developers/extend/apps/building) עבור ממשקי ה-API של `defineApplication` / `defineEntity`."
 
 #. js-lingui-id: VsxjzF
 #: src/modules/page-layout/widgets/call-recording/utils/getCallRecordingStatusDisplayConfiguration.ts
@@ -21724,7 +21724,7 @@ msgstr ""
 #. js-lingui-id: Ya1wb4
 #: src/pages/settings/legal/SettingsLegalDpaNew.tsx
 msgid "The PDF is pre-signed by Twenty and executed with your legal entity and authorized signatory."
-msgstr "ה-PDF נחתם מראש על ידי Twenty ומבוצע עם הישות המשפטית שלך והחותם המורשה שלך."
+msgstr "ה-PDF נחתם מראש על ידי Nova CRM ומבוצע עם הישות המשפטית שלך והחותם המורשה שלך."
 
 #. js-lingui-id: Ir4tSJ
 #: src/modules/page-layout/widgets/call-recording/utils/getCallRecordingStatusDisplayConfiguration.ts
@@ -22829,15 +22829,15 @@ msgstr "הפעל את מצב המפתח"
 msgid "Turquoise"
 msgstr "טורקיז"
 
-#. js-lingui-id: JnaRPe
+#. js-lingui-id: 8IC03p
 #: src/modules/spreadsheet-import/steps/components/MatchColumnsStep/components/ColumnGrid.tsx
-msgid "Twenty fields"
-msgstr "שדות Twenty"
+msgid "Nova CRM fields"
+msgstr "שדות Nova CRM"
 
-#. js-lingui-id: pNo8xt
+#. js-lingui-id: GF355F
 #: src/pages/settings/ai/components/SettingsAiModelsTab.tsx
-msgid "Twenty fills each level with the best model that meets your requirements"
-msgstr "Twenty ממלאת כל רמה במודל הטוב ביותר שעומד בדרישות שלך"
+msgid "Nova CRM fills each level with the best model that meets your requirements"
+msgstr "Nova CRM ממלאת כל רמה במודל הטוב ביותר שעומד בדרישות שלך"
 
 #. js-lingui-id: YIjS4q
 #: src/modules/ai/components/SettingsAgentModelCapabilities.tsx
@@ -24660,7 +24660,7 @@ msgstr ""
 #. js-lingui-id: nTuObL
 #: src/pages/auth/SignInUp.tsx
 msgid "Welcome to Twenty"
-msgstr "ברוכים הבאים ל-Twenty"
+msgstr "ברוכים הבאים ל-Nova CRM"
 
 #. js-lingui-id: t8ZvkC
 #: src/modules/onboarding/constants/WelcomeTitleMessage.ts
@@ -25530,3 +25530,35 @@ msgstr "הגדל"
 #: src/modules/settings/data-model/graph-overview/components/SettingsDataModelOverview.tsx
 msgid "Zoom out"
 msgstr "הקטן"
+
+#. js-lingui-id: Cw/3WF
+#: src/modules/settings/hooks/useSettingsNavigationItems.tsx
+#: src/pages/settings/community/SettingsCommunity.tsx
+#: src/pages/settings/community/SettingsCommunity.tsx
+msgid "About Nova CRM"
+msgstr "About Nova CRM"
+
+#. js-lingui-id: nqkbwZ
+#: src/utils/title-utils.ts
+msgid "About Nova CRM - Settings"
+msgstr "About Nova CRM - Settings"
+
+#. js-lingui-id: h4H387
+#: src/pages/settings/community/SettingsCommunity.tsx
+msgid "Nova CRM"
+msgstr "Nova CRM"
+
+#. js-lingui-id: XKVkqf
+#: src/pages/settings/community/SettingsCommunity.tsx
+msgid "Nova CRM website"
+msgstr "Nova CRM website"
+
+#. js-lingui-id: Uedd1q
+#: src/pages/settings/community/SettingsCommunity.tsx
+msgid "Open-source customer relationship management for your team."
+msgstr "Open-source customer relationship management for your team."
+
+#. js-lingui-id: joolK7
+#: src/pages/settings/community/SettingsCommunity.tsx
+msgid "Source code"
+msgstr "Source code"

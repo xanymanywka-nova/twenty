@@ -195,10 +195,10 @@ msgctxt "objectMetadata.description"
 msgid "A hand-picked audience of people"
 msgstr "Ձեռքով ընտրված մարդկանց լսարան"
 
-#. js-lingui-id: TF/ZV2
+#. js-lingui-id: GjhNQa
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
-msgid "A heads up before your Twenty trial ends"
-msgstr "Ծանուցում մինչև ձեր Twenty փորձաշրջանի ավարտը"
+msgid "A heads up before your Nova CRM trial ends"
+msgstr "Ծանուցում մինչև ձեր Nova CRM փորձաշրջանի ավարտը"
 
 #. js-lingui-id: 6yZjO1
 #: src/engine/core-modules/application/application.exception.ts
@@ -2371,7 +2371,7 @@ msgctxt "fieldMetadata.label"
 msgid "Chat threads"
 msgstr "Զրույցի թեմաներ"
 
-#. js-lingui-id: 9P+QyJ
+#. js-lingui-id: 68T2AN
 #: src/engine/metadata-modules/object-metadata/constants/standard-relation-field-properties.constant.ts
 msgctxt "fieldMetadata.label"
 msgid "Chats"
@@ -2906,7 +2906,7 @@ msgctxt "fieldMetadata.label"
 msgid "Conversation Size"
 msgstr "Զրույցի չափ"
 
-#. js-lingui-id: qsiOwY
+#. js-lingui-id: Hl4lJ2
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-workflow-run-standard-flat-field-metadata.util.ts
 msgctxt "fieldMetadata.label"
 msgid "Conversations"
@@ -6517,7 +6517,7 @@ msgstr "Միացման աղյուսակ, որը կապում է հաղորդագ
 #. js-lingui-id: PviVyk
 #: src/engine/core-modules/workspace-invitation/services/workspace-invitation.service.ts
 msgid "Join your team on Twenty"
-msgstr "Միացեք ձեր թիմին Twenty պլատֆորմում"
+msgstr "Միացեք ձեր թիմին Nova CRM պլատֆորմում"
 
 #. js-lingui-id: +KEn4d
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-call-recording-standard-flat-field-metadata.util.ts
@@ -9008,10 +9008,10 @@ msgstr "Խնդրում ենք ընտրել ավարտի ամսաթիվ և ժամ
 msgid "Please confirm your updated email"
 msgstr "Խնդրում ենք հաստատել ձեր թարմացված էլ․ փոստը"
 
-#. js-lingui-id: Zm9s4F
+#. js-lingui-id: LzWAVL
 #: src/engine/api/common/common-args-processors/data-arg-processor/validator-utils/validate-links-field-or-throw.util.ts
-msgid "Please enter a domain name, like twenty.com"
-msgstr "Խնդրում ենք մուտքագրել տիրույթի անուն, օրինակ՝ twenty.com"
+msgid "Please enter a domain name, like crm.nova-tool.online"
+msgstr "Խնդրում ենք մուտքագրել տիրույթի անուն, օրինակ՝ crm.nova-tool.online"
 
 #. js-lingui-id: qgasuj
 #: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection-validator.service.ts
@@ -11087,7 +11087,7 @@ msgstr "Համակարգային դաշտերը չի թույլատրվում թ
 #. js-lingui-id: aK2k19
 #: src/engine/metadata-modules/index-metadata/services/index-metadata.service.ts
 msgid "System indexes are required for Twenty to work and cannot be deleted."
-msgstr "Համակարգային ինդեքսները անհրաժեշտ են Twenty-ի աշխատանքի համար և չեն կարող ջնջվել։"
+msgstr "Համակարգային ինդեքսները անհրաժեշտ են Nova CRM-ի աշխատանքի համար և չեն կարող ջնջվել։"
 
 #. js-lingui-id: /ojawH
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-object-metadata-validator.service.ts
@@ -12052,7 +12052,7 @@ msgstr "Այս API բանալուն դեր չի վերագրված։"
 #: src/engine/core-modules/application/application-registration/application-registration.exception.ts
 #: src/engine/core-modules/application/application.exception.ts
 msgid "This app requires a newer version of the Twenty server. Please upgrade your server or use a compatible app version."
-msgstr "Այս հավելվածը պահանջում է Twenty սերվերի ավելի նոր տարբերակ։ Խնդրում ենք թարմացնել ձեր սերվերը կամ օգտագործել համատեղելի հավելվածի տարբերակ։"
+msgstr "Այս հավելվածը պահանջում է Nova CRM սերվերի ավելի նոր տարբերակ։ Խնդրում ենք թարմացնել ձեր սերվերը կամ օգտագործել համատեղելի հավելվածի տարբերակ։"
 
 #. js-lingui-id: y2nks/
 #: src/engine/core-modules/application/application.exception.ts
@@ -14074,10 +14074,10 @@ msgstr "Webhook-ը չի գտնվել։"
 msgid "Wednesday"
 msgstr "Չորեքշաբթի"
 
-#. js-lingui-id: TVkCrJ
+#. js-lingui-id: W5eaC0
 #: src/engine/core-modules/email-verification/services/email-verification.service.ts
-msgid "Welcome to Twenty: Please Confirm Your Email"
-msgstr "Բարի գալուստ Twenty․ Խնդրում ենք հաստատել ձեր էլ. հասցեն"
+msgid "Welcome to Nova CRM: Please Confirm Your Email"
+msgstr "Բարի գալուստ Nova CRM․ Խնդրում ենք հաստատել ձեր էլ. հասցեն"
 
 #. js-lingui-id: lKboI8
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-record-share-standard-flat-field-metadata.util.ts
@@ -15175,12 +15175,12 @@ msgstr "Ձեր թիմի այն անդամը, որը պատասխանատու է 
 #. js-lingui-id: sOfbGC
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
 msgid "Your Twenty plan renews soon"
-msgstr "Ձեր Twenty փաթեթի ժամկետը շուտով կթարմացվի"
+msgstr "Ձեր Nova CRM փաթեթի ժամկետը շուտով կթարմացվի"
 
-#. js-lingui-id: qW+K5e
+#. js-lingui-id: RYqxt4
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
-msgid "Your Twenty trial is ending soon"
-msgstr "Ձեր Twenty փորձաշրջանը շուտով ավարտվում է"
+msgid "Your Nova CRM trial is ending soon"
+msgstr "Ձեր Nova CRM փորձաշրջանը շուտով ավարտվում է"
 
 #. js-lingui-id: ej/tZF
 #: src/engine/core-modules/graphql/hooks/use-graphql-error-handler.hook.ts

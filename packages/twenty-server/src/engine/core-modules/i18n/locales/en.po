@@ -190,10 +190,10 @@ msgctxt "objectMetadata.description"
 msgid "A hand-picked audience of people"
 msgstr "A hand-picked audience of people"
 
-#. js-lingui-id: TF/ZV2
+#. js-lingui-id: GjhNQa
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
-msgid "A heads up before your Twenty trial ends"
-msgstr "A heads up before your Twenty trial ends"
+msgid "A heads up before your Nova CRM trial ends"
+msgstr "A heads up before your Nova CRM trial ends"
 
 #. js-lingui-id: 6yZjO1
 #: src/engine/core-modules/application/application.exception.ts
@@ -2366,7 +2366,7 @@ msgctxt "fieldMetadata.label"
 msgid "Chat threads"
 msgstr "Chat threads"
 
-#. js-lingui-id: 9P+QyJ
+#. js-lingui-id: 68T2AN
 #: src/engine/metadata-modules/object-metadata/constants/standard-relation-field-properties.constant.ts
 msgctxt "fieldMetadata.label"
 msgid "Chats"
@@ -2901,7 +2901,7 @@ msgctxt "fieldMetadata.label"
 msgid "Conversation Size"
 msgstr "Conversation Size"
 
-#. js-lingui-id: qsiOwY
+#. js-lingui-id: Hl4lJ2
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-workflow-run-standard-flat-field-metadata.util.ts
 msgctxt "fieldMetadata.label"
 msgid "Conversations"
@@ -6512,7 +6512,7 @@ msgstr "Join table linking message channel message associations to message folde
 #. js-lingui-id: PviVyk
 #: src/engine/core-modules/workspace-invitation/services/workspace-invitation.service.ts
 msgid "Join your team on Twenty"
-msgstr "Join your team on Twenty"
+msgstr "Join your team on Nova CRM"
 
 #. js-lingui-id: +KEn4d
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-call-recording-standard-flat-field-metadata.util.ts
@@ -9003,10 +9003,10 @@ msgstr "Please choose an end date and time after the start date and time."
 msgid "Please confirm your updated email"
 msgstr "Please confirm your updated email"
 
-#. js-lingui-id: Zm9s4F
+#. js-lingui-id: LzWAVL
 #: src/engine/api/common/common-args-processors/data-arg-processor/validator-utils/validate-links-field-or-throw.util.ts
-msgid "Please enter a domain name, like twenty.com"
-msgstr "Please enter a domain name, like twenty.com"
+msgid "Please enter a domain name, like crm.nova-tool.online"
+msgstr "Please enter a domain name, like crm.nova-tool.online"
 
 #. js-lingui-id: qgasuj
 #: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection-validator.service.ts
@@ -11082,7 +11082,7 @@ msgstr "System fields cannot be updated"
 #. js-lingui-id: aK2k19
 #: src/engine/metadata-modules/index-metadata/services/index-metadata.service.ts
 msgid "System indexes are required for Twenty to work and cannot be deleted."
-msgstr "System indexes are required for Twenty to work and cannot be deleted."
+msgstr "System indexes are required for Nova CRM to work and cannot be deleted."
 
 #. js-lingui-id: /ojawH
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-object-metadata-validator.service.ts
@@ -12047,7 +12047,7 @@ msgstr "This API key has no role assigned."
 #: src/engine/core-modules/application/application-registration/application-registration.exception.ts
 #: src/engine/core-modules/application/application.exception.ts
 msgid "This app requires a newer version of the Twenty server. Please upgrade your server or use a compatible app version."
-msgstr "This app requires a newer version of the Twenty server. Please upgrade your server or use a compatible app version."
+msgstr "This app requires a newer version of the Nova CRM server. Please upgrade your server or use a compatible app version."
 
 #. js-lingui-id: y2nks/
 #: src/engine/core-modules/application/application.exception.ts
@@ -14069,10 +14069,10 @@ msgstr "Webhook not found."
 msgid "Wednesday"
 msgstr "Wednesday"
 
-#. js-lingui-id: TVkCrJ
+#. js-lingui-id: W5eaC0
 #: src/engine/core-modules/email-verification/services/email-verification.service.ts
-msgid "Welcome to Twenty: Please Confirm Your Email"
-msgstr "Welcome to Twenty: Please Confirm Your Email"
+msgid "Welcome to Nova CRM: Please Confirm Your Email"
+msgstr "Welcome to Nova CRM: Please Confirm Your Email"
 
 #. js-lingui-id: lKboI8
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-record-share-standard-flat-field-metadata.util.ts
@@ -15170,12 +15170,12 @@ msgstr "Your team member responsible for managing the company account"
 #. js-lingui-id: sOfbGC
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
 msgid "Your Twenty plan renews soon"
-msgstr "Your Twenty plan renews soon"
+msgstr "Your Nova CRM plan renews soon"
 
-#. js-lingui-id: qW+K5e
+#. js-lingui-id: RYqxt4
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
-msgid "Your Twenty trial is ending soon"
-msgstr "Your Twenty trial is ending soon"
+msgid "Your Nova CRM trial is ending soon"
+msgstr "Your Nova CRM trial is ending soon"
 
 #. js-lingui-id: ej/tZF
 #: src/engine/core-modules/graphql/hooks/use-graphql-error-handler.hook.ts

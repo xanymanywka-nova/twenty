@@ -195,10 +195,10 @@ msgctxt "objectMetadata.description"
 msgid "A hand-picked audience of people"
 msgstr "קהל יעד שנבחר בקפידה של אנשים"
 
-#. js-lingui-id: TF/ZV2
+#. js-lingui-id: GjhNQa
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
-msgid "A heads up before your Twenty trial ends"
-msgstr "תזכורת לפני שתקופת הניסיון שלך ב-Twenty מסתיימת"
+msgid "A heads up before your Nova CRM trial ends"
+msgstr "תזכורת לפני שתקופת הניסיון שלך ב-Nova CRM מסתיימת"
 
 #. js-lingui-id: 6yZjO1
 #: src/engine/core-modules/application/application.exception.ts
@@ -2371,7 +2371,7 @@ msgctxt "fieldMetadata.label"
 msgid "Chat threads"
 msgstr "שרשורי צ'אט"
 
-#. js-lingui-id: 9P+QyJ
+#. js-lingui-id: 68T2AN
 #: src/engine/metadata-modules/object-metadata/constants/standard-relation-field-properties.constant.ts
 msgctxt "fieldMetadata.label"
 msgid "Chats"
@@ -2906,7 +2906,7 @@ msgctxt "fieldMetadata.label"
 msgid "Conversation Size"
 msgstr "גודל השיחה"
 
-#. js-lingui-id: qsiOwY
+#. js-lingui-id: Hl4lJ2
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-workflow-run-standard-flat-field-metadata.util.ts
 msgctxt "fieldMetadata.label"
 msgid "Conversations"
@@ -6517,7 +6517,7 @@ msgstr "טבלת קישור שמקשרת בין שיוכי הודעות של ע�
 #. js-lingui-id: PviVyk
 #: src/engine/core-modules/workspace-invitation/services/workspace-invitation.service.ts
 msgid "Join your team on Twenty"
-msgstr "הצטרף לצוות שלך ב-Twenty"
+msgstr "הצטרף לצוות שלך ב-Nova CRM"
 
 #. js-lingui-id: +KEn4d
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-call-recording-standard-flat-field-metadata.util.ts
@@ -9008,10 +9008,10 @@ msgstr "אנא בחרו תאריך ושעת סיום לאחר תאריך ושע�
 msgid "Please confirm your updated email"
 msgstr ""
 
-#. js-lingui-id: Zm9s4F
+#. js-lingui-id: LzWAVL
 #: src/engine/api/common/common-args-processors/data-arg-processor/validator-utils/validate-links-field-or-throw.util.ts
-msgid "Please enter a domain name, like twenty.com"
-msgstr "יש להזין שם דומיין, כגון twenty.com"
+msgid "Please enter a domain name, like crm.nova-tool.online"
+msgstr "יש להזין שם דומיין, כגון crm.nova-tool.online"
 
 #. js-lingui-id: qgasuj
 #: src/engine/core-modules/imap-smtp-caldav-connection/services/imap-smtp-caldav-connection-validator.service.ts
@@ -11087,7 +11087,7 @@ msgstr ""
 #. js-lingui-id: aK2k19
 #: src/engine/metadata-modules/index-metadata/services/index-metadata.service.ts
 msgid "System indexes are required for Twenty to work and cannot be deleted."
-msgstr "אינדקסי מערכת נדרשים כדי ש-Twenty יעבוד ואי אפשר למחוק אותם."
+msgstr "אינדקסי מערכת נדרשים כדי ש-Nova CRM יעבוד ואי אפשר למחוק אותם."
 
 #. js-lingui-id: /ojawH
 #: src/engine/workspace-manager/workspace-migration/workspace-migration-builder/validators/services/flat-object-metadata-validator.service.ts
@@ -12052,7 +12052,7 @@ msgstr "למפתח API זה לא הוקצה תפקיד."
 #: src/engine/core-modules/application/application-registration/application-registration.exception.ts
 #: src/engine/core-modules/application/application.exception.ts
 msgid "This app requires a newer version of the Twenty server. Please upgrade your server or use a compatible app version."
-msgstr "אפליקציה זו דורשת גרסה חדשה יותר של שרת Twenty. אנא שדרגו את השרת שלכם או השתמשו בגרסת אפליקציה תואמת."
+msgstr "אפליקציה זו דורשת גרסה חדשה יותר של שרת Nova CRM. אנא שדרגו את השרת שלכם או השתמשו בגרסת אפליקציה תואמת."
 
 #. js-lingui-id: y2nks/
 #: src/engine/core-modules/application/application.exception.ts
@@ -14074,10 +14074,10 @@ msgstr "וובהוק לא נמצא."
 msgid "Wednesday"
 msgstr "יום רביעי"
 
-#. js-lingui-id: TVkCrJ
+#. js-lingui-id: W5eaC0
 #: src/engine/core-modules/email-verification/services/email-verification.service.ts
-msgid "Welcome to Twenty: Please Confirm Your Email"
-msgstr "ברוך הבא ל-Twenty: נא לאשר את האימייל שלך"
+msgid "Welcome to Nova CRM: Please Confirm Your Email"
+msgstr "ברוך הבא ל-Nova CRM: נא לאשר את האימייל שלך"
 
 #. js-lingui-id: lKboI8
 #: src/engine/workspace-manager/twenty-standard-application/utils/field-metadata/compute-record-share-standard-flat-field-metadata.util.ts
@@ -15175,12 +15175,12 @@ msgstr "חבר הצוות שלך אחראי על ניהול חשבון החבר�
 #. js-lingui-id: sOfbGC
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
 msgid "Your Twenty plan renews soon"
-msgstr "תוכנית ה-Twenty שלך מתחדשת בקרוב"
+msgstr "תוכנית ה-Nova CRM שלך מתחדשת בקרוב"
 
-#. js-lingui-id: qW+K5e
+#. js-lingui-id: RYqxt4
 #: src/engine/core-modules/billing/reminders/services/billing-reminder.service.ts
-msgid "Your Twenty trial is ending soon"
-msgstr "תקופת הניסיון שלך ב-Twenty מסתיימת בקרוב"
+msgid "Your Nova CRM trial is ending soon"
+msgstr "תקופת הניסיון שלך ב-Nova CRM מסתיימת בקרוב"
 
 #. js-lingui-id: ej/tZF
 #: src/engine/core-modules/graphql/hooks/use-graphql-error-handler.hook.ts

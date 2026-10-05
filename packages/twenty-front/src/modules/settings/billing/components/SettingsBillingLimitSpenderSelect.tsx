@@ -59,9 +59,9 @@ export const SettingsBillingLimitSpenderSelect = ({
     : [];
 
   const workspaceName = currentWorkspace?.displayName ?? t`Workspace`;
-  const workspaceAvatarUrl = getAbsoluteImageUrl(
-    currentWorkspace?.logo ?? DEFAULT_WORKSPACE_LOGO,
-  );
+  const workspaceAvatarUrl = currentWorkspace?.logo
+    ? getAbsoluteImageUrl(currentWorkspace.logo)
+    : DEFAULT_WORKSPACE_LOGO;
   const workspaceAvatarColorSeed = getWorkspaceAvatarColorSeed(workspaceName);
 
   const handleSelect = (

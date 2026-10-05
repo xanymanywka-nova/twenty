@@ -1,3 +1,6 @@
+import { DOCUMENTATION_BASE_URL } from 'twenty-shared/constants';
+import { isDefined } from 'twenty-shared/utils';
+
 import { buildApiCatalog } from 'src/engine/core-modules/well-known/utils/build-api-catalog.util';
 
 describe('buildApiCatalog', () => {
@@ -49,13 +52,17 @@ describe('buildApiCatalog', () => {
     ]);
   });
 
-  it('gives every surface human documentation', () => {
+  it('advertises human documentation only when a documentation site exists', () => {
     const catalog = buildApiCatalog(baseUrl);
 
     for (const entry of catalog.linkset) {
-      expect(entry['service-doc']?.[0]?.href).toMatch(
-        /^https:\/\/docs\.twenty\.com\//,
-      );
+      if (isDefined(DOCUMENTATION_BASE_URL)) {
+        expect(entry['service-doc']?.[0]?.href).toMatch(
+          new RegExp(`^${DOCUMENTATION_BASE_URL}/`),
+        );
+      } else {
+        expect(entry['service-doc']).toBeUndefined();
+      }
     }
   });
 });

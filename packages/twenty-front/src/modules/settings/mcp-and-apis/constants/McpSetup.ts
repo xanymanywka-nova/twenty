@@ -1,6 +1,4 @@
 export const MCP_SETUP = {
-  chatGptTwentyAppUrl:
-    'https://chatgpt.com/apps/twenty/asdk_app_6a0ac8d7e28c8191a58ea65bb0ca3d5c',
   tooltipIds: {
     claudeInstallDisabled: 'mcp-claude-install-disabled',
     replitInstallDisabled: 'mcp-replit-install-disabled',
@@ -11,7 +9,7 @@ export const MCP_SETUP = {
   },
   server: {
     name: 'twenty',
-    displayName: 'Twenty',
+    displayName: 'Nova CRM',
   },
   clientDocsUrls: {
     augment: 'https://docs.augmentcode.com/setup-augment/mcp',
