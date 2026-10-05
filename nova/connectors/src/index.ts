@@ -5,7 +5,9 @@ import { createConnector, SOURCE_NAMES } from './connectors/index.js';
 import { runConnector } from './sync.js';
 
 const config = crmConfig();
-const writer = new NovaCrmClient(config.url, config.apiKey);
+const writer = new NovaCrmClient(config.url, config.apiKey, fetch, {
+  maxRequestsPerSecond: config.maxRequestsPerSecond,
+});
 
 for (const source of SOURCE_NAMES.filter(
   (candidate) => candidate !== 'legacy' && isConnectorEnabled(candidate),

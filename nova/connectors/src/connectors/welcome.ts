@@ -2,9 +2,9 @@ import {
   ReadOnlyHttpClient,
   type HttpTransport,
 } from '../http/read-only-client.js';
-import type { Connector, SyncRecord } from '../types.js';
+import type { Connector, RecordLink, SyncRecord } from '../types.js';
 import {
-  guestExternalId,
+  identifiedGuestExternalId,
   phoneValue,
   platformKey,
   primaryLink,
@@ -41,6 +41,18 @@ const text = (value: unknown): string | undefined =>
 const number = (value: unknown): number | undefined =>
   typeof value === 'number' ? value : undefined;
 const boolean = (value: unknown): boolean => value === true;
+
+const guestLinks = (personId: string | undefined): RecordLink[] =>
+  personId
+    ? [
+        {
+          field: 'guestId',
+          object: 'people',
+          externalSource: 'guest',
+          externalId: personId,
+        },
+      ]
+    : [];
 const externalKey = (row: WelcomeRow): string =>
   text(row.id) ??
   text(row.transaction_id) ??
@@ -54,17 +66,11 @@ export const mapWelcomeRow = (
 ): SyncRecord[] => {
   if (table === 'channex_reviews') {
     const guestName = text(row.reviewer_name);
-    const personId = guestExternalId({ name: guestName, fallback: row.id });
     const platform = text(row.ota) ?? 'Unknown';
     const propertyId = text(row.apaleo_property_id);
     const stayId = text(row.apaleo_reservation_id);
+    // OTA reviews carry only a display name; the guest is reachable via the stay.
     return [
-      {
-        object: 'people',
-        externalSource: 'guest',
-        externalId: personId,
-        fields: { name: splitName(guestName) },
-      },
       {
         object: 'reviews',
         externalSource: `review:${platformKey(platform)}`,
@@ -76,14 +82,9 @@ export const mapWelcomeRow = (
           text: richText(text(row.content)),
           publishedAt: text(row.received_at),
           replied: boolean(row.is_replied),
+          reviewerName: guestName,
         },
         links: [
-          {
-            field: 'guestId',
-            object: 'people',
-            externalSource: 'guest',
-            externalId: personId,
-          },
           ...(propertyId
             ? [
                 {
@@ -111,21 +112,21 @@ export const mapWelcomeRow = (
   if (table === 'channex_threads' || table === 'trengo_threads') {
     const guestName = text(row.guest_name);
     const phone = text(row.contact_phone);
-    const personId = guestExternalId({
-      phone,
-      name: guestName,
-      fallback: row.id,
-    });
+    const personId = identifiedGuestExternalId({ phone, name: guestName });
     return [
-      {
-        object: 'people',
-        externalSource: 'guest',
-        externalId: personId,
-        fields: {
-          name: splitName(guestName),
-          phones: phone ? phoneValue(phone) : undefined,
-        },
-      },
+      ...(personId && phone
+        ? [
+            {
+              object: 'people' as const,
+              externalSource: 'guest',
+              externalId: personId,
+              fields: {
+                name: splitName(guestName),
+                phones: phoneValue(phone),
+              },
+            },
+          ]
+        : []),
       {
         object: 'conversations',
         externalSource: `welcome-${table}`,
@@ -139,15 +140,9 @@ export const mapWelcomeRow = (
           lastMessageAt: text(row.last_message_at),
           direction: text(row.last_message_sender),
           sourceLink: primaryLink(text(row.source_link)),
+          contactName: guestName,
         },
-        links: [
-          {
-            field: 'guestId',
-            object: 'people',
-            externalSource: 'guest',
-            externalId: personId,
-          },
-        ],
+        links: guestLinks(personId),
       },
     ];
   }
@@ -156,18 +151,19 @@ export const mapWelcomeRow = (
       text(row.contact_phone_key) ??
       text(row.from_number) ??
       text(row.to_number);
-    const personId = guestExternalId({
-      phone,
-      name: text(row.guest_name),
-      fallback: row.id,
-    });
+    const guestName = text(row.guest_name);
+    const personId = identifiedGuestExternalId({ phone, name: guestName });
     return [
-      {
-        object: 'people',
-        externalSource: 'guest',
-        externalId: personId,
-        fields: { name: splitName(text(row.guest_name)) },
-      },
+      ...(personId && phone
+        ? [
+            {
+              object: 'people' as const,
+              externalSource: 'guest',
+              externalId: personId,
+              fields: { name: splitName(guestName), phones: phoneValue(phone) },
+            },
+          ]
+        : []),
       {
         object: 'conversations',
         externalSource: 'welcome-yeastar',
@@ -178,15 +174,9 @@ export const mapWelcomeRow = (
           lastMessageAt: text(row.ended_at) ?? text(row.started_at),
           direction: text(row.direction),
           duration: number(row.duration_seconds),
+          contactName: guestName,
         },
-        links: [
-          {
-            field: 'guestId',
-            object: 'people',
-            externalSource: 'guest',
-            externalId: personId,
-          },
-        ],
+        links: guestLinks(personId),
       },
     ];
   }
@@ -280,7 +270,7 @@ export const createWelcomeConnector = (
       let offset = 0;
       while (true) {
         const rows = await client.get<WelcomeRow[]>(
-          `${table}?select=*&limit=1000&offset=${offset}${cursor}`,
+          `${table}?select=*&order=${cursorColumn}.asc,id.asc&limit=1000&offset=${offset}${cursor}`,
         );
         for (const row of rows) {
           const channexPropertyId =

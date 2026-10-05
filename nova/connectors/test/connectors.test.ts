@@ -75,18 +75,18 @@ test('maps all Nova Welcome families', () => {
       id: 'r1',
       reviewer_name: 'Synthetic Guest',
       overall_score: 8,
-    })[1]?.object,
+    })[0]?.object,
     'reviews',
   );
   assert.equal(
     mapWelcomeRow('channex_threads', {
       id: 't1',
       guest_name: 'Synthetic Guest',
-    })[1]?.object,
+    })[0]?.object,
     'conversations',
   );
   assert.equal(
-    mapWelcomeRow('trengo_threads', { id: 't2', trengo_ticket_id: 42 })[1]
+    mapWelcomeRow('trengo_threads', { id: 't2', trengo_ticket_id: 42 })[0]
       ?.fields.channel,
     'WhatsApp',
   );
@@ -95,7 +95,7 @@ test('maps all Nova Welcome families', () => {
       id: 'c1',
       call_id: 'call-1',
       duration_seconds: 20,
-    })[1]?.fields.duration,
+    })[0]?.fields.duration,
     20,
   );
   assert.equal(
@@ -149,7 +149,7 @@ test('maps review-monitor, Stripe and Nova Beds', () => {
     ota: 'Google',
     ota_review_id: 'g1',
     overall_score: 8,
-  })[1];
+  })[0];
   assert.equal(monitorReview.fields.rating, 8);
   assert.equal(monitorReview.externalSource, welcomeReview?.externalSource);
   assert.equal(monitorReview.externalId, welcomeReview?.externalId);

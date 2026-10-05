@@ -9,6 +9,7 @@ const required = (name: string): string => {
 export const crmConfig = () => ({
   apiKey: required('NOVA_CRM_API_KEY'),
   url: required('NOVA_CRM_URL').replace(/\/$/, ''),
+  maxRequestsPerSecond: Number(process.env.NOVA_CRM_MAX_RPS ?? 10),
 });
 
 export const isConnectorEnabled = (source: SourceName): boolean =>

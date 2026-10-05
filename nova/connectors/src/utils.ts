@@ -86,3 +86,15 @@ export const guestExternalId = (guest: {
     return `name-dob:${guest.name.trim().toLowerCase()}|${guest.birthDate}`;
   return `record:${guest.fallback}`;
 };
+
+// Reviews, threads and calls rarely carry an email; a name alone is not an
+// identity, so those sources only create a Person when this returns a key.
+export const identifiedGuestExternalId = (guest: {
+  email?: string | null | undefined;
+  phone?: string | null | undefined;
+  name?: string | null | undefined;
+  birthDate?: string | null | undefined;
+}): string | undefined => {
+  const externalId = guestExternalId({ ...guest, fallback: '' });
+  return externalId.startsWith('record:') ? undefined : externalId;
+};

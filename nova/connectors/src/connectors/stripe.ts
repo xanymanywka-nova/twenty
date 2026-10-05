@@ -56,9 +56,16 @@ export const createStripeConnector = (
       !context.full && context.cursor
         ? `&created[gt]=${Math.floor(Date.parse(context.cursor) / 1000)}`
         : '';
-    const page = await client.get<{ data: StripeCharge[] }>(
-      `/v1/charges?limit=100${created}`,
-    );
-    for (const charge of page.data) yield mapStripeCharge(charge);
+    let startingAfter = '';
+    for (;;) {
+      const page = await client.get<{
+        data: StripeCharge[];
+        has_more?: boolean;
+      }>(`/v1/charges?limit=100${created}${startingAfter}`);
+      for (const charge of page.data) yield mapStripeCharge(charge);
+      const last = page.data.at(-1);
+      if (!page.has_more || !last) break;
+      startingAfter = `&starting_after=${encodeURIComponent(last.id)}`;
+    }
   },
 });

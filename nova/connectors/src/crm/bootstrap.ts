@@ -111,6 +111,7 @@ export const OBJECT_DEFINITIONS: ObjectDefinition[] = [
       { name: 'language', label: 'Language', type: 'TEXT' },
       { name: 'publishedAt', label: 'Published at', type: 'DATE_TIME' },
       { name: 'replied', label: 'Replied', type: 'BOOLEAN' },
+      { name: 'reviewerName', label: 'Reviewer name', type: 'TEXT' },
       {
         name: 'property',
         label: 'Property',
@@ -146,6 +147,7 @@ export const OBJECT_DEFINITIONS: ObjectDefinition[] = [
       { name: 'direction', label: 'Direction', type: 'TEXT' },
       { name: 'sourceLink', label: 'Source link', type: 'LINK' },
       { name: 'duration', label: 'Duration seconds', type: 'NUMBER' },
+      { name: 'contactName', label: 'Contact name', type: 'TEXT' },
       {
         name: 'guest',
         label: 'Guest',

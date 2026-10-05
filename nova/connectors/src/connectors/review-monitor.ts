@@ -28,6 +28,7 @@ export const mapMonitorReview = (review: MonitorReview): SyncRecord => ({
     language: review.language,
     publishedAt: review.publishedAt,
     replied: false,
+    reviewerName: review.authorName,
   },
   links: review.propertyCode
     ? [

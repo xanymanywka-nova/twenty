@@ -2,6 +2,8 @@ import type { Connector, RecordWriter, SyncCounts } from './types.js';
 import { GuestDeduplicator } from './dedupe.js';
 import { richText } from './utils.js';
 
+const CURSOR_OVERLAP_MS = 2 * 60_000;
+
 const stringField = (value: unknown, key: string): string | undefined =>
   value &&
   typeof value === 'object' &&
@@ -16,6 +18,11 @@ export const runConnector = async (
   options: { full?: boolean; now?: () => Date } = {},
 ): Promise<SyncCounts> => {
   const counts: SyncCounts = { created: 0, updated: 0, skipped: 0 };
+  // Source rows written while the run is in flight must be picked up next
+  // time, so the cursor is the run start minus a margin for clock skew.
+  const nextCursor = new Date(
+    (options.now ?? (() => new Date()))().getTime() - CURSOR_OVERLAP_MS,
+  ).toISOString();
   const runId = await writer.startRun(connector.name);
   const cursor = options.full
     ? undefined
@@ -80,12 +87,7 @@ export const runConnector = async (
         counts[taskResult] += 1;
       }
     }
-    await writer.finishRun(
-      runId,
-      'success',
-      counts,
-      (options.now ?? (() => new Date()))().toISOString(),
-    );
+    await writer.finishRun(runId, 'success', counts, nextCursor);
     return counts;
   } catch (error) {
     await writer.finishRun(

@@ -27,7 +27,9 @@ const main = async (): Promise<void> => {
     ? new DryRunWriter()
     : (() => {
         const config = crmConfig();
-        return new NovaCrmClient(config.url, config.apiKey);
+        return new NovaCrmClient(config.url, config.apiKey, fetch, {
+          maxRequestsPerSecond: config.maxRequestsPerSecond,
+        });
       })();
   const counts = await runConnector(
     createConnector(source as SourceName),

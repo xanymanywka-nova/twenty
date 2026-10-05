@@ -10,6 +10,28 @@ import { richText } from '../utils.js';
 type CrmRecord = Record<string, unknown> & { id: string };
 type CrmResponse = { data?: unknown } | unknown[];
 
+const RETRYABLE_STATUSES = new Set([429, 502, 503, 504]);
+const MAX_ATTEMPTS = 5;
+
+const sleep = (milliseconds: number): Promise<void> =>
+  new Promise((resolve) => setTimeout(resolve, milliseconds));
+
+const retryDelay = (response: Response, attempt: number): number => {
+  const retryAfter = response.headers.get('retry-after');
+  if (retryAfter) {
+    const seconds = Number(retryAfter);
+    if (Number.isFinite(seconds)) return Math.max(0, seconds * 1000);
+    const date = Date.parse(retryAfter);
+    if (Number.isFinite(date)) return Math.max(0, date - Date.now());
+  }
+  return Math.min(30_000, 500 * 2 ** attempt);
+};
+
+export type NovaCrmClientOptions = {
+  maxRequestsPerSecond?: number;
+  sleep?: (milliseconds: number) => Promise<void>;
+};
+
 const pluralKey = (object: ObjectName | 'syncRuns'): string => object;
 
 const nestedString = (value: unknown, key: string): string | undefined =>
@@ -61,30 +83,72 @@ const unwrapRecord = (body: unknown, key: string): CrmRecord => {
       return (data as Record<string, CrmRecord>)[key] as CrmRecord;
     if (data && typeof data === 'object' && 'id' in data)
       return data as CrmRecord;
+    // REST mutations answer as { data: { createPerson: {...} } }.
+    const nested =
+      data && typeof data === 'object'
+        ? Object.values(data).find(
+            (value) => value && typeof value === 'object' && 'id' in value,
+          )
+        : undefined;
+    if (nested) return nested as CrmRecord;
   }
   if ('id' in body) return body as CrmRecord;
   throw new Error(`Nova CRM returned an unexpected ${key} response`);
 };
 
 export class NovaCrmClient implements RecordWriter {
+  private readonly minimumInterval: number;
+  private readonly wait: (milliseconds: number) => Promise<void>;
+  private queue: Promise<void> = Promise.resolve();
+  private lastRequestAt = 0;
+  // Twenty's REST filters are not read-your-writes friendly for links, and a
+  // run touches the same people and properties many times.
+  private readonly records = new Map<string, CrmRecord | null>();
+
   constructor(
     private readonly url: string,
     private readonly apiKey: string,
     private readonly transport: typeof fetch = fetch,
-  ) {}
+    options: NovaCrmClientOptions = {},
+  ) {
+    const rate = options.maxRequestsPerSecond ?? 10;
+    this.minimumInterval = rate > 0 ? 1000 / rate : 0;
+    this.wait = options.sleep ?? sleep;
+  }
+
+  private throttle(): Promise<void> {
+    const slot = this.queue.then(async () => {
+      const delay = this.lastRequestAt + this.minimumInterval - Date.now();
+      if (delay > 0) await this.wait(delay);
+      this.lastRequestAt = Date.now();
+    });
+    this.queue = slot;
+    return slot;
+  }
 
   private async request(
     path: string,
     init: RequestInit = {},
   ): Promise<unknown> {
-    const response = await this.transport(`${this.url}${path}`, {
-      ...init,
-      headers: {
-        Authorization: `Bearer ${this.apiKey}`,
-        'Content-Type': 'application/json',
-        ...init.headers,
-      },
-    });
+    let response: Response;
+    for (let attempt = 0; ; attempt += 1) {
+      await this.throttle();
+      response = await this.transport(`${this.url}${path}`, {
+        ...init,
+        headers: {
+          Authorization: `Bearer ${this.apiKey}`,
+          'Content-Type': 'application/json',
+          ...init.headers,
+        },
+      });
+      if (
+        !RETRYABLE_STATUSES.has(response.status) ||
+        attempt + 1 >= MAX_ATTEMPTS
+      )
+        break;
+      await response.text();
+      await this.wait(retryDelay(response, attempt));
+    }
     const text = await response.text();
     if (!response.ok)
       throw new Error(
@@ -98,13 +162,17 @@ export class NovaCrmClient implements RecordWriter {
     externalSource: string,
     externalId: string,
   ): Promise<CrmRecord | undefined> {
+    const key = `${object}|${externalSource}|${externalId}`;
+    if (this.records.has(key)) return this.records.get(key) ?? undefined;
     const filter = encodeURIComponent(
       `and(${equalsFilter('externalSource', externalSource)},${equalsFilter('externalId', externalId)})`,
     );
     const body = (await this.request(
       `/rest/${pluralKey(object)}?filter=${filter}&limit=1`,
     )) as CrmResponse;
-    return unwrapRecords(body, pluralKey(object))[0];
+    const found = unwrapRecords(body, pluralKey(object))[0];
+    this.records.set(key, found ?? null);
+    return found;
   }
 
   private async findPeopleByFilter(filter: string): Promise<CrmRecord[]> {
@@ -215,11 +283,17 @@ export class NovaCrmClient implements RecordWriter {
         externalId: record.externalId,
       }).filter(([, value]) => value !== undefined),
     );
+    const key = `${record.object}|${record.externalSource}|${record.externalId}`;
     if (!existing) {
-      await this.request(`/rest/${pluralKey(record.object)}`, {
+      const body = await this.request(`/rest/${pluralKey(record.object)}`, {
         method: 'POST',
         body: JSON.stringify(data),
       });
+      try {
+        this.records.set(key, unwrapRecord(body, record.object));
+      } catch {
+        this.records.delete(key);
+      }
       return 'created';
     }
     const changed = Object.entries(data).some(
@@ -232,11 +306,14 @@ export class NovaCrmClient implements RecordWriter {
       method: 'PATCH',
       body: JSON.stringify(data),
     });
+    this.records.set(key, { ...existing, ...data, id: existing.id });
     return 'updated';
   }
 
   async getCursor(source: SourceName): Promise<string | undefined> {
-    const filter = encodeURIComponent(`source[eq]:"${source}"`);
+    const filter = encodeURIComponent(
+      `and(${equalsFilter('source', source)},${equalsFilter('status', 'success')})`,
+    );
     const body = (await this.request(
       `/rest/syncRuns?filter=${filter}&order_by=startedAt[DescNullsLast]&limit=1`,
     )) as CrmResponse;
@@ -245,6 +322,8 @@ export class NovaCrmClient implements RecordWriter {
   }
 
   async startRun(source: SourceName): Promise<string> {
+    // Records may be edited or deleted in the CRM between scheduled runs.
+    this.records.clear();
     const now = new Date().toISOString();
     const record = unwrapRecord(
       await this.request('/rest/syncRuns', {
