@@ -1745,39 +1745,39 @@ msgstr "Voeg SSO-identiteitsverskaffer by"
 msgid "Add test input for evaluation (e.g., \"Find all customers in NY\")"
 msgstr ""
 
-#. js-lingui-id: FKGcEL
+#. js-lingui-id: L7WZJM
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add the Twenty MCP server as a remote context server in Zed."
+msgid "Add the Nova CRM MCP server as a remote context server in Zed."
 msgstr "Voeg die Nova CRM MCP-bediener as 'n afgeleë konteksbediener in Zed by."
 
-#. js-lingui-id: iA2nHX
+#. js-lingui-id: IOMXx2
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add the Twenty MCP server from Augment Code settings."
+msgid "Add the Nova CRM MCP server from Augment Code settings."
 msgstr "Voeg die Nova CRM MCP-bediener vanuit Augment Code-instellings by."
 
-#. js-lingui-id: l+NzAk
+#. js-lingui-id: 3GE+Vq
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add the Twenty MCP server from Raycast's MCP commands or settings."
+msgid "Add the Nova CRM MCP server from Raycast's MCP commands or settings."
 msgstr "Voeg die Nova CRM MCP-bediener vanuit Raycast se MCP-opdragte of -instellings by."
 
-#. js-lingui-id: j6G/yI
+#. js-lingui-id: aFJSz4
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add the Twenty MCP server in Gemini CLI settings."
+msgid "Add the Nova CRM MCP server in Gemini CLI settings."
 msgstr "Voeg die Nova CRM MCP-bediener in Gemini CLI-instellings by."
 
-#. js-lingui-id: /OyhlM
+#. js-lingui-id: OVKFVI
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add the Twenty MCP server to your LibreChat configuration file."
+msgid "Add the Nova CRM MCP server to your LibreChat configuration file."
 msgstr "Voeg die Nova CRM MCP-bediener by jou LibreChat-konfigurasielêer."
 
-#. js-lingui-id: K0DXoj
+#. js-lingui-id: iIyxYS
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add the Twenty remote server with LM Studio's install link."
+msgid "Add the Nova CRM remote server with LM Studio's install link."
 msgstr "Voeg die Nova CRM-afgeleë bediener by met LM Studio se installasieskakel."
 
-#. js-lingui-id: BTFMKE
+#. js-lingui-id: DQU0u5
 #: src/pages/settings/communications/SettingsWorkspaceCommunicationGroupChannelDetail.tsx
-msgid "Add these records at your DNS provider. Twenty checks them automatically."
+msgid "Add these records at your DNS provider. Nova CRM checks them automatically."
 msgstr "Voeg hierdie rekords by jou DNS-verskaffer. Nova CRM kontroleer dit outomaties."
 
 #. js-lingui-id: 5+ttxv
@@ -1795,9 +1795,9 @@ msgstr "Voeg by tot gunstelinge"
 msgid "Add topic"
 msgstr "Voeg onderwerp by"
 
-#. js-lingui-id: 4D/zWv
+#. js-lingui-id: EJpfip
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add Twenty as a Streamable HTTP extension in Goose."
+msgid "Add Nova CRM as a Streamable HTTP extension in Goose."
 msgstr "Voeg Nova CRM as 'n Streamable HTTP-uitbreiding in Goose by."
 
 #. js-lingui-id: XnwceV
@@ -3470,9 +3470,9 @@ msgstr "Outomaties skep van Persoonlike rekords by ontvang of stuur van e-posse"
 msgid "Automatically install this app on every newly created workspace"
 msgstr "Installeer hierdie toep outomaties op elke nuutgeskepte werksruimte"
 
-#. js-lingui-id: MHsVk5
+#. js-lingui-id: uSq0Sl
 #: src/pages/settings/ai/components/SettingsAiModelTiersPreview.tsx
-msgid "Automatically selected by Twenty for this mode."
+msgid "Automatically selected by Nova CRM for this mode."
 msgstr "Outomaties deur Nova CRM vir hierdie modus gekies."
 
 #. js-lingui-id: XFGV21
@@ -3680,9 +3680,9 @@ msgstr "Faktureringsinterval"
 msgid "Billing period"
 msgstr "Faktureringsperiode"
 
-#. js-lingui-id: xF/NXI
+#. js-lingui-id: UeXU24
 #: src/modules/settings/billing/hooks/useBillingPortalSession.ts
-msgid "Billing portal session error. Please retry or contact Twenty team"
+msgid "Billing portal session error. Please retry or contact Nova CRM team"
 msgstr "Faktureringsportaal-sessiefout. Probeer asseblief weer of kontak die Nova CRM-span"
 
 #. js-lingui-id: H++SIW
@@ -3890,9 +3890,9 @@ msgstr "Knoppie"
 msgid "by {author}"
 msgstr "deur {author}"
 
-#. js-lingui-id: 8Pfllj
+#. js-lingui-id: 8UMLyO
 #: src/modules/auth/sign-in-up/components/FooterNote.tsx
-msgid "By using Twenty, you agree to the"
+msgid "By using Nova CRM, you agree to the"
 msgstr "Deur gebruik te maak van Nova CRM, stem jy in tot die"
 
 #. js-lingui-id: Yx41df
@@ -4467,10 +4467,10 @@ msgstr "Gaan jou e-pos na"
 msgid "Check your inbox to verify your new email address."
 msgstr "Kontroleer jou inkassie om jou nuwe e-posadres te bevestig."
 
-#. js-lingui-id: SxwQE8
+#. js-lingui-id: hiAtq7
 #: src/modules/settings/billing/hooks/useHandleCheckoutSession.ts
 #: src/modules/settings/billing/hooks/useHandleCheckoutSession.ts
-msgid "Checkout session error. Please retry or contact Twenty team"
+msgid "Checkout session error. Please retry or contact Nova CRM team"
 msgstr "Betaalafhandeling sessie fout. Probeer asseblief weer of kontak Nova CRM-span"
 
 #. js-lingui-id: SviKkE
@@ -5237,14 +5237,14 @@ msgstr "Konfigureer die afgeleë MCP-bediener via Warp se agent-instellings."
 msgid "Configure the remote server in Amazon Q Developer's MCP settings."
 msgstr "Konfigureer die afgeleë bediener in Amazon Q Developer se MCP-instellings."
 
-#. js-lingui-id: g1/8jH
+#. js-lingui-id: me8J+b
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Configure the Twenty MCP server manually in Cascade."
+msgid "Configure the Nova CRM MCP server manually in Cascade."
 msgstr "Konfigureer die Nova CRM MCP-bediener handmatig in Cascade."
 
-#. js-lingui-id: XiyvRh
+#. js-lingui-id: QJZpMN
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Configure the Twenty MCP server manually in Cline."
+msgid "Configure the Nova CRM MCP server manually in Cline."
 msgstr "Konfigureer die Nova CRM MCP-bediener handmatig in Cline."
 
 #. js-lingui-id: qA9AGQ
@@ -9093,9 +9093,9 @@ msgstr "Fout tydens die kansellasie van intervalwisseling."
 msgid "Error while cancelling plan switching."
 msgstr "Fout tydens die kansellasie van planwisseling."
 
-#. js-lingui-id: QmR+2U
+#. js-lingui-id: kNHe8p
 #: src/modules/settings/billing/hooks/useEndSubscriptionTrialPeriod.ts
-msgid "Error while ending trial period. Please contact Twenty team."
+msgid "Error while ending trial period. Please contact Nova CRM team."
 msgstr "Fout tydens die beëindiging van die proefperiode. Kontak asseblief die Nova CRM-span."
 
 #. js-lingui-id: 5g78zo
@@ -14047,9 +14047,9 @@ msgstr "Model-ID word vereis"
 msgid "Model information"
 msgstr "Modelinligting"
 
-#. js-lingui-id: iaurWj
+#. js-lingui-id: /sSH0Z
 #: src/pages/settings/ai/components/SettingsAiModelsTab.tsx
-msgid "Model used when you chat with Twenty"
+msgid "Model used when you chat with Nova CRM"
 msgstr "Model wat gebruik word wanneer jy met Nova CRM klets"
 
 #. js-lingui-id: //nm2/
@@ -16082,9 +16082,9 @@ msgstr "Aanvangsbeloning"
 msgid "One or more filters reference deactivated or deleted fields and will be automatically removed on save."
 msgstr "Een of meer filters verwys na gedeaktiveerde of uitgevee velde en sal outomaties verwyder word wanneer gestoor word."
 
-#. js-lingui-id: 1WZTTl
+#. js-lingui-id: Iqh4bc
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
-msgid "One subscription provides one Organization key that powers one production instance and one potential staging or test instance. To run a staging or test environment, install Twenty on a second server, activate it with this same Organization key, then register that server as a development instance. Development instances unlock premium features without extra billing and do not count toward your production seats."
+msgid "One subscription provides one Organization key that powers one production instance and one potential staging or test instance. To run a staging or test environment, install Nova CRM on a second server, activate it with this same Organization key, then register that server as a development instance. Development instances unlock premium features without extra billing and do not count toward your production seats."
 msgstr "Een intekening voorsien een Organisasiesleutel wat een produksie-instansie en een potensiële stagerings- of toetsinstansie aandryf. Om 'n stagerings- of toetsomgewing te laat loop, installeer Nova CRM op 'n tweede bediener, aktiveer dit met dieselfde Organisasiesleutel en registreer dan daardie bediener as 'n ontwikkelingsinstansie. Ontwikkelingsinstansies ontsluit premiumfunksies sonder ekstra fakturering en tel nie teen jou produksiesitplekke nie."
 
 #. js-lingui-id: JEtonz
@@ -16189,9 +16189,9 @@ msgstr "Open 'n e-posredigeerder om blokinstellings te wysig."
 msgid "Open as link"
 msgstr "Maak oop as 'n skakel"
 
-#. js-lingui-id: n0vVgf
+#. js-lingui-id: vv05qq
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Open Claude with the Twenty connector name and MCP URL prefilled."
+msgid "Open Claude with the Nova CRM connector name and MCP URL prefilled."
 msgstr "Maak Claude oop met die Nova CRM-koppelnaam en MCP-URL vooraf ingevul."
 
 #. js-lingui-id: uIKeEf
@@ -16199,9 +16199,9 @@ msgstr "Maak Claude oop met die Nova CRM-koppelnaam en MCP-URL vooraf ingevul."
 msgid "Open conversation"
 msgstr ""
 
-#. js-lingui-id: +n2jpB
+#. js-lingui-id: a5B2hY
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Open Cursor's MCP installer with the Twenty remote server config."
+msgid "Open Cursor's MCP installer with the Nova CRM remote server config."
 msgstr "Maak Cursor se MCP-installeerder oop met die Nova CRM-afgeleë bediener-konfigurasie."
 
 #. js-lingui-id: pZZH4Q
@@ -16275,9 +16275,9 @@ msgstr "Maak rekords oop in"
 msgid "Open records on a dedicated page"
 msgstr "Maak rekords op 'n toegewyde bladsy oop"
 
-#. js-lingui-id: q170S2
+#. js-lingui-id: IEKwtt
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Open Replit with the Twenty remote server config."
+msgid "Open Replit with the Nova CRM remote server config."
 msgstr "Maak Replit oop met die Nova CRM-afgeleë bediener-konfigurasie."
 
 #. js-lingui-id: Yp+Hi/
@@ -16661,9 +16661,9 @@ msgstr "Bladsyuitlegte"
 msgid "Page name"
 msgstr "Bladsynaam"
 
-#. js-lingui-id: NRvxzv
+#. js-lingui-id: IdwVmc
 #: src/pages/not-found/NotFound.tsx
-msgid "Page Not Found | Twenty"
+msgid "Page Not Found | Nova CRM"
 msgstr "Bladsy nie gevind nie | Nova CRM"
 
 #. js-lingui-id: oIhFvf
@@ -20958,7 +20958,7 @@ msgstr "Subvelde"
 msgid "Subdomain"
 msgstr "Subdomein"
 
-#. js-lingui-id: Sv4BSp
+#. js-lingui-id: ZgMy0x
 #: src/modules/settings/billing/constants/SettingsBillingPlanComparisonRows.ts
 msgid "Subdomain (crm.nova-tool.online)"
 msgstr "Subdomein (crm.nova-tool.online)"
@@ -21054,12 +21054,12 @@ msgstr "Subskripsie"
 msgid "Subscription activated."
 msgstr "Intekening geaktiveer."
 
-#. js-lingui-id: 0okvpx
+#. js-lingui-id: EUuX3G
 #: src/modules/settings/billing/components/AddPaymentMethodForm.tsx
 #: src/modules/settings/billing/components/AddPaymentMethodForm.tsx
 #: src/modules/settings/billing/hooks/useSubmitSubscriptionPayment.ts
 #: src/modules/settings/billing/hooks/useSubmitSubscriptionPayment.ts
-msgid "Subscription error. Please retry or contact Twenty team"
+msgid "Subscription error. Please retry or contact Nova CRM team"
 msgstr "Intekeningsfout. Probeer asseblief weer of kontak die Nova CRM-span"
 
 #. js-lingui-id: +QiH+4
@@ -22829,14 +22829,14 @@ msgstr "Skakel ontwikkelaarmodus aan"
 msgid "Turquoise"
 msgstr "Turkoois"
 
-#. js-lingui-id: JnaRPe
+#. js-lingui-id: 8IC03p
 #: src/modules/spreadsheet-import/steps/components/MatchColumnsStep/components/ColumnGrid.tsx
-msgid "Twenty fields"
+msgid "Nova CRM fields"
 msgstr "Nova CRM-velde"
 
-#. js-lingui-id: pNo8xt
+#. js-lingui-id: GF355F
 #: src/pages/settings/ai/components/SettingsAiModelsTab.tsx
-msgid "Twenty fills each level with the best model that meets your requirements"
+msgid "Nova CRM fills each level with the best model that meets your requirements"
 msgstr "Nova CRM vul elke vlak met die beste model wat aan jou vereistes voldoen"
 
 #. js-lingui-id: YIjS4q
@@ -25530,3 +25530,35 @@ msgstr "Zoem in"
 #: src/modules/settings/data-model/graph-overview/components/SettingsDataModelOverview.tsx
 msgid "Zoom out"
 msgstr "Zoem uit"
+
+#. js-lingui-id: Cw/3WF
+#: src/modules/settings/hooks/useSettingsNavigationItems.tsx
+#: src/pages/settings/community/SettingsCommunity.tsx
+#: src/pages/settings/community/SettingsCommunity.tsx
+msgid "About Nova CRM"
+msgstr "About Nova CRM"
+
+#. js-lingui-id: nqkbwZ
+#: src/utils/title-utils.ts
+msgid "About Nova CRM - Settings"
+msgstr "About Nova CRM - Settings"
+
+#. js-lingui-id: h4H387
+#: src/pages/settings/community/SettingsCommunity.tsx
+msgid "Nova CRM"
+msgstr "Nova CRM"
+
+#. js-lingui-id: XKVkqf
+#: src/pages/settings/community/SettingsCommunity.tsx
+msgid "Nova CRM website"
+msgstr "Nova CRM website"
+
+#. js-lingui-id: Uedd1q
+#: src/pages/settings/community/SettingsCommunity.tsx
+msgid "Open-source customer relationship management for your team."
+msgstr "Open-source customer relationship management for your team."
+
+#. js-lingui-id: joolK7
+#: src/pages/settings/community/SettingsCommunity.tsx
+msgid "Source code"
+msgstr "Source code"

@@ -40,6 +40,8 @@ services:
     networks:
       - internal
       - coolify
+      # Connectors reach the API as http://server:3000 without leaving the host.
+      - novahub
     labels:
       - traefik.enable=true
       - traefik.docker.network=coolify
@@ -121,4 +123,6 @@ volumes:
 networks:
   internal:
   coolify:
+    external: true
+  novahub:
     external: true

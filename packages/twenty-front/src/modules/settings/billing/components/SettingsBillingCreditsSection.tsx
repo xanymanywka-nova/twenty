@@ -311,18 +311,20 @@ export const SettingsBillingCreditsSection = ({
           size="sm"
           variant="outline"
         >{t`View usage`}</NavigationButton>
-        <Button
-          startIcon={<IconExternalLink />}
-          size="sm"
-          onClick={() =>
-            window.open(
-              creditsDocumentationUrl,
-              '_blank',
-              'noopener,noreferrer',
-            )
-          }
-          variant="outline"
-        >{t`How credits work`}</Button>
+        {isDefined(creditsDocumentationUrl) && (
+          <Button
+            startIcon={<IconExternalLink />}
+            size="sm"
+            onClick={() =>
+              window.open(
+                creditsDocumentationUrl,
+                '_blank',
+                'noopener,noreferrer',
+              )
+            }
+            variant="outline"
+          >{t`How credits work`}</Button>
+        )}
       </StyledCreditUsageFooterActions>
     </Section.Root>
   );

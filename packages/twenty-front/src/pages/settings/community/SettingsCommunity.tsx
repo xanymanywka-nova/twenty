@@ -1,11 +1,14 @@
 import { SettingsCard } from '@/settings/components/SettingsCard';
 import { SettingsPageContainer } from '@/settings/components/SettingsPageContainer';
+import { SettingsLabContent } from '@/settings/lab/components/SettingsLabContent';
+import { useHasPermissionFlag } from '@/settings/roles/hooks/useHasPermissionFlag';
 import { SettingsPageLayout } from '@/settings/components/layout/SettingsPageLayout';
 import { styled } from '@linaria/react';
 import { t } from '@lingui/core/macro';
 import { Section } from 'twenty-ui/components';
 import { IconCode, IconWorld, type IconComponent } from 'twenty-ui/icon';
 import { SettingsPath } from 'twenty-shared/types';
+import { PermissionFlagType } from '~/generated-metadata/graphql';
 import { getSettingsPath } from 'twenty-shared/utils';
 import { PRODUCT_BRAND } from 'twenty-shared/constants';
 import { MOBILE_VIEWPORT, themeCssVariables, useTheme } from 'twenty-ui/theme';
@@ -34,6 +37,8 @@ type SettingsCommunityLink = {
 
 export const SettingsCommunity = () => {
   const theme = useTheme();
+  // Lab toggles change workspace feature flags, unlike the rest of this page.
+  const canManageWorkspace = useHasPermissionFlag(PermissionFlagType.WORKSPACE);
 
   const socialLinks: SettingsCommunityLink[] = [
     {
@@ -86,6 +91,16 @@ export const SettingsCommunity = () => {
             ))}
           </StyledCardsGrid>
         </Section.Root>
+
+        {canManageWorkspace && (
+          <Section.Root>
+            <Section.Header
+              title={t`Features`}
+              description={t`Try our upcoming features. Note they are still in beta. Please bear with us and report any issues you find.`}
+            />
+            <SettingsLabContent />
+          </Section.Root>
+        )}
       </SettingsPageContainer>
     </SettingsPageLayout>
   );

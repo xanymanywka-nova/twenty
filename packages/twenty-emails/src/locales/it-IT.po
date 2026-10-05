@@ -70,7 +70,7 @@ msgstr ""
 
 #. js-lingui-explicit-id
 #: src/emails/password-update-notify.email.tsx
-msgid "Connect to Twenty"
+msgid "Connect to Nova CRM"
 msgstr "Accedi a Nova CRM"
 
 #. js-lingui-explicit-id
@@ -129,7 +129,7 @@ msgstr "Ciao {userName},"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-trial-converting.email.tsx
-msgid "If Twenty is working for you, you're all set — there's nothing to do. If it's not the right fit, you can cancel in one click before then and you won't be charged."
+msgid "If Nova CRM is working for you, you're all set — there's nothing to do. If it's not the right fit, you can cancel in one click before then and you won't be charged."
 msgstr "Se Nova CRM funziona per te, sei a posto — non devi fare nulla. Se invece non fa al caso tuo, puoi annullare con un clic prima di quella data e non ti verrà addebitato nulla."
 
 #. js-lingui-explicit-id
@@ -149,7 +149,7 @@ msgstr "Se non fai nulla, metteremo in pausa il tuo spazio di lavoro e manterrem
 
 #. js-lingui-explicit-id
 #: src/emails/clean-suspended-workspace.email.tsx
-msgid "If you'd ever like to give Twenty another try, you can start a fresh workspace in minutes — we'd love to have you back."
+msgid "If you'd ever like to give Nova CRM another try, you can start a fresh workspace in minutes — we'd love to have you back."
 msgstr "Se vorrai mai dare un’altra possibilità a Nova CRM, potrai creare un nuovo spazio di lavoro in pochi minuti — ci farebbe piacere riaverti con noi."
 
 #. js-lingui-explicit-id
@@ -169,7 +169,7 @@ msgstr "I suoi dati sono stati rimossi e non possono più essere recuperati."
 
 #. js-lingui-explicit-id
 #: src/emails/send-invite-link.email.tsx
-msgid "Join your team on Twenty"
+msgid "Join your team on Nova CRM"
 msgstr "Unisciti al tuo team su Nova CRM"
 
 #. js-lingui-explicit-id
@@ -311,7 +311,7 @@ msgstr "Sito web"
 
 #. js-lingui-explicit-id
 #: src/components/WhatIsTwenty.tsx
-msgid "What is Twenty?"
+msgid "What is Nova CRM?"
 msgstr "Che cos'è Nova CRM?"
 
 #. js-lingui-explicit-id
@@ -358,3 +358,23 @@ msgstr "Il tuo spazio di lavoro è stato eliminato"
 #: src/emails/warn-suspended-workspace.email.tsx
 msgid "Your workspace is paused"
 msgstr "Il tuo spazio di lavoro è in pausa"
+
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx
+msgid "Open-source CRM"
+msgstr "Open-source CRM"
+
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx
+msgid "Source code"
+msgstr "Source code"
+
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx
+msgid "Visit Nova CRM source code"
+msgstr "Visit Nova CRM source code"
+
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx
+msgid "Visit Nova CRM website"
+msgstr "Visit Nova CRM website"

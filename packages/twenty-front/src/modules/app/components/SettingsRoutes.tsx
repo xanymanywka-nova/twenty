@@ -1242,15 +1242,8 @@ const createSettingsRouteElements = ({
       </>
     )}
 
-    <Route
-      element={
-        <SettingsProtectedRouteWrapper
-          settingsPermission={PermissionFlagType.WORKSPACE}
-        />
-      }
-    >
-      <Route path={SettingsPath.Community} element={<SettingsCommunity />} />
-    </Route>
+    {/* AGPL §13: every member must be able to reach the source code link. */}
+    <Route path={SettingsPath.Community} element={<SettingsCommunity />} />
   </>
 );
 

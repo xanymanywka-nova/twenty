@@ -70,7 +70,7 @@ msgstr ""
 
 #. js-lingui-explicit-id
 #: src/emails/password-update-notify.email.tsx
-msgid "Connect to Twenty"
+msgid "Connect to Nova CRM"
 msgstr "Anslut till Nova CRM"
 
 #. js-lingui-explicit-id
@@ -129,7 +129,7 @@ msgstr "Hej {userName},"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-trial-converting.email.tsx
-msgid "If Twenty is working for you, you're all set — there's nothing to do. If it's not the right fit, you can cancel in one click before then and you won't be charged."
+msgid "If Nova CRM is working for you, you're all set — there's nothing to do. If it's not the right fit, you can cancel in one click before then and you won't be charged."
 msgstr "Om Nova CRM fungerar bra för dig är allt klart — du behöver inte göra någonting. Om det inte är rätt för dig kan du säga upp med ett klick innan dess och du kommer inte att debiteras."
 
 #. js-lingui-explicit-id
@@ -149,7 +149,7 @@ msgstr "Om du inte gör någonting pausar vi din arbetsyta och håller dina data
 
 #. js-lingui-explicit-id
 #: src/emails/clean-suspended-workspace.email.tsx
-msgid "If you'd ever like to give Twenty another try, you can start a fresh workspace in minutes — we'd love to have you back."
+msgid "If you'd ever like to give Nova CRM another try, you can start a fresh workspace in minutes — we'd love to have you back."
 msgstr "Om du någon gång vill ge Nova CRM en ny chans kan du starta en ny arbetsyta på några minuter — vi skulle bli glada att få tillbaka dig."
 
 #. js-lingui-explicit-id
@@ -169,7 +169,7 @@ msgstr "Dess data har tagits bort och kan inte längre återställas."
 
 #. js-lingui-explicit-id
 #: src/emails/send-invite-link.email.tsx
-msgid "Join your team on Twenty"
+msgid "Join your team on Nova CRM"
 msgstr "Gå med i ditt team på Nova CRM"
 
 #. js-lingui-explicit-id
@@ -311,7 +311,7 @@ msgstr "Webbplats"
 
 #. js-lingui-explicit-id
 #: src/components/WhatIsTwenty.tsx
-msgid "What is Twenty?"
+msgid "What is Nova CRM?"
 msgstr "Vad är Nova CRM?"
 
 #. js-lingui-explicit-id
@@ -358,3 +358,23 @@ msgstr "Din arbetsyta har raderats"
 #: src/emails/warn-suspended-workspace.email.tsx
 msgid "Your workspace is paused"
 msgstr "Din arbetsyta är pausad"
+
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx
+msgid "Open-source CRM"
+msgstr "Open-source CRM"
+
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx
+msgid "Source code"
+msgstr "Source code"
+
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx
+msgid "Visit Nova CRM source code"
+msgstr "Visit Nova CRM source code"
+
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx
+msgid "Visit Nova CRM website"
+msgstr "Visit Nova CRM website"

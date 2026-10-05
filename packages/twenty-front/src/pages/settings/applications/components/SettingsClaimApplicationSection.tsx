@@ -106,6 +106,12 @@ export const SettingsClaimApplicationSection = () => {
   const claimError = isDefined(claimErrorCode)
     ? getClaimErrorContent(claimErrorCode)
     : null;
+  const claimErrorDocumentationUrl = isDefined(claimError)
+    ? getDocumentationUrl({
+        locale: currentWorkspaceMember?.locale,
+        path: claimError.docPath,
+      })
+    : undefined;
 
   const canSyncCatalog = useHasPermissionFlag(
     PermissionFlagType.MARKETPLACE_APPS,
@@ -229,17 +235,15 @@ export const SettingsClaimApplicationSection = () => {
             variant="error"
             title={t`Could not claim this application`}
             description={i18n._(claimError.message)}
-            action={{
-              label: t`Read documentation`,
-              onClick: () =>
-                window.open(
-                  getDocumentationUrl({
-                    locale: currentWorkspaceMember?.locale,
-                    path: claimError.docPath,
-                  }),
-                  '_blank',
-                ),
-            }}
+            action={
+              isDefined(claimErrorDocumentationUrl)
+                ? {
+                    label: t`Read documentation`,
+                    onClick: () =>
+                      window.open(claimErrorDocumentationUrl, '_blank'),
+                  }
+                : undefined
+            }
             isClosable
             closeLabel={t`Close`}
             onClose={dismissClaimError}

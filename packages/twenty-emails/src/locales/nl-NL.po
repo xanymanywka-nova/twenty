@@ -70,7 +70,7 @@ msgstr ""
 
 #. js-lingui-explicit-id
 #: src/emails/password-update-notify.email.tsx
-msgid "Connect to Twenty"
+msgid "Connect to Nova CRM"
 msgstr "Verbinden met Nova CRM"
 
 #. js-lingui-explicit-id
@@ -129,7 +129,7 @@ msgstr "Beste {userName},"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-trial-converting.email.tsx
-msgid "If Twenty is working for you, you're all set — there's nothing to do. If it's not the right fit, you can cancel in one click before then and you won't be charged."
+msgid "If Nova CRM is working for you, you're all set — there's nothing to do. If it's not the right fit, you can cancel in one click before then and you won't be charged."
 msgstr "Als Nova CRM goed voor u werkt, bent u helemaal klaar — u hoeft niets te doen. Als het toch niet de juiste keuze is, kunt u het voor die tijd met één klik opzeggen en wordt er niets in rekening gebracht."
 
 #. js-lingui-explicit-id
@@ -149,7 +149,7 @@ msgstr "Als u niets doet, pauzeren we uw werkruimte en bewaren we uw gegevens {d
 
 #. js-lingui-explicit-id
 #: src/emails/clean-suspended-workspace.email.tsx
-msgid "If you'd ever like to give Twenty another try, you can start a fresh workspace in minutes — we'd love to have you back."
+msgid "If you'd ever like to give Nova CRM another try, you can start a fresh workspace in minutes — we'd love to have you back."
 msgstr "Als u Nova CRM ooit nog een kans wilt geven, kunt u binnen enkele minuten een nieuwe werkruimte starten — we zien u graag terug."
 
 #. js-lingui-explicit-id
@@ -169,7 +169,7 @@ msgstr "De gegevens zijn verwijderd en kunnen niet meer worden hersteld."
 
 #. js-lingui-explicit-id
 #: src/emails/send-invite-link.email.tsx
-msgid "Join your team on Twenty"
+msgid "Join your team on Nova CRM"
 msgstr "Sluit je aan bij je team op Nova CRM"
 
 #. js-lingui-explicit-id
@@ -311,7 +311,7 @@ msgstr "Website"
 
 #. js-lingui-explicit-id
 #: src/components/WhatIsTwenty.tsx
-msgid "What is Twenty?"
+msgid "What is Nova CRM?"
 msgstr "Wat is Nova CRM?"
 
 #. js-lingui-explicit-id
@@ -358,3 +358,23 @@ msgstr "Uw werkruimte is verwijderd"
 #: src/emails/warn-suspended-workspace.email.tsx
 msgid "Your workspace is paused"
 msgstr "Uw werkruimte is gepauzeerd"
+
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx
+msgid "Open-source CRM"
+msgstr "Open-source CRM"
+
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx
+msgid "Source code"
+msgstr "Source code"
+
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx
+msgid "Visit Nova CRM source code"
+msgstr "Visit Nova CRM source code"
+
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx
+msgid "Visit Nova CRM website"
+msgstr "Visit Nova CRM website"

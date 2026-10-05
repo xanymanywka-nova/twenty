@@ -70,7 +70,7 @@ msgstr ""
 
 #. js-lingui-explicit-id
 #: src/emails/password-update-notify.email.tsx
-msgid "Connect to Twenty"
+msgid "Connect to Nova CRM"
 msgstr "Kết nối với Nova CRM"
 
 #. js-lingui-explicit-id
@@ -129,7 +129,7 @@ msgstr "Chào {userName},"
 
 #. js-lingui-explicit-id
 #: src/emails/billing-trial-converting.email.tsx
-msgid "If Twenty is working for you, you're all set — there's nothing to do. If it's not the right fit, you can cancel in one click before then and you won't be charged."
+msgid "If Nova CRM is working for you, you're all set — there's nothing to do. If it's not the right fit, you can cancel in one click before then and you won't be charged."
 msgstr "Nếu Nova CRM phù hợp với nhu cầu của bạn, mọi thứ đã sẵn sàng — bạn không cần làm gì thêm. Nếu không phù hợp, bạn có thể hủy chỉ với một lần nhấp trước thời điểm đó và sẽ không bị tính phí."
 
 #. js-lingui-explicit-id
@@ -149,7 +149,7 @@ msgstr "Nếu bạn không làm gì, chúng tôi sẽ tạm dừng không gian l
 
 #. js-lingui-explicit-id
 #: src/emails/clean-suspended-workspace.email.tsx
-msgid "If you'd ever like to give Twenty another try, you can start a fresh workspace in minutes — we'd love to have you back."
+msgid "If you'd ever like to give Nova CRM another try, you can start a fresh workspace in minutes — we'd love to have you back."
 msgstr "Nếu một ngày nào đó bạn muốn dùng thử Nova CRM lần nữa, bạn có thể bắt đầu một không gian làm việc hoàn toàn mới chỉ trong vài phút — chúng tôi rất mong được chào đón bạn quay lại."
 
 #. js-lingui-explicit-id
@@ -169,7 +169,7 @@ msgstr "Dữ liệu của nó đã bị xóa và không thể khôi phục lại
 
 #. js-lingui-explicit-id
 #: src/emails/send-invite-link.email.tsx
-msgid "Join your team on Twenty"
+msgid "Join your team on Nova CRM"
 msgstr "Tham gia vào đội ngũ của bạn trên Nova CRM"
 
 #. js-lingui-explicit-id
@@ -311,7 +311,7 @@ msgstr "Trang web"
 
 #. js-lingui-explicit-id
 #: src/components/WhatIsTwenty.tsx
-msgid "What is Twenty?"
+msgid "What is Nova CRM?"
 msgstr "Nova CRM là gì?"
 
 #. js-lingui-explicit-id
@@ -358,3 +358,23 @@ msgstr "Không gian làm việc của bạn đã bị xóa"
 #: src/emails/warn-suspended-workspace.email.tsx
 msgid "Your workspace is paused"
 msgstr "Không gian làm việc của bạn đang bị tạm dừng"
+
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx
+msgid "Open-source CRM"
+msgstr "Open-source CRM"
+
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx
+msgid "Source code"
+msgstr "Source code"
+
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx
+msgid "Visit Nova CRM source code"
+msgstr "Visit Nova CRM source code"
+
+#. js-lingui-explicit-id
+#: src/components/Footer.tsx
+msgid "Visit Nova CRM website"
+msgstr "Visit Nova CRM website"

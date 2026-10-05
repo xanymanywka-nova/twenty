@@ -1745,39 +1745,39 @@ msgstr "Додати провайдера єдиної системи входу
 msgid "Add test input for evaluation (e.g., \"Find all customers in NY\")"
 msgstr ""
 
-#. js-lingui-id: FKGcEL
+#. js-lingui-id: L7WZJM
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add the Twenty MCP server as a remote context server in Zed."
+msgid "Add the Nova CRM MCP server as a remote context server in Zed."
 msgstr "Додайте сервер Nova CRM MCP як віддалений сервер контексту в Zed."
 
-#. js-lingui-id: iA2nHX
+#. js-lingui-id: IOMXx2
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add the Twenty MCP server from Augment Code settings."
+msgid "Add the Nova CRM MCP server from Augment Code settings."
 msgstr "Додайте сервер Nova CRM MCP у налаштуваннях Augment Code."
 
-#. js-lingui-id: l+NzAk
+#. js-lingui-id: 3GE+Vq
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add the Twenty MCP server from Raycast's MCP commands or settings."
+msgid "Add the Nova CRM MCP server from Raycast's MCP commands or settings."
 msgstr "Додайте сервер Nova CRM MCP через MCP-команди або налаштування Raycast."
 
-#. js-lingui-id: j6G/yI
+#. js-lingui-id: aFJSz4
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add the Twenty MCP server in Gemini CLI settings."
+msgid "Add the Nova CRM MCP server in Gemini CLI settings."
 msgstr "Додайте сервер Nova CRM MCP у налаштуваннях Gemini CLI."
 
-#. js-lingui-id: /OyhlM
+#. js-lingui-id: OVKFVI
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add the Twenty MCP server to your LibreChat configuration file."
+msgid "Add the Nova CRM MCP server to your LibreChat configuration file."
 msgstr "Додайте сервер Nova CRM MCP до вашого конфігураційного файлу LibreChat."
 
-#. js-lingui-id: K0DXoj
+#. js-lingui-id: iIyxYS
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add the Twenty remote server with LM Studio's install link."
+msgid "Add the Nova CRM remote server with LM Studio's install link."
 msgstr "Додайте віддалений сервер Nova CRM за інсталяційним посиланням LM Studio."
 
-#. js-lingui-id: BTFMKE
+#. js-lingui-id: DQU0u5
 #: src/pages/settings/communications/SettingsWorkspaceCommunicationGroupChannelDetail.tsx
-msgid "Add these records at your DNS provider. Twenty checks them automatically."
+msgid "Add these records at your DNS provider. Nova CRM checks them automatically."
 msgstr "Додайте ці записи у свого DNS-провайдера. Nova CRM перевірить їх автоматично."
 
 #. js-lingui-id: 5+ttxv
@@ -1795,9 +1795,9 @@ msgstr "Додати до обраних"
 msgid "Add topic"
 msgstr "Додати тему"
 
-#. js-lingui-id: 4D/zWv
+#. js-lingui-id: EJpfip
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add Twenty as a Streamable HTTP extension in Goose."
+msgid "Add Nova CRM as a Streamable HTTP extension in Goose."
 msgstr "Додайте Nova CRM як Streamable HTTP-розширення в Goose."
 
 #. js-lingui-id: XnwceV
@@ -3470,9 +3470,9 @@ msgstr "Автоматично створювати записи Людей пр
 msgid "Automatically install this app on every newly created workspace"
 msgstr "Автоматично встановлювати цей застосунок у кожен новостворений робочий простір"
 
-#. js-lingui-id: MHsVk5
+#. js-lingui-id: uSq0Sl
 #: src/pages/settings/ai/components/SettingsAiModelTiersPreview.tsx
-msgid "Automatically selected by Twenty for this mode."
+msgid "Automatically selected by Nova CRM for this mode."
 msgstr "Автоматично вибрано Nova CRM для цього режиму."
 
 #. js-lingui-id: XFGV21
@@ -3680,9 +3680,9 @@ msgstr "Інтервал виставлення рахунків"
 msgid "Billing period"
 msgstr "Розрахунковий період"
 
-#. js-lingui-id: xF/NXI
+#. js-lingui-id: UeXU24
 #: src/modules/settings/billing/hooks/useBillingPortalSession.ts
-msgid "Billing portal session error. Please retry or contact Twenty team"
+msgid "Billing portal session error. Please retry or contact Nova CRM team"
 msgstr "Помилка сеансу білінгового порталу. Спробуйте ще раз або зв’яжіться з командою Nova CRM"
 
 #. js-lingui-id: H++SIW
@@ -3890,9 +3890,9 @@ msgstr "Кнопка"
 msgid "by {author}"
 msgstr "від {author}"
 
-#. js-lingui-id: 8Pfllj
+#. js-lingui-id: 8UMLyO
 #: src/modules/auth/sign-in-up/components/FooterNote.tsx
-msgid "By using Twenty, you agree to the"
+msgid "By using Nova CRM, you agree to the"
 msgstr "Використовуючи Nova CRM, ви погоджуєтесь із"
 
 #. js-lingui-id: Yx41df
@@ -4467,10 +4467,10 @@ msgstr "Перевірте свою електронну пошту"
 msgid "Check your inbox to verify your new email address."
 msgstr "Перевірте свою поштову скриньку, щоб підтвердити нову електронну адресу."
 
-#. js-lingui-id: SxwQE8
+#. js-lingui-id: hiAtq7
 #: src/modules/settings/billing/hooks/useHandleCheckoutSession.ts
 #: src/modules/settings/billing/hooks/useHandleCheckoutSession.ts
-msgid "Checkout session error. Please retry or contact Twenty team"
+msgid "Checkout session error. Please retry or contact Nova CRM team"
 msgstr "Помилка сеансу оформлення. Спробуйте ще раз або зв'яжіться з командою Nova CRM"
 
 #. js-lingui-id: SviKkE
@@ -5237,14 +5237,14 @@ msgstr "Налаштуйте віддалений сервер MCP у налаш
 msgid "Configure the remote server in Amazon Q Developer's MCP settings."
 msgstr "Налаштуйте віддалений сервер у налаштуваннях MCP Amazon Q Developer."
 
-#. js-lingui-id: g1/8jH
+#. js-lingui-id: me8J+b
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Configure the Twenty MCP server manually in Cascade."
+msgid "Configure the Nova CRM MCP server manually in Cascade."
 msgstr "Налаштуйте сервер Nova CRM MCP вручну в Cascade."
 
-#. js-lingui-id: XiyvRh
+#. js-lingui-id: QJZpMN
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Configure the Twenty MCP server manually in Cline."
+msgid "Configure the Nova CRM MCP server manually in Cline."
 msgstr "Налаштуйте сервер Nova CRM MCP вручну в Cline."
 
 #. js-lingui-id: qA9AGQ
@@ -9093,9 +9093,9 @@ msgstr "Помилка при скасуванні перемикання інт
 msgid "Error while cancelling plan switching."
 msgstr "Помилка при скасуванні перемикання плану."
 
-#. js-lingui-id: QmR+2U
+#. js-lingui-id: kNHe8p
 #: src/modules/settings/billing/hooks/useEndSubscriptionTrialPeriod.ts
-msgid "Error while ending trial period. Please contact Twenty team."
+msgid "Error while ending trial period. Please contact Nova CRM team."
 msgstr "Помилка під час завершення пробного періоду. Будь ласка, звʼяжіться з командою Nova CRM."
 
 #. js-lingui-id: 5g78zo
@@ -14047,9 +14047,9 @@ msgstr "Потрібно вказати ID моделі"
 msgid "Model information"
 msgstr "Інформація про модель"
 
-#. js-lingui-id: iaurWj
+#. js-lingui-id: /sSH0Z
 #: src/pages/settings/ai/components/SettingsAiModelsTab.tsx
-msgid "Model used when you chat with Twenty"
+msgid "Model used when you chat with Nova CRM"
 msgstr "Модель, що використовується, коли ви спілкуєтеся з Nova CRM"
 
 #. js-lingui-id: //nm2/
@@ -16082,9 +16082,9 @@ msgstr "Вступна винагорода"
 msgid "One or more filters reference deactivated or deleted fields and will be automatically removed on save."
 msgstr "Один або кілька фільтрів посилаються на деактивовані або видалені поля й будуть автоматично видалені під час збереження."
 
-#. js-lingui-id: 1WZTTl
+#. js-lingui-id: Iqh4bc
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
-msgid "One subscription provides one Organization key that powers one production instance and one potential staging or test instance. To run a staging or test environment, install Twenty on a second server, activate it with this same Organization key, then register that server as a development instance. Development instances unlock premium features without extra billing and do not count toward your production seats."
+msgid "One subscription provides one Organization key that powers one production instance and one potential staging or test instance. To run a staging or test environment, install Nova CRM on a second server, activate it with this same Organization key, then register that server as a development instance. Development instances unlock premium features without extra billing and do not count toward your production seats."
 msgstr "Одна підписка надає один ключ Організації, який забезпечує роботу одного продуктивного інстансу та одного потенційного staging- або тестового інстансу. Щоб запустити staging- або тестове середовище, встановіть Nova CRM на другий сервер, активуйте його тим самим ключем Організації, а потім зареєструйте цей сервер як інстанс для розробки. Інстанси для розробки розблоковують преміум-функції без додаткової оплати та не враховуються у кількості ваших продуктивних місць."
 
 #. js-lingui-id: JEtonz
@@ -16189,9 +16189,9 @@ msgstr "Відкрийте редактор електронної пошти, �
 msgid "Open as link"
 msgstr "Відкрити як посилання"
 
-#. js-lingui-id: n0vVgf
+#. js-lingui-id: vv05qq
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Open Claude with the Twenty connector name and MCP URL prefilled."
+msgid "Open Claude with the Nova CRM connector name and MCP URL prefilled."
 msgstr "Відкрийте Claude з наперед заповненою назвою конектора Nova CRM та MCP URL."
 
 #. js-lingui-id: uIKeEf
@@ -16199,9 +16199,9 @@ msgstr "Відкрийте Claude з наперед заповненою наз�
 msgid "Open conversation"
 msgstr ""
 
-#. js-lingui-id: +n2jpB
+#. js-lingui-id: a5B2hY
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Open Cursor's MCP installer with the Twenty remote server config."
+msgid "Open Cursor's MCP installer with the Nova CRM remote server config."
 msgstr "Відкрийте інсталятор MCP у Cursor із конфігурацією віддаленого сервера Nova CRM."
 
 #. js-lingui-id: pZZH4Q
@@ -16275,9 +16275,9 @@ msgstr "Відкривати записи у"
 msgid "Open records on a dedicated page"
 msgstr "Відкривати записи на окремій сторінці"
 
-#. js-lingui-id: q170S2
+#. js-lingui-id: IEKwtt
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Open Replit with the Twenty remote server config."
+msgid "Open Replit with the Nova CRM remote server config."
 msgstr "Відкрийте Replit із конфігурацією віддаленого сервера Nova CRM."
 
 #. js-lingui-id: Yp+Hi/
@@ -16661,9 +16661,9 @@ msgstr "Макети сторінок"
 msgid "Page name"
 msgstr "Назва сторінки"
 
-#. js-lingui-id: NRvxzv
+#. js-lingui-id: IdwVmc
 #: src/pages/not-found/NotFound.tsx
-msgid "Page Not Found | Twenty"
+msgid "Page Not Found | Nova CRM"
 msgstr "Сторінку не знайдено | Nova CRM"
 
 #. js-lingui-id: oIhFvf
@@ -20958,7 +20958,7 @@ msgstr "Підполя"
 msgid "Subdomain"
 msgstr "Субдомен"
 
-#. js-lingui-id: Sv4BSp
+#. js-lingui-id: ZgMy0x
 #: src/modules/settings/billing/constants/SettingsBillingPlanComparisonRows.ts
 msgid "Subdomain (crm.nova-tool.online)"
 msgstr "Субдомен (crm.nova-tool.online)"
@@ -21054,12 +21054,12 @@ msgstr "Підписка"
 msgid "Subscription activated."
 msgstr "Підписка активована."
 
-#. js-lingui-id: 0okvpx
+#. js-lingui-id: EUuX3G
 #: src/modules/settings/billing/components/AddPaymentMethodForm.tsx
 #: src/modules/settings/billing/components/AddPaymentMethodForm.tsx
 #: src/modules/settings/billing/hooks/useSubmitSubscriptionPayment.ts
 #: src/modules/settings/billing/hooks/useSubmitSubscriptionPayment.ts
-msgid "Subscription error. Please retry or contact Twenty team"
+msgid "Subscription error. Please retry or contact Nova CRM team"
 msgstr "Помилка передплати. Спробуйте ще раз або зв’яжіться з командою Nova CRM"
 
 #. js-lingui-id: +QiH+4
@@ -22831,14 +22831,14 @@ msgstr "Увімкнути режим розробника"
 msgid "Turquoise"
 msgstr "Бірюзовий"
 
-#. js-lingui-id: JnaRPe
+#. js-lingui-id: 8IC03p
 #: src/modules/spreadsheet-import/steps/components/MatchColumnsStep/components/ColumnGrid.tsx
-msgid "Twenty fields"
+msgid "Nova CRM fields"
 msgstr "Поля Nova CRM"
 
-#. js-lingui-id: pNo8xt
+#. js-lingui-id: GF355F
 #: src/pages/settings/ai/components/SettingsAiModelsTab.tsx
-msgid "Twenty fills each level with the best model that meets your requirements"
+msgid "Nova CRM fills each level with the best model that meets your requirements"
 msgstr "Nova CRM заповнює кожен рівень найкращою моделлю, яка відповідає вашим вимогам"
 
 #. js-lingui-id: YIjS4q
@@ -25532,3 +25532,35 @@ msgstr "Збільшити масштаб"
 #: src/modules/settings/data-model/graph-overview/components/SettingsDataModelOverview.tsx
 msgid "Zoom out"
 msgstr "Зменшити масштаб"
+
+#. js-lingui-id: Cw/3WF
+#: src/modules/settings/hooks/useSettingsNavigationItems.tsx
+#: src/pages/settings/community/SettingsCommunity.tsx
+#: src/pages/settings/community/SettingsCommunity.tsx
+msgid "About Nova CRM"
+msgstr "Про Nova CRM"
+
+#. js-lingui-id: nqkbwZ
+#: src/utils/title-utils.ts
+msgid "About Nova CRM - Settings"
+msgstr "Про Nova CRM - Налаштування"
+
+#. js-lingui-id: h4H387
+#: src/pages/settings/community/SettingsCommunity.tsx
+msgid "Nova CRM"
+msgstr "Nova CRM"
+
+#. js-lingui-id: XKVkqf
+#: src/pages/settings/community/SettingsCommunity.tsx
+msgid "Nova CRM website"
+msgstr "Сайт Nova CRM"
+
+#. js-lingui-id: Uedd1q
+#: src/pages/settings/community/SettingsCommunity.tsx
+msgid "Open-source customer relationship management for your team."
+msgstr "CRM-система з відкритим кодом для вашої команди."
+
+#. js-lingui-id: joolK7
+#: src/pages/settings/community/SettingsCommunity.tsx
+msgid "Source code"
+msgstr "Вихідний код"

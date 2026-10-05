@@ -1745,39 +1745,39 @@ msgstr "SSO ID 공급자 추가"
 msgid "Add test input for evaluation (e.g., \"Find all customers in NY\")"
 msgstr ""
 
-#. js-lingui-id: FKGcEL
+#. js-lingui-id: L7WZJM
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add the Twenty MCP server as a remote context server in Zed."
+msgid "Add the Nova CRM MCP server as a remote context server in Zed."
 msgstr "Zed에서 Nova CRM MCP 서버를 원격 컨텍스트 서버로 추가하세요."
 
-#. js-lingui-id: iA2nHX
+#. js-lingui-id: IOMXx2
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add the Twenty MCP server from Augment Code settings."
+msgid "Add the Nova CRM MCP server from Augment Code settings."
 msgstr "Augment Code 설정에서 Nova CRM MCP 서버를 추가하세요."
 
-#. js-lingui-id: l+NzAk
+#. js-lingui-id: 3GE+Vq
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add the Twenty MCP server from Raycast's MCP commands or settings."
+msgid "Add the Nova CRM MCP server from Raycast's MCP commands or settings."
 msgstr "Raycast의 MCP 명령 또는 설정에서 Nova CRM MCP 서버를 추가하세요."
 
-#. js-lingui-id: j6G/yI
+#. js-lingui-id: aFJSz4
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add the Twenty MCP server in Gemini CLI settings."
+msgid "Add the Nova CRM MCP server in Gemini CLI settings."
 msgstr "Gemini CLI 설정에서 Nova CRM MCP 서버를 추가하세요."
 
-#. js-lingui-id: /OyhlM
+#. js-lingui-id: OVKFVI
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add the Twenty MCP server to your LibreChat configuration file."
+msgid "Add the Nova CRM MCP server to your LibreChat configuration file."
 msgstr "LibreChat 구성 파일에 Nova CRM MCP 서버를 추가하세요."
 
-#. js-lingui-id: K0DXoj
+#. js-lingui-id: iIyxYS
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add the Twenty remote server with LM Studio's install link."
+msgid "Add the Nova CRM remote server with LM Studio's install link."
 msgstr "LM Studio의 설치 링크로 Nova CRM 원격 서버를 추가하세요."
 
-#. js-lingui-id: BTFMKE
+#. js-lingui-id: DQU0u5
 #: src/pages/settings/communications/SettingsWorkspaceCommunicationGroupChannelDetail.tsx
-msgid "Add these records at your DNS provider. Twenty checks them automatically."
+msgid "Add these records at your DNS provider. Nova CRM checks them automatically."
 msgstr "DNS 제공업체에 이 레코드를 추가하세요. Nova CRM가 자동으로 확인합니다."
 
 #. js-lingui-id: 5+ttxv
@@ -1795,9 +1795,9 @@ msgstr "즐겨찾기에 추가"
 msgid "Add topic"
 msgstr "주제 추가"
 
-#. js-lingui-id: 4D/zWv
+#. js-lingui-id: EJpfip
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Add Twenty as a Streamable HTTP extension in Goose."
+msgid "Add Nova CRM as a Streamable HTTP extension in Goose."
 msgstr "Goose에서 Nova CRM를 Streamable HTTP 확장으로 추가하세요."
 
 #. js-lingui-id: XnwceV
@@ -3470,9 +3470,9 @@ msgstr "이메일을 받거나 보낼 때 사람 레코드를 자동으로 생�
 msgid "Automatically install this app on every newly created workspace"
 msgstr "새로 생성된 모든 워크스페이스에 이 앱을 자동으로 설치"
 
-#. js-lingui-id: MHsVk5
+#. js-lingui-id: uSq0Sl
 #: src/pages/settings/ai/components/SettingsAiModelTiersPreview.tsx
-msgid "Automatically selected by Twenty for this mode."
+msgid "Automatically selected by Nova CRM for this mode."
 msgstr "이 모드에서는 Nova CRM가 자동으로 선택합니다."
 
 #. js-lingui-id: XFGV21
@@ -3680,9 +3680,9 @@ msgstr "청구 주기"
 msgid "Billing period"
 msgstr "청구 기간"
 
-#. js-lingui-id: xF/NXI
+#. js-lingui-id: UeXU24
 #: src/modules/settings/billing/hooks/useBillingPortalSession.ts
-msgid "Billing portal session error. Please retry or contact Twenty team"
+msgid "Billing portal session error. Please retry or contact Nova CRM team"
 msgstr "결제 포털 세션 오류입니다. 다시 시도하거나 Nova CRM 팀에 문의하세요"
 
 #. js-lingui-id: H++SIW
@@ -3890,9 +3890,9 @@ msgstr "버튼"
 msgid "by {author}"
 msgstr "제작: {author}"
 
-#. js-lingui-id: 8Pfllj
+#. js-lingui-id: 8UMLyO
 #: src/modules/auth/sign-in-up/components/FooterNote.tsx
-msgid "By using Twenty, you agree to the"
+msgid "By using Nova CRM, you agree to the"
 msgstr "Nova CRM를 사용함으로써 귀하는 다음에 동의합니다"
 
 #. js-lingui-id: Yx41df
@@ -4467,10 +4467,10 @@ msgstr "이메일을 확인하세요"
 msgid "Check your inbox to verify your new email address."
 msgstr "새 이메일 주소를 확인하려면 받은 편지함을 확인하세요."
 
-#. js-lingui-id: SxwQE8
+#. js-lingui-id: hiAtq7
 #: src/modules/settings/billing/hooks/useHandleCheckoutSession.ts
 #: src/modules/settings/billing/hooks/useHandleCheckoutSession.ts
-msgid "Checkout session error. Please retry or contact Twenty team"
+msgid "Checkout session error. Please retry or contact Nova CRM team"
 msgstr "결제 세션 오류입니다. 다시 시도하거나 Nova CRM 팀에 문의하십시오"
 
 #. js-lingui-id: SviKkE
@@ -5237,14 +5237,14 @@ msgstr "Warp의 에이전트 설정에서 원격 MCP 서버를 구성하세요."
 msgid "Configure the remote server in Amazon Q Developer's MCP settings."
 msgstr "Amazon Q Developer의 MCP 설정에서 원격 서버를 구성하세요."
 
-#. js-lingui-id: g1/8jH
+#. js-lingui-id: me8J+b
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Configure the Twenty MCP server manually in Cascade."
+msgid "Configure the Nova CRM MCP server manually in Cascade."
 msgstr "Cascade에서 Nova CRM MCP 서버를 수동으로 구성하세요."
 
-#. js-lingui-id: XiyvRh
+#. js-lingui-id: QJZpMN
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Configure the Twenty MCP server manually in Cline."
+msgid "Configure the Nova CRM MCP server manually in Cline."
 msgstr "Cline에서 Nova CRM MCP 서버를 수동으로 구성하세요."
 
 #. js-lingui-id: qA9AGQ
@@ -9093,9 +9093,9 @@ msgstr "간격 전환 취소 중 오류 발생."
 msgid "Error while cancelling plan switching."
 msgstr "플랜 전환 취소 중 오류 발생."
 
-#. js-lingui-id: QmR+2U
+#. js-lingui-id: kNHe8p
 #: src/modules/settings/billing/hooks/useEndSubscriptionTrialPeriod.ts
-msgid "Error while ending trial period. Please contact Twenty team."
+msgid "Error while ending trial period. Please contact Nova CRM team."
 msgstr "시험 기간 종료 중 오류가 발생했습니다. Nova CRM 팀에 문의하세요."
 
 #. js-lingui-id: 5g78zo
@@ -14047,9 +14047,9 @@ msgstr "모델 ID가 필요합니다"
 msgid "Model information"
 msgstr "모델 정보"
 
-#. js-lingui-id: iaurWj
+#. js-lingui-id: /sSH0Z
 #: src/pages/settings/ai/components/SettingsAiModelsTab.tsx
-msgid "Model used when you chat with Twenty"
+msgid "Model used when you chat with Nova CRM"
 msgstr "Nova CRM와 채팅할 때 사용하는 모델"
 
 #. js-lingui-id: //nm2/
@@ -16082,9 +16082,9 @@ msgstr "온보딩 보상"
 msgid "One or more filters reference deactivated or deleted fields and will be automatically removed on save."
 msgstr "하나 이상의 필터가 비활성화되었거나 삭제된 필드를 참조하고 있어, 저장 시 자동으로 제거됩니다."
 
-#. js-lingui-id: 1WZTTl
+#. js-lingui-id: Iqh4bc
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
-msgid "One subscription provides one Organization key that powers one production instance and one potential staging or test instance. To run a staging or test environment, install Twenty on a second server, activate it with this same Organization key, then register that server as a development instance. Development instances unlock premium features without extra billing and do not count toward your production seats."
+msgid "One subscription provides one Organization key that powers one production instance and one potential staging or test instance. To run a staging or test environment, install Nova CRM on a second server, activate it with this same Organization key, then register that server as a development instance. Development instances unlock premium features without extra billing and do not count toward your production seats."
 msgstr "하나의 구독은 하나의 프로덕션 인스턴스와 하나의 스테이징 또는 테스트 인스턴스를 구동하는 조직 키 한 개를 제공합니다. 스테이징 또는 테스트 환경을 실행하려면 두 번째 서버에 Nova CRM를 설치하고, 동일한 조직 키로 활성화한 다음 해당 서버를 개발 인스턴스로 등록하세요. 개발 인스턴스는 추가 청구 없이 프리미엄 기능을 활성화하며 프로덕션 좌석 수에 포함되지 않습니다."
 
 #. js-lingui-id: JEtonz
@@ -16189,9 +16189,9 @@ msgstr "이메일 편집기를 열어 블록 설정을 편집하세요."
 msgid "Open as link"
 msgstr "링크로 열기"
 
-#. js-lingui-id: n0vVgf
+#. js-lingui-id: vv05qq
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Open Claude with the Twenty connector name and MCP URL prefilled."
+msgid "Open Claude with the Nova CRM connector name and MCP URL prefilled."
 msgstr "Nova CRM 커넥터 이름과 MCP URL이 미리 채워진 상태로 Claude를 여세요."
 
 #. js-lingui-id: uIKeEf
@@ -16199,9 +16199,9 @@ msgstr "Nova CRM 커넥터 이름과 MCP URL이 미리 채워진 상태로 Claud
 msgid "Open conversation"
 msgstr ""
 
-#. js-lingui-id: +n2jpB
+#. js-lingui-id: a5B2hY
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Open Cursor's MCP installer with the Twenty remote server config."
+msgid "Open Cursor's MCP installer with the Nova CRM remote server config."
 msgstr "Nova CRM 원격 서버 구성이 미리 채워진 상태로 Cursor의 MCP 설치 프로그램을 여세요."
 
 #. js-lingui-id: pZZH4Q
@@ -16275,9 +16275,9 @@ msgstr "레코드를 다음에서 열기"
 msgid "Open records on a dedicated page"
 msgstr "전용 페이지에서 레코드를 열기"
 
-#. js-lingui-id: q170S2
+#. js-lingui-id: IEKwtt
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
-msgid "Open Replit with the Twenty remote server config."
+msgid "Open Replit with the Nova CRM remote server config."
 msgstr "Nova CRM 원격 서버 구성이 미리 채워진 상태로 Replit을 여세요."
 
 #. js-lingui-id: Yp+Hi/
@@ -16661,9 +16661,9 @@ msgstr "페이지 레이아웃"
 msgid "Page name"
 msgstr "페이지 이름"
 
-#. js-lingui-id: NRvxzv
+#. js-lingui-id: IdwVmc
 #: src/pages/not-found/NotFound.tsx
-msgid "Page Not Found | Twenty"
+msgid "Page Not Found | Nova CRM"
 msgstr "페이지를 찾을 수 없음 | Nova CRM"
 
 #. js-lingui-id: oIhFvf
@@ -20958,7 +20958,7 @@ msgstr "하위 필드"
 msgid "Subdomain"
 msgstr "하위 도메인"
 
-#. js-lingui-id: Sv4BSp
+#. js-lingui-id: ZgMy0x
 #: src/modules/settings/billing/constants/SettingsBillingPlanComparisonRows.ts
 msgid "Subdomain (crm.nova-tool.online)"
 msgstr "서브도메인 (crm.nova-tool.online)"
@@ -21054,12 +21054,12 @@ msgstr "구독"
 msgid "Subscription activated."
 msgstr "구독이 활성화되었습니다."
 
-#. js-lingui-id: 0okvpx
+#. js-lingui-id: EUuX3G
 #: src/modules/settings/billing/components/AddPaymentMethodForm.tsx
 #: src/modules/settings/billing/components/AddPaymentMethodForm.tsx
 #: src/modules/settings/billing/hooks/useSubmitSubscriptionPayment.ts
 #: src/modules/settings/billing/hooks/useSubmitSubscriptionPayment.ts
-msgid "Subscription error. Please retry or contact Twenty team"
+msgid "Subscription error. Please retry or contact Nova CRM team"
 msgstr "구독 오류입니다. 다시 시도하거나 Nova CRM 팀에 문의하세요"
 
 #. js-lingui-id: +QiH+4
@@ -22829,14 +22829,14 @@ msgstr "개발자 모드 켜기"
 msgid "Turquoise"
 msgstr "터콰이즈"
 
-#. js-lingui-id: JnaRPe
+#. js-lingui-id: 8IC03p
 #: src/modules/spreadsheet-import/steps/components/MatchColumnsStep/components/ColumnGrid.tsx
-msgid "Twenty fields"
+msgid "Nova CRM fields"
 msgstr "Nova CRM 필드"
 
-#. js-lingui-id: pNo8xt
+#. js-lingui-id: GF355F
 #: src/pages/settings/ai/components/SettingsAiModelsTab.tsx
-msgid "Twenty fills each level with the best model that meets your requirements"
+msgid "Nova CRM fills each level with the best model that meets your requirements"
 msgstr "Nova CRM는 요구 사항을 충족하는 최적의 모델로 각 수준을 채웁니다"
 
 #. js-lingui-id: YIjS4q
@@ -25530,3 +25530,35 @@ msgstr "확대"
 #: src/modules/settings/data-model/graph-overview/components/SettingsDataModelOverview.tsx
 msgid "Zoom out"
 msgstr "축소"
+
+#. js-lingui-id: Cw/3WF
+#: src/modules/settings/hooks/useSettingsNavigationItems.tsx
+#: src/pages/settings/community/SettingsCommunity.tsx
+#: src/pages/settings/community/SettingsCommunity.tsx
+msgid "About Nova CRM"
+msgstr "About Nova CRM"
+
+#. js-lingui-id: nqkbwZ
+#: src/utils/title-utils.ts
+msgid "About Nova CRM - Settings"
+msgstr "About Nova CRM - Settings"
+
+#. js-lingui-id: h4H387
+#: src/pages/settings/community/SettingsCommunity.tsx
+msgid "Nova CRM"
+msgstr "Nova CRM"
+
+#. js-lingui-id: XKVkqf
+#: src/pages/settings/community/SettingsCommunity.tsx
+msgid "Nova CRM website"
+msgstr "Nova CRM website"
+
+#. js-lingui-id: Uedd1q
+#: src/pages/settings/community/SettingsCommunity.tsx
+msgid "Open-source customer relationship management for your team."
+msgstr "Open-source customer relationship management for your team."
+
+#. js-lingui-id: joolK7
+#: src/pages/settings/community/SettingsCommunity.tsx
+msgid "Source code"
+msgstr "Source code"

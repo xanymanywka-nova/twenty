@@ -189,7 +189,6 @@ const useSettingsNavigationItems = (): SettingsNavigationSection[] => {
           label: t`About Nova CRM`,
           path: SettingsPath.Community,
           Icon: IconInfoCircle,
-          isHidden: !permissionFlagMap[PermissionFlagType.WORKSPACE],
         },
         {
           label: t`Support`,

@@ -6,10 +6,14 @@ REMOTE_DIR="/opt/nova-crm-hub"
 COMPOSE="docker compose -f docker-compose.hetzner.yml"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+# The remote directory also holds .env, connector state and backups, so only
+# the files this script owns are copied and nothing there is ever deleted.
+DEPLOY_FILES=(docker-compose.hetzner.yml .env.example)
+
 echo "Syncing deployment files to ${HOST}:${REMOTE_DIR}"
-rsync -az --delete \
-  --exclude '.env' \
-  "${SCRIPT_DIR}/" "${HOST}:${REMOTE_DIR}/"
+ssh "${HOST}" "mkdir -p ${REMOTE_DIR} && docker network inspect novahub >/dev/null 2>&1 || docker network create novahub >/dev/null"
+rsync -az \
+  "${DEPLOY_FILES[@]/#/${SCRIPT_DIR}/}" "${HOST}:${REMOTE_DIR}/"
 
 echo "Pulling and starting Nova CRM"
 ssh "${HOST}" "cd ${REMOTE_DIR} && ${COMPOSE} pull && ${COMPOSE} up -d"

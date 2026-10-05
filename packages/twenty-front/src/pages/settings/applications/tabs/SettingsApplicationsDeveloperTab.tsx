@@ -11,7 +11,7 @@ import { styled } from '@linaria/react';
 import { useLingui } from '@lingui/react/macro';
 import { useState } from 'react';
 import { SettingsPath } from 'twenty-shared/types';
-import { getSettingsPath } from 'twenty-shared/utils';
+import { getSettingsPath, isDefined } from 'twenty-shared/utils';
 import { CommandBlock, SearchInput, Section } from 'twenty-ui/components';
 import { IconArrowUpRight, IconChevronRight, IconCopy } from 'twenty-ui/icon';
 import { Button } from 'twenty-ui/primitives/input';
@@ -47,6 +47,10 @@ export const SettingsApplicationsDeveloperTab = () => {
   const { t } = useLingui();
   const theme = useTheme();
   const currentWorkspaceMember = useAtomStateValue(currentWorkspaceMemberState);
+  const gettingStartedDocumentationUrl = getDocumentationUrl({
+    locale: currentWorkspaceMember?.locale,
+    path: '/developers/extend/apps/getting-started',
+  });
 
   const { copyToClipboard } = useCopyToClipboard();
 
@@ -98,22 +102,18 @@ export const SettingsApplicationsDeveloperTab = () => {
           description={t`You can either create a private app or share it to others`}
         />
         <CommandBlock commands={createCommands} button={createCopyButton} />
-        <StyledButtonContainer>
-          <Button
-            startIcon={<IconArrowUpRight />}
-            size="sm"
-            onClick={() =>
-              window.open(
-                getDocumentationUrl({
-                  locale: currentWorkspaceMember?.locale,
-                  path: '/developers/extend/apps/getting-started',
-                }),
-                '_blank',
-              )
-            }
-            variant="outline"
-          >{t`Read documentation`}</Button>
-        </StyledButtonContainer>
+        {isDefined(gettingStartedDocumentationUrl) && (
+          <StyledButtonContainer>
+            <Button
+              startIcon={<IconArrowUpRight />}
+              size="sm"
+              onClick={() =>
+                window.open(gettingStartedDocumentationUrl, '_blank')
+              }
+              variant="outline"
+            >{t`Read documentation`}</Button>
+          </StyledButtonContainer>
+        )}
       </Section.Root>
 
       {canClaimApplications && <SettingsClaimApplicationSection />}
