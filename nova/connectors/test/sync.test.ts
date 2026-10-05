@@ -5,6 +5,7 @@ import { classifyCustomer } from '../src/classify.js';
 import { ReadOnlyHttpClient } from '../src/http/read-only-client.js';
 import { NovaCrmClient } from '../src/crm/client.js';
 import { runConnector } from '../src/sync.js';
+import { phoneValue } from '../src/utils.js';
 import type {
   Connector,
   RecordWriter,
@@ -236,4 +237,11 @@ test('customer classification distinguishes explicit companies from consumers', 
     classifyCustomer({ name: 'Test Guest', email: 'guest@gmail.com' }).type,
     'B2C',
   );
+});
+
+test('phoneValue drops numbers Twenty cannot parse', () => {
+  assert.equal(phoneValue('000652078146'), undefined);
+  const value = phoneValue('000652078146', ['0202 1234567']);
+  assert.equal(value?.primaryPhoneNumber, '+492021234567');
+  assert.deepEqual(value?.additionalPhones, []);
 });
