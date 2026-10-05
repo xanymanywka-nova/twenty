@@ -1,0 +1,28 @@
+{
+  "name": "nova-crm-connectors",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "bootstrap": "tsx src/cli.ts bootstrap",
+    "migrate:legacy": "tsx src/cli.ts migrate-legacy",
+    "fixture:hotel-anna": "tsx scripts/create-hotel-fixture.ts",
+    "sync": "tsx src/cli.ts sync",
+    "start": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/**/*.test.ts"
+  },
+  "dependencies": {
+    "node-cron": "^4.2.1",
+    "pg": "^8.16.3",
+    "tsx": "^4.20.6"
+  },
+  "devDependencies": {
+    "@types/node": "^24.7.0",
+    "@types/pg": "^8.15.5",
+    "typescript": "^5.9.3"
+  }
+}

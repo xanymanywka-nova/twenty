@@ -1,0 +1,27 @@
+services:
+  nova-connectors:
+    build:
+      context: .
+    restart: unless-stopped
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      NOVA_CRM_URL: ${NOVA_CRM_URL:-http://server:3000}
+      HOTEL_ANNA_DATABASE_PATH: /data/hotel-anna/prod.db
+      REVIEW_MONITOR_DATABASE_PATH: /data/review-monitor/reviews.db
+      NOVA_BEDS_DATABASE_PATH: /data/nova-beds/prod.db
+    mem_limit: 256m
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m
+    volumes:
+      - /opt/hotel-anna/prisma/data:/data/hotel-anna:ro
+      - ${REVIEW_MONITOR_SQLITE_DIR:-/opt/review-monitor/data}:/data/review-monitor:ro
+      - ${NOVA_BEDS_SQLITE_DIR:-/opt/nova-beds/prisma/data}:/data/nova-beds:ro
+    networks:
+      - novahub
+
+networks:
+  novahub:
+    external: true
