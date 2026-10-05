@@ -18,7 +18,7 @@ export const mapBedsListings = (rows: ListingRow[]): SyncRecord => ({
   fields: {
     name: 'Nova Beds',
     code: 'NBW',
-    type: 'apartments',
+    propertyType: 'apartments',
     listings: richText(
       JSON.stringify(
         rows
