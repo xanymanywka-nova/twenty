@@ -23,6 +23,9 @@ services:
       SUPPORT_DRIVER: ${SUPPORT_DRIVER:-NONE}
       CHECK_FOR_UPDATES_ENABLED: ${CHECK_FOR_UPDATES_ENABLED:-false}
       IS_BILLING_ENABLED: ${IS_BILLING_ENABLED:-false}
+      # Workspace activation seeds every standard object in one request and runs out
+      # of the heap Node derives from a 1g cgroup.
+      NODE_OPTIONS: --max-old-space-size=1152
     volumes:
       - server-local-data:/app/packages/twenty-server/.local-storage
     depends_on:
@@ -36,7 +39,7 @@ services:
       timeout: 5s
       retries: 20
       start_period: 30s
-    mem_limit: 1g
+    mem_limit: 1536m
     # Short service names are ambiguous on the shared coolify network (coolify-redis
     # also answers to "redis"), so every cross-container hostname is prefixed.
     networks:
