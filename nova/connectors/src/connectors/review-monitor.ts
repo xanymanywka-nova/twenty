@@ -5,7 +5,8 @@ import { openReadOnlyDatabase, queryRows } from './sqlite.js';
 export type MonitorReview = {
   id: string;
   sourceName: string;
-  propertyCode: string;
+  placeName?: string;
+  propertyCode?: string;
   rating: number;
   ratingScale?: number;
   title?: string;
@@ -13,6 +14,7 @@ export type MonitorReview = {
   language?: string;
   publishedAt?: string;
   authorName?: string;
+  repliedAt?: string | number | null;
 };
 
 export const mapMonitorReview = (review: MonitorReview): SyncRecord => ({
@@ -20,14 +22,18 @@ export const mapMonitorReview = (review: MonitorReview): SyncRecord => ({
   externalSource: `review:${platformKey(review.sourceName)}`,
   externalId: review.id,
   fields: {
-    name: review.title ?? `${review.sourceName} review`,
+    name:
+      review.title ??
+      [review.placeName, `${review.sourceName} review`]
+        .filter(Boolean)
+        .join(' · '),
     platform: review.sourceName,
     rating: ratingOutOfTen(review.rating, review.ratingScale ?? 5),
     title: review.title,
     text: richText(review.text),
     language: review.language,
     publishedAt: review.publishedAt,
-    replied: false,
+    replied: review.repliedAt != null,
     reviewerName: review.authorName,
   },
   links: review.propertyCode
@@ -49,7 +55,9 @@ export const createReviewMonitorConnector = (path: string): Connector => ({
     try {
       const rows = queryRows<MonitorReview>(
         database,
-        `SELECT r.id, s.name AS sourceName, p.code AS propertyCode, r.rating, COALESCE(s.ratingScale, 5) AS ratingScale, r.title, r.text, r.language, r.publishedAt, r.authorName FROM Review r JOIN Source s ON s.id = r.sourceId JOIN Place p ON p.id = r.placeId`,
+        // Rating is already normalised to 0-5; externalId is the platform's own id, which
+        // Welcome's Channex feed uses too, so both sources land on one record.
+        `SELECT COALESCE(r.externalId, r.id) AS id, r.platform AS sourceName, p.name AS placeName, r.rating, 5 AS ratingScale, r.title, r.text, r.language, r.publishedAt, r.author AS authorName, r.repliedAt FROM Review r JOIN Place p ON p.id = r.placeId`,
       );
       for (const row of rows) yield mapMonitorReview(row);
     } finally {

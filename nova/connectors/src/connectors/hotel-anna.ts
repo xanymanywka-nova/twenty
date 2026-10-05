@@ -1,6 +1,7 @@
 import type { Connector, SyncRecord } from '../types.js';
 import {
   guestExternalId,
+  isoTimestamp,
   nightsBetween,
   phoneValue,
   richText,
@@ -14,25 +15,27 @@ export type HotelReservation = {
   guestName: string;
   guestEmail: string;
   guestPhone?: string;
-  checkIn: string;
-  checkOut: string;
+  checkIn: string | number;
+  checkOut: string | number;
   adults: number;
   totalPrice: number;
   status: string;
   apaleoId?: string;
-  createdAt?: string;
+  createdAt?: string | number;
 };
 export type PageView = {
   id: string;
   propertyId: string;
   referrer?: string;
   visitorId?: string;
-  createdAt: string;
+  createdAt: string | number;
 };
 
 export const mapHotelReservation = (
   reservation: HotelReservation,
 ): SyncRecord[] => {
+  const checkIn = isoTimestamp(reservation.checkIn);
+  const checkOut = isoTimestamp(reservation.checkOut);
   const personId = guestExternalId({
     email: reservation.guestEmail,
     phone: reservation.guestPhone,
@@ -61,9 +64,9 @@ export const mapHotelReservation = (
       externalId: reservation.apaleoId ?? reservation.id,
       fields: {
         name: reservation.apaleoId ?? reservation.id,
-        arrival: reservation.checkIn.slice(0, 10),
-        departure: reservation.checkOut.slice(0, 10),
-        nights: nightsBetween(reservation.checkIn, reservation.checkOut),
+        arrival: checkIn.slice(0, 10),
+        departure: checkOut.slice(0, 10),
+        nights: nightsBetween(checkIn, checkOut),
         adults: reservation.adults,
         status: reservation.status,
         channel: 'direct-web',
@@ -106,7 +109,7 @@ export const aggregatePageViews = (
     }
   >();
   for (const row of rows) {
-    const date = row.createdAt.slice(0, 10);
+    const date = isoTimestamp(row.createdAt).slice(0, 10);
     const key = `${row.propertyId}:${date}`;
     const group = groups.get(key) ?? {
       propertyId: row.propertyId,
@@ -127,7 +130,7 @@ export const aggregatePageViews = (
   }
   for (const reservation of reservations) {
     if (!reservation.createdAt) continue;
-    const date = reservation.createdAt.slice(0, 10);
+    const date = isoTimestamp(reservation.createdAt).slice(0, 10);
     const key = `${reservation.propertyId}:${date}`;
     const group = groups.get(key) ?? {
       propertyId: reservation.propertyId,
@@ -179,7 +182,8 @@ export const createHotelAnnaConnector = (path: string): Connector => ({
       const reservations = queryRows<HotelReservation>(
         database,
         `SELECT id, propertyId, guestName, guestEmail, guestPhone, checkIn, checkOut, adults, totalPrice, status, apaleoId, createdAt FROM Reservation${clause}`,
-        ...(context.cursor ? [context.cursor] : []),
+        // updatedAt is epoch milliseconds, so an ISO cursor would compare as text.
+        ...(clause && context.cursor ? [Date.parse(context.cursor)] : []),
       );
       for (const reservation of reservations)
         for (const record of mapHotelReservation(reservation)) yield record;

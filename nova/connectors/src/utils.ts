@@ -14,6 +14,12 @@ export const normalizePhone = (value?: string | null): string | undefined => {
   return `+${digits}`;
 };
 
+// Prisma on SQLite stores DateTime as epoch milliseconds, while other sources hand over ISO strings.
+export const isoTimestamp = (value: string | number): string =>
+  typeof value === 'number' || /^\d+$/.test(value)
+    ? new Date(Number(value)).toISOString()
+    : value;
+
 export const nightsBetween = (arrival: string, departure: string): number =>
   Math.max(
     0,
@@ -74,7 +80,10 @@ export const phoneValue = (
   primaryPhoneNumber: string,
   additionalPhoneNumbers: string[] = [],
 ) => {
-  const [primary, ...additional] = [primaryPhoneNumber, ...additionalPhoneNumbers]
+  const [primary, ...additional] = [
+    primaryPhoneNumber,
+    ...additionalPhoneNumbers,
+  ]
     .map((number) => normalizePhone(number))
     .filter((number): number is string => !!number && isParsablePhone(number));
   if (!primary) return undefined;
