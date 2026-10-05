@@ -46,6 +46,8 @@ jobs:
         with:
           context: .
           file: packages/twenty-docker/twenty/Dockerfile
+          # The last stage is the all-in-one dev image with its own Postgres/Redis/ClickHouse.
+          target: twenty
           platforms: linux/amd64
           push: true
           build-args: |
