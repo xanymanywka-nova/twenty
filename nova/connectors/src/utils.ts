@@ -1,3 +1,5 @@
+import { parsePhoneNumberWithError } from 'libphonenumber-js';
+
 export const normalizeEmail = (value?: string | null): string | undefined => {
   const normalized = value?.trim().toLowerCase();
   return normalized || undefined;
@@ -57,19 +59,36 @@ export const primaryLink = (
     ? { primaryLinkUrl: url, primaryLinkLabel: url, secondaryLinks: [] }
     : undefined;
 
+// Twenty rejects the whole record when any number fails to parse, and legacy data
+// holds typos such as "+0652078146", so unparsable numbers are dropped instead.
+const isParsablePhone = (number: string): boolean => {
+  try {
+    parsePhoneNumberWithError(number);
+    return true;
+  } catch {
+    return false;
+  }
+};
+
 export const phoneValue = (
   primaryPhoneNumber: string,
   additionalPhoneNumbers: string[] = [],
-) => ({
-  primaryPhoneNumber: normalizePhone(primaryPhoneNumber) ?? primaryPhoneNumber,
-  primaryPhoneCountryCode: '',
-  primaryPhoneCallingCode: '',
-  additionalPhones: additionalPhoneNumbers.map((number) => ({
-    number: normalizePhone(number) ?? number,
-    countryCode: '',
-    callingCode: '',
-  })),
-});
+) => {
+  const [primary, ...additional] = [primaryPhoneNumber, ...additionalPhoneNumbers]
+    .map((number) => normalizePhone(number))
+    .filter((number): number is string => !!number && isParsablePhone(number));
+  if (!primary) return undefined;
+  return {
+    primaryPhoneNumber: primary,
+    primaryPhoneCountryCode: '',
+    primaryPhoneCallingCode: '',
+    additionalPhones: additional.map((number) => ({
+      number,
+      countryCode: '',
+      callingCode: '',
+    })),
+  };
+};
 
 export const guestExternalId = (guest: {
   email?: string | null | undefined;

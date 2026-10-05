@@ -16,6 +16,7 @@
     "test": "tsx --test test/**/*.test.ts"
   },
   "dependencies": {
+    "libphonenumber-js": "1.11.5",
     "node-cron": "^4.2.1",
     "pg": "^8.16.3",
     "tsx": "^4.20.6"
