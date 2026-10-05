@@ -35,7 +35,7 @@ export const OBJECT_DEFINITIONS: ObjectDefinition[] = [
       ...COMMON_FIELDS,
       { name: 'code', label: 'Code', type: 'TEXT' },
       { name: 'propertyType', label: 'Property type', type: 'TEXT' },
-      { name: 'website', label: 'Website', type: 'LINK' },
+      { name: 'website', label: 'Website', type: 'LINKS' },
       { name: 'listings', label: 'Listings', type: 'RICH_TEXT' },
     ],
   },
@@ -145,7 +145,7 @@ export const OBJECT_DEFINITIONS: ObjectDefinition[] = [
       { name: 'subject', label: 'Subject', type: 'TEXT' },
       { name: 'lastMessageAt', label: 'Last message at', type: 'DATE_TIME' },
       { name: 'direction', label: 'Direction', type: 'TEXT' },
-      { name: 'sourceLink', label: 'Source link', type: 'LINK' },
+      { name: 'sourceLink', label: 'Source link', type: 'LINKS' },
       { name: 'duration', label: 'Duration seconds', type: 'NUMBER' },
       { name: 'contactName', label: 'Contact name', type: 'TEXT' },
       {
