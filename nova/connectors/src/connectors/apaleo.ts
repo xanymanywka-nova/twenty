@@ -131,8 +131,9 @@ export const mapApaleoBooking = (booking: ApaleoBooking): SyncRecord[] => {
       externalId: reservation.id,
       fields: {
         name: reservation.id,
-        arrival: reservation.arrival,
-        departure: reservation.departure,
+        // Apaleo sends a datetime with offset; these CRM fields accept only YYYY-MM-DD
+        arrival: reservation.arrival.slice(0, 10),
+        departure: reservation.departure.slice(0, 10),
         nights: nightsBetween(reservation.arrival, reservation.departure),
         adults: reservation.adults ?? 1,
         status: reservation.status,
