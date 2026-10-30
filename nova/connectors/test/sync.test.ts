@@ -187,6 +187,55 @@ test('Nova CRM writer matches a returning guest by normalized phone across runs'
   assert.equal(patches, 1);
 });
 
+test('Nova CRM writer never moves an email that belongs to another person', async () => {
+  const phoneGuest = {
+    id: 'person-phone',
+    externalSource: 'guest',
+    externalId: 'email:first@example.test',
+    emails: { primaryEmail: 'first@example.test', additionalEmails: null },
+    phones: { primaryPhoneNumber: '+4917612345678' },
+  };
+  const emailOwner = {
+    id: 'person-email',
+    externalSource: 'guest',
+    externalId: 'email:second@example.test',
+    emails: { primaryEmail: 'second@example.test', additionalEmails: null },
+  };
+  const patches: Record<string, unknown>[] = [];
+  const transport: typeof fetch = async (input, init) => {
+    const method = init?.method ?? 'GET';
+    if (method === 'GET') {
+      const filter = decodeURIComponent(String(input));
+      const people = filter.includes('emails.primaryEmail')
+        ? [emailOwner]
+        : filter.includes('first@example.test') ||
+            filter.includes('primaryPhoneNumber')
+          ? [phoneGuest]
+          : [];
+      return new Response(JSON.stringify({ data: { people, tasks: [] } }), {
+        status: 200,
+      });
+    }
+    if (method === 'PATCH')
+      patches.push(JSON.parse(String(init?.body)) as Record<string, unknown>);
+    return new Response('{}', { status: 200 });
+  };
+  const writer = new NovaCrmClient('http://crm.test', 'test-key', transport);
+  await writer.upsert({
+    object: 'people',
+    externalSource: 'guest',
+    externalId: 'email:first@example.test',
+    fields: {
+      emails: { primaryEmail: 'second@example.test', additionalEmails: null },
+      phones: { primaryPhoneNumber: '+4917612345678' },
+      jobTitle: 'Guest',
+    },
+  });
+  assert.equal(patches.length, 1);
+  assert.equal(patches[0]?.emails, undefined);
+  assert.equal(patches[0]?.jobTitle, 'Guest');
+});
+
 test('source HTTP client rejects every non-GET method', async () => {
   const client = new ReadOnlyHttpClient('https://example.test');
   for (const method of ['POST', 'PUT', 'PATCH', 'DELETE'])
