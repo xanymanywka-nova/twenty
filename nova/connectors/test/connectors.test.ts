@@ -58,6 +58,23 @@ test('maps Apaleo property, reservation and folio', () => {
   );
 });
 
+test('sends Apaleo stay dates as YYYY-MM-DD, as the CRM date fields require', () => {
+  const stay = mapApaleoBooking({
+    id: 'B2',
+    reservations: [
+      {
+        id: 'R2',
+        status: 'Confirmed',
+        arrival: '2025-10-05T15:00:00+02:00',
+        departure: '2025-10-07T11:00:00+02:00',
+      },
+    ],
+  }).find((record) => record.object === 'stays');
+  assert.equal(stay?.fields.arrival, '2025-10-05');
+  assert.equal(stay?.fields.departure, '2025-10-07');
+  assert.equal(stay?.fields.nights, 2);
+});
+
 test('maps legacy CRM customer', () => {
   const record = mapLegacyCustomer({
     id: 'old-1',
