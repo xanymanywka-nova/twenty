@@ -260,6 +260,7 @@ export class NovaCrmClient implements RecordWriter {
       record.externalSource,
       record.externalId,
     );
+    const omittedFields = new Set<string>();
     if (record.object === 'people') {
       const identityCandidates = await this.findPersonCandidates(record);
       const candidates = [
@@ -269,11 +270,26 @@ export class NovaCrmClient implements RecordWriter {
           ),
         ).values(),
       ];
+      const email = nestedString(
+        record.fields.emails,
+        'primaryEmail',
+      )?.toLowerCase();
+      const emailOwner = email
+        ? identityCandidates.find(
+            ({ emails }) =>
+              nestedString(emails, 'primaryEmail')?.toLowerCase() === email,
+          )
+        : undefined;
       if (candidates.length > 1) {
         await this.createDuplicateReviewTask(record, candidates);
+        existing ??= emailOwner;
       } else if (!existing) {
         existing = candidates[0];
       }
+      // The CRM keeps primary emails unique, so a guest matched by phone or
+      // name must not take an email that belongs to another person.
+      if (emailOwner && existing && emailOwner.id !== existing.id)
+        omittedFields.add('emails');
     }
     const data = Object.fromEntries(
       Object.entries({
@@ -281,7 +297,9 @@ export class NovaCrmClient implements RecordWriter {
         ...(await this.linkedFields(record)),
         externalSource: record.externalSource,
         externalId: record.externalId,
-      }).filter(([, value]) => value !== undefined),
+      }).filter(
+        ([field, value]) => value !== undefined && !omittedFields.has(field),
+      ),
     );
     const key = `${record.object}|${record.externalSource}|${record.externalId}`;
     if (!existing) {
