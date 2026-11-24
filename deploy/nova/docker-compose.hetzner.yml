@@ -67,6 +67,15 @@ services:
       - traefik.http.routers.novahub-https.middlewares=novahub-gzip
       - traefik.http.routers.novahub-https.service=novahub-server
       - traefik.http.services.novahub-server.loadbalancer.server.port=3000
+      # MCP endpoint: reachable from anywhere, guarded by the workspace API key only
+      # (Twenty answers 401 without a valid Bearer). Deliberately without novahub-lock,
+      # the office IP allowlist the rest of the site sits behind; higher priority wins.
+      - traefik.http.routers.novahub-mcp-https.entrypoints=https
+      - traefik.http.routers.novahub-mcp-https.rule=Host(`crm.nova-tool.online`) && (Path(`/mcp`) || PathPrefix(`/mcp/`))
+      - traefik.http.routers.novahub-mcp-https.priority=1000
+      - traefik.http.routers.novahub-mcp-https.tls=true
+      - traefik.http.routers.novahub-mcp-https.tls.certresolver=letsencrypt
+      - traefik.http.routers.novahub-mcp-https.service=novahub-server
 
   worker:
     image: ghcr.io/xanymanywka-nova/nova-crm:${TAG:-latest}
